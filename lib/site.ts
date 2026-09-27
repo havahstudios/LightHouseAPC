@@ -3,7 +3,7 @@
 export const site = {
   name: "Lighthouse Law APC",
   shortName: "Lighthouse Law",
-  tagline: "Employment Lawyers",
+  tagline: "Trial Lawyers",
   phone: "(000) 000-0000", // placeholder
   phoneHref: "tel:+10000000000", // placeholder
   address: {

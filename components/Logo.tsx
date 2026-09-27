@@ -1,38 +1,23 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
 
-// Temporary text logo with a lighthouse mark. Swap for the real logo file once designed.
+// Tower monogram logo: the lighthouse tower forms the letter L.
 export default function Logo({ tone = "light" }: { tone?: "light" | "dark" }) {
-  const text = tone === "light" ? "text-white" : "text-ink";
+  const name = tone === "light" ? "text-white" : "text-ink";
+  const sub = tone === "light" ? "text-beacon" : "text-beacon-dark";
 
   return (
-    <Link href="/" className="flex items-center gap-3" aria-label={`${site.name} home`}>
-      <svg viewBox="0 0 40 44" className="h-11 w-10 shrink-0 text-beacon" aria-hidden="true">
-        <path
-          d="M20 2 4 8v12c0 10 7 18.5 16 22 9-3.5 16-12 16-22V8L20 2Z"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.6"
-        />
-        <path d="M17 17h6l1.5 17h-9L17 17Z" fill="currentColor" />
-        <path d="M16.5 14h7v3h-7z" fill="currentColor" opacity=".85" />
-        <path d="M18 11.5h4l.5 2.5h-5z" fill="currentColor" />
-        <path
-          d="M24 14.5 32 12M24 15.5l8 1.5M16 14.5 8 12M16 15.5 8 17"
-          stroke="currentColor"
-          strokeWidth="1"
-          opacity=".55"
-        />
+    <Link href="/" className="flex items-center gap-2.5" aria-label={`${site.name} home`}>
+      <svg viewBox="0 0 60 66" className="h-12 w-11 shrink-0 text-beacon" aria-hidden="true">
+        <path d="M29.5 4.75 48 1M29.5 4.75 49 7.5M29.5 4.75 48 14" stroke="currentColor" strokeWidth="1.2" opacity=".7" />
+        <rect x="23" y="2.5" width="6" height="4.5" fill="currentColor" />
+        <path d="M22 8h8l2 42H20z" fill="currentColor" />
+        <rect x="20" y="50" width="26" height="4.5" fill="currentColor" />
+        <path d="M18 61q3.5-3 7 0t7 0 7 0 7 0" fill="none" stroke="currentColor" strokeWidth="1.2" />
       </svg>
       <span className="leading-none">
-        <span className={`block font-sans text-[1.05rem] font-semibold tracking-[0.14em] uppercase ${text}`}>
-          {site.shortName}
-        </span>
-        <span
-          className={`mt-1.5 block font-sans text-[0.62rem] tracking-[0.34em] uppercase ${
-            tone === "light" ? "text-white/70" : "text-stone"
-          }`}
-        >
+        <span className={`block font-serif text-[1.55rem] font-light ${name}`}>{site.shortName}</span>
+        <span className={`mt-1.5 block font-sans text-[0.58rem] font-medium tracking-[0.3em] uppercase ${sub}`}>
           APC · {site.tagline}
         </span>
       </span>
