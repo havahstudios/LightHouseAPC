@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/*
+  Brand colors — change these to rebrand the whole site.
+  (Temporary lighthouse palette until the logo is designed.)
+*/
+@theme {
+  --color-ink: #06111d; /* deepest navy: footer, form bands */
+  --color-navy: #0b1d30; /* header, cards */
+  --color-navy-soft: #13283f;
+  --color-beacon: #cfa45c; /* gold accent: buttons, lines, links */
+  --color-beacon-light: #e2c28b;
+  --color-beacon-dark: #b3893f;
+  --color-sand: #f3efe8; /* warm section background */
+  --color-shell: #faf8f4; /* lightest background */
+  --color-stone: #5b6470; /* body text on light backgrounds */
+  --color-line: #e3ddd2;
+
+  --font-serif: var(--font-roboto-slab), Georgia, serif;
+  --font-sans: var(--font-plex), system-ui, sans-serif;
+}
+
+/* Base styles live in a layer so Tailwind classes can override them. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-shell);
+    color: var(--color-stone);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    color: var(--color-ink);
+  }
+
+  ::selection {
+    background: var(--color-beacon);
+    color: var(--color-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
