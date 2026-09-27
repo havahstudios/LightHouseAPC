@@ -14,12 +14,12 @@ export default function Hero() {
 
   return (
     <section className="relative flex min-h-[680px] items-center overflow-hidden bg-ink md:h-[100svh] md:min-h-[760px]">
-      {/* Background: a video when one is added, otherwise a photo */}
+      {/* Background: a video when one is added, otherwise a slowly drifting photo */}
       <div className="absolute inset-0">
         {site.heroVideo ? (
           <video src={site.heroVideo} autoPlay muted loop playsInline className="h-full w-full object-cover" />
         ) : (
-          <Image src={photos.hero} alt="" fill priority sizes="100vw" className="object-cover" />
+          <Image src={photos.hero} alt="" fill priority sizes="100vw" className="animate-slow-drift object-cover" />
         )}
         <div className="absolute inset-0 bg-ink/60" />
       </div>
@@ -43,7 +43,7 @@ export default function Hero() {
 
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/90 md:text-[1.35rem]">
           Wrongfully fired, harassed or underpaid? We stand up for California workers.
-          <br className="hidden md:block" /> No fees unless we win for you.
+          <br className="hidden md:block" /> Trial lawyers ready for the courtroom. No fees unless we win for you.
         </p>
 
         <div className="mt-10">

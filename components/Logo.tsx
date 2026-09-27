@@ -17,8 +17,11 @@ export default function Logo({ tone = "light" }: { tone?: "light" | "dark" }) {
       </svg>
       <span className="leading-none">
         <span className={`block font-serif text-[1.55rem] font-light ${name}`}>{site.shortName}</span>
-        <span className={`mt-1.5 block font-sans text-[0.58rem] font-medium tracking-[0.3em] uppercase ${sub}`}>
-          APC · {site.tagline}
+        <span className={`mt-2 block font-sans text-[0.56rem] font-semibold tracking-[0.3em] uppercase ${name}`}>
+          {site.tagline}
+        </span>
+        <span className={`mt-1 block font-sans text-[0.56rem] font-medium tracking-[0.3em] uppercase ${sub}`}>
+          APC · Los Angeles
         </span>
       </span>
     </Link>

@@ -28,7 +28,7 @@ The layout, scroll behaviour and animations closely mirror **https://blairdefens
 **Phase 1 — Homepage only (this task).** Sections, top to bottom, matching the reference:
 
 1. **Header** — logo left, "Call us at: (xxx)" top right, nav (Home, About, Practice Areas, Resources, Areas Served, Contact). Transparent over hero → turns solid navy when you scroll. Hamburger menu on mobile.
-2. **Hero** — full-height background video (muted, looping) with dark overlay — until a video is provided, a still photo is used (set `heroVideo` in `lib/site.ts` to switch), Google-review badge with stars, big H1, subline, gold "Get a Free Consultation" button, circular play button (opens video in a modal), **angled/diagonal bottom edge**.
+2. **Hero** — full-height background video (muted, looping) with dark overlay — until a video is provided, a slowly drifting photo is used (set `heroVideo` in `lib/site.ts` to switch), Google-review badge with stars, big H1, subline, gold "Get a Free Consultation" button, circular play button (opens video in a modal), **angled/diagonal bottom edge**.
 3. **Intro** — checkmark icon, H2, two-column paragraph text.
 4. **Stats** — 3 big numbers (e.g. 15+, 150+, 5,000+) that **count up** when scrolled into view, gold line above each.
 5. **Free case review form (navy band)** — Name / Email / Phone / Describe your case → Submit.
@@ -45,7 +45,7 @@ The layout, scroll behaviour and animations closely mirror **https://blairdefens
 16. **Footer** — consultation form, contact info, embedded map, about blurb, areas served, link columns, legal line.
 17. **Floating Google-rating badge** bottom-left (as on reference).
 
-**Animations/effects (kept minimal, per user feedback 2026-09-27):** header turns solid on scroll, sliders (awards, testimonials, blog), popup windows, simple color changes on hover. No fade-ins, count-ups, parallax, zooms or pulsing.
+**Animations/effects (kept minimal, per user feedback 2026-09-27):** header turns solid on scroll, very slow drift on the hero photo, gentle fade-in of each section on scroll, sliders (awards, testimonials, blog), popup windows, simple color changes on hover. No count-ups, parallax, hover zooms or pulsing.
 
 **Flow:** Visitor lands → scrolls → either taps phone number (opens dialer) or fills the form → sees a success message (or a clear error if it fails).
 

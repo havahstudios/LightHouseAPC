@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 
 type Props = {
   open: boolean;
@@ -11,6 +12,7 @@ type Props = {
 };
 
 // Centered popup window with a dimmed background. Closes on Escape or backdrop click.
+// Rendered at the end of <body> so no parent section can shift its position.
 export default function Modal({ open, onClose, label, children, className = "" }: Props) {
   useEffect(() => {
     if (!open) return;
@@ -25,7 +27,7 @@ export default function Modal({ open, onClose, label, children, className = "" }
 
   if (!open) return null;
 
-  return (
+  return createPortal(
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-ink/70 p-4" onClick={onClose}>
       <div
         role="dialog"
@@ -36,6 +38,7 @@ export default function Modal({ open, onClose, label, children, className = "" }
       >
         {children}
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

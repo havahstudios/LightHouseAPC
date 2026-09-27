@@ -108,7 +108,7 @@ export default function Footer() {
               {site.name} represents employees throughout Los Angeles and California who have been
               wronged at work. We know how stressful it is to lose a job or feel unsafe on the job, so we
               offer clear guidance, fast communication and determined advocacy from the first call to the
-              final result.
+              final result. As trial lawyers, we are prepared to take your case all the way to a verdict.
             </p>
           </div>
           <div>

@@ -13,7 +13,7 @@ export default function Intro() {
             <path d="m19 32 8 8 15-17" fill="none" className="stroke-beacon" strokeWidth="2" strokeLinecap="round" />
           </svg>
           <h2 className="max-w-xl text-4xl leading-tight font-light md:text-[2.75rem]">
-            Los Angeles Employment Lawyer
+            Los Angeles Employment &amp; Trial Lawyers
           </h2>
         </div>
 

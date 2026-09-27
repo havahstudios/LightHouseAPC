@@ -7,6 +7,7 @@ export const stats = [
 ];
 
 export const whyHireReasons = [
+  "We are trial lawyers. We prepare every case as if it's going in front of a jury, and employers know it — which strengthens your position when it's time to negotiate.",
   "We focus on one thing: representing employees — never employers — in workplace disputes across Los Angeles and California.",
   "Most cases are handled on a contingency basis, which means you pay no attorney fees unless we recover money for you.",
   "Every consultation is free and confidential, so you can understand your rights before deciding anything.",

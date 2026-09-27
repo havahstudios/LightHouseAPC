@@ -1,3 +1,4 @@
+import FadeIn from "@/components/FadeIn";
 import Hero from "./_sections/Hero";
 import Intro from "./_sections/Intro";
 import Stats from "./_sections/Stats";
@@ -14,23 +15,50 @@ import ClosingCta from "./_sections/ClosingCta";
 import BlogPosts from "./_sections/BlogPosts";
 
 // Homepage — sections appear in the same order as the reference site.
+// Every section after the hero gently fades in as you scroll to it.
 export default function Home() {
   return (
     <>
       <Hero />
-      <Intro />
-      <Stats />
-      <CaseReviewBand />
-      <TrustSlider />
-      <WhyHire />
-      <CaseResults />
-      <Location />
-      <Process />
-      <Testimonials />
-      <VideoStatement />
-      <PracticeAreas />
-      <ClosingCta />
-      <BlogPosts />
+      <FadeIn>
+        <Intro />
+      </FadeIn>
+      <FadeIn>
+        <Stats />
+      </FadeIn>
+      <FadeIn>
+        <CaseReviewBand />
+      </FadeIn>
+      <FadeIn>
+        <TrustSlider />
+      </FadeIn>
+      <FadeIn>
+        <WhyHire />
+      </FadeIn>
+      <FadeIn>
+        <CaseResults />
+      </FadeIn>
+      <FadeIn>
+        <Location />
+      </FadeIn>
+      <FadeIn>
+        <Process />
+      </FadeIn>
+      <FadeIn>
+        <Testimonials />
+      </FadeIn>
+      <FadeIn>
+        <VideoStatement />
+      </FadeIn>
+      <FadeIn>
+        <PracticeAreas />
+      </FadeIn>
+      <FadeIn>
+        <ClosingCta />
+      </FadeIn>
+      <FadeIn>
+        <BlogPosts />
+      </FadeIn>
     </>
   );
 }
