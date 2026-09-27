@@ -12,5 +12,5 @@ create table if not exists public.consultation_requests (
 );
 
 -- Row Level Security ON with no policies = nobody can read or write this table from the
--- browser. Only the website's server (using the service_role key) can add rows.
+-- browser. Only the website's server (using the secret key) can add rows.
 alter table public.consultation_requests enable row level security;

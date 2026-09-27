@@ -87,7 +87,7 @@ Copy will be **original text written for Lighthouse Law** — we copy the refere
 3. Logo: we'll design it together later → text-based placeholder logo for now.
 4. Stats, case results, testimonials, awards: not yet → clearly marked placeholders.
 5. Photos/video: placeholders for now.
-6. Supabase: user has an account. I build the form + API route + database setup file now; after the site is built I walk the user through connecting it step by step. Until then the form shows a friendly "not connected yet" error instead of silently failing.
+6. Supabase: project `seogkpnzrbjztqjqsgsc` connected via `.env.local` (URL + secret key, server-only). User has an account. I build the form + API route + database setup file now; after the site is built I walk the user through connecting it step by step. Until then the form shows a friendly "not connected yet" error instead of silently failing.
 
 ## 10. Status
 - 2026-09-27: Homepage (Phase 1) built and tested locally. Form shows a "not connected yet" message until Supabase keys are added.
