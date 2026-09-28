@@ -1,4 +1,5 @@
 import "server-only";
+import { sendConsultationEmail } from "@/lib/email";
 import { createAdminClient } from "@/lib/supabase/admin";
 
 export type ConsultationInput = {
@@ -28,7 +29,7 @@ function validate(input: ConsultationInput): string | null {
   return null;
 }
 
-// Validates a consultation request and saves it to Supabase.
+// Validates a consultation request, saves it to Supabase, then emails it to the firm.
 export async function saveConsultationRequest(raw: Partial<ConsultationInput>): Promise<ConsultationResult> {
   const input: ConsultationInput = {
     name: String(raw.name ?? "").trim(),
@@ -59,6 +60,10 @@ export async function saveConsultationRequest(raw: Partial<ConsultationInput>): 
       error: "We couldn't send your message. Please try again or call us directly.",
     };
   }
+
+  // The request is safely saved, so an email problem shouldn't show the visitor an error.
+  const emailResult = await sendConsultationEmail(input);
+  console.log("[consultation] email", emailResult);
 
   return { ok: true };
 }

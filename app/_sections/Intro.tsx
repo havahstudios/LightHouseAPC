@@ -7,7 +7,7 @@ export default function Intro() {
     <section className="relative bg-shell pt-4 pb-16 md:pb-20">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div>
-          <svg viewBox="0 0 64 64" className="-mt-10 mb-8 size-16 md:-mt-16" aria-hidden="true">
+          <svg viewBox="0 0 64 64" className="mb-8 size-16" aria-hidden="true">
             <circle cx="30" cy="32" r="26" fill="none" className="stroke-ink" strokeWidth="1.5" />
             <path d="M52 10a30 30 0 0 1 0 44" fill="none" className="stroke-ink" strokeWidth="1.5" />
             <path d="m19 32 8 8 15-17" fill="none" className="stroke-beacon" strokeWidth="2" strokeLinecap="round" />

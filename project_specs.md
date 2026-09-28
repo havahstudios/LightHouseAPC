@@ -45,7 +45,7 @@ The layout, scroll behaviour and animations closely mirror **https://blairdefens
 16. **Footer** — consultation form, contact info, embedded map, about blurb, areas served, link columns, legal line.
 17. **Floating Google-rating badge** bottom-left (as on reference).
 
-**Animations/effects (kept minimal, per user feedback 2026-09-27):** header turns solid on scroll, very slow drift on the hero photo, gentle fade-in of each section on scroll, sliders (awards, testimonials, blog), popup windows, simple color changes on hover. No count-ups, parallax, hover zooms or pulsing.
+**Animations/effects (kept minimal, per user feedback 2026-09-27):** header turns solid on scroll, very slow drift on the hero photo, soft opacity-only fade-in of each section on scroll (no sliding), sliders (awards, testimonials, blog), popup windows, simple color changes on hover. No count-ups, parallax, hover zooms or pulsing.
 
 **Flow:** Visitor lands → scrolls → either taps phone number (opens dialer) or fills the form → sees a success message (or a clear error if it fails).
 
@@ -70,7 +70,7 @@ Supabase table `consultation_requests`:
 - **Supabase** — saves form submissions.
 - **Vercel** — hosting.
 - **Google Maps embed** — office map (no API key needed for basic embed).
-- *(Optional later)* email notification when a form is submitted (e.g. Resend) — not in this phase.
+- **Resend** — emails each new consultation request to havahstudios@gmail.com (added 2026-09-27 at user request). Free tier; sends from `onboarding@resend.dev` until the firm's own domain is verified.
 
 ## 7. Content & assets
 Copy will be **original text written for Lighthouse Law** — we copy the reference's design, not its words, photos, video or logos (those are the other firm's property). Until you send real assets I'll use tasteful placeholders.
@@ -78,7 +78,7 @@ Copy will be **original text written for Lighthouse Law** — we copy the refere
 ## 8. What "done" looks like
 - Homepage with all 17 sections above, visually matching the reference's layout, spacing, typography and effects, in Lighthouse branding.
 - Works on phone, tablet and desktop.
-- Consultation form saves to Supabase and shows success / error messages.
+- Consultation form saves to Supabase, emails the request to havahstudios@gmail.com (reply goes straight to the visitor), and shows success / error messages. If the email fails, the message is still saved in Supabase.
 - `npm run build` passes with no errors; no console errors; tested in the browser.
 
 ## 9. Answers so far
