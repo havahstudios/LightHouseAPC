@@ -78,7 +78,7 @@ Copy will be **original text written for Lighthouse Law** — we copy the refere
 ## 8. What "done" looks like
 - Homepage with all 17 sections above, visually matching the reference's layout, spacing, typography and effects, in Lighthouse branding.
 - Works on phone, tablet and desktop.
-- Consultation form saves to Supabase, emails the request to havahstudios@gmail.com (reply goes straight to the visitor), and shows success / error messages. If the email fails, the message is still saved in Supabase.
+- Consultation form saves to Supabase, emails the request to havahstudios@gmail.com (reply goes straight to the visitor), and shows success / error messages. The request counts as received if either the Supabase save or the email succeeds, so a lead is never lost when one service is down.
 - `npm run build` passes with no errors; no console errors; tested in the browser.
 
 ## 9. Answers so far
@@ -91,3 +91,4 @@ Copy will be **original text written for Lighthouse Law** — we copy the refere
 
 ## 10. Status
 - 2026-09-27: Homepage (Phase 1) built and tested locally. Form shows a "not connected yet" message until Supabase keys are added.
+- 2026-10-22: Live on Vercel (project `light-house-apc`, auto-deploys from GitHub `main`). Domain lighthouselawapc.com (GoDaddy DNS) attached; www redirects to the main domain. The domain also hosts Microsoft 365 email — never change its MX or root TXT records.
