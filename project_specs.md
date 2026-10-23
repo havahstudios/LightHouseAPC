@@ -1,7 +1,7 @@
 # Lighthouse Law APC — Project Specs
 
 ## 1. What the app does and who uses it
-A marketing website for **Lighthouse Law APC**, an **employment law** firm in **Los Angeles, CA**. Visitors are workers who have been wronged by an employer (fired, harassed, underpaid, etc.). The site's job is to build trust quickly and get them to **call** or **submit a free consultation form**.
+A marketing website for **Lighthouse Law APC**, an **employment law and personal injury** trial firm serving **Los Angeles**, with its office in **Beverly Hills, CA**. Visitors are workers wronged by an employer (fired, harassed, underpaid, etc.) and people hurt in accidents. The site's job is to build trust quickly and get them to **call** or **submit a free consultation form**.
 
 The layout, scroll behaviour and animations closely mirror **https://blairdefense.com** — only the branding (name, logo, colors, copy, photos) changes.
 
@@ -39,7 +39,7 @@ The layout, scroll behaviour and animations closely mirror **https://blairdefens
 10. **Process explainer** — side-image section: "What is the California employment claim process?" (consultation → evidence gathering → agency filing (CRD/EEOC) → demand & negotiation → lawsuit → mediation → trial).
 11. **Testimonials** — slider of client reviews.
 12. **Tagline video block** — "Protecting…"-style statement over video.
-13. **Practice areas** — heading + button on left, icon grid on right; clicking an item opens a **popup** with a short description. Employment law areas: Wrongful Termination, Discrimination, Sexual Harassment, Retaliation, Wage & Hour, Unpaid Overtime, Disability Accommodation, Pregnancy & Family Leave, Whistleblower Claims.
+13. **Practice areas** — heading + button on left; on the right two groups, **Employment Law** and **Personal Injury**, each with 6 featured areas (icon + name); clicking one opens a **popup** with a short description; "View all" links go to the Practice Areas page. The full list (44 areas, matching mesrianilaw.com's practice areas at the client's request, with original descriptions) lives in `lib/content/practiceAreas.ts`.
 14. **Closing CTA** — side-image section + button.
 15. **Latest blog posts** — 3 cards with "Read More".
 16. **Footer** — consultation form, contact info, embedded map, about blurb, areas served, link columns, legal line.
@@ -49,7 +49,9 @@ The layout, scroll behaviour and animations closely mirror **https://blairdefens
 
 **Flow:** Visitor lands → scrolls → either taps phone number (opens dialer) or fills the form → sees a success message (or a clear error if it fails).
 
-Inner pages (About, each Practice Area, Case Results, Blog, Contact) are **not** in this phase — nav links will point to placeholder pages until we build them.
+**Practice Areas page** (`/practice-areas`, added 2026-10-22): navy title band, then every Employment Law and Personal Injury area with a short description.
+
+Other inner pages (About, individual practice areas, Case Results, Blog, Contact) are **not** in this phase — nav links point to placeholder pages until we build them.
 
 ## 5. Data models & storage
 Supabase table `consultation_requests`:
@@ -83,7 +85,7 @@ Copy will be **original text written for Lighthouse Law** — we copy the refere
 
 ## 9. Answers so far
 1. Practice: **Employment law**.
-2. Location: **Los Angeles, CA**. Address, phone, attorney names: not yet → placeholders like `(000) 000-0000`.
+2. Office: **8889 West Olympic Boulevard, Suite 226, Beverly Hills, CA 90211** · Phone **(310) 487-0024** (from client, 2026-10-22). **Do not show the attorney's name anywhere** (client request) — this includes his personal email address.
 3. Logo: we'll design it together later → text-based placeholder logo for now.
 4. Stats, case results, testimonials, awards: not yet → clearly marked placeholders.
 5. Photos/video: placeholders for now.

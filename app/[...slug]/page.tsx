@@ -5,7 +5,6 @@ import { site } from "@/lib/site";
 // Temporary "coming soon" pages for menu links until the inner pages are built.
 const pages: Record<string, string> = {
   about: "About Us",
-  "practice-areas": "Practice Areas",
   resources: "Resources",
   "areas-served": "Areas Served",
   contact: "Contact Us",

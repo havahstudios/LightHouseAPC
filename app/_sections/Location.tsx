@@ -8,7 +8,7 @@ export default function Location() {
           <div className="grid items-center gap-10 bg-navy px-7 py-12 md:grid-cols-2 md:px-14 md:py-16">
             <div>
               <h2 className="text-3xl leading-tight font-light text-white md:text-[2.4rem]">
-                Visit Our Employment Law Office in Los Angeles, CA
+                Visit Our Law Office in {site.address.city}
               </h2>
               <dl className="mt-10 space-y-7 text-sm text-white/75">
                 <div>

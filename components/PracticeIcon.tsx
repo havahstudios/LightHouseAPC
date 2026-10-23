@@ -1,7 +1,7 @@
-import type { PracticeArea } from "@/lib/content/practiceAreas";
+import type { PracticeIconName } from "@/lib/content/practiceAreas";
 
 // Gold line icons for each practice area.
-const icons: Record<PracticeArea["icon"], React.ReactNode> = {
+const icons: Record<PracticeIconName, React.ReactNode> = {
   termination: (
     <>
       <path d="M14 4H6a1 1 0 0 0-1 1v22a1 1 0 0 0 1 1h8" />
@@ -35,27 +35,6 @@ const icons: Record<PracticeArea["icon"], React.ReactNode> = {
       <path d="M16 9v7l5 3" />
     </>
   ),
-  overtime: (
-    <>
-      <rect x="4" y="8" width="24" height="16" rx="1.5" />
-      <circle cx="16" cy="16" r="4" />
-      <path d="M8 12v.5M24 19.5v.5" />
-    </>
-  ),
-  disability: (
-    <>
-      <path d="M5 17c3-1 5 0 7 2l3 3a2 2 0 0 0 3-3l-3-3" />
-      <path d="M12 12l3-3c2-2 5-2 7 0l5 5v6l-4 3" />
-      <path d="M5 13v10" />
-    </>
-  ),
-  leave: (
-    <>
-      <path d="M4 15 16 5l12 10" />
-      <path d="M7 13v14h18V13" />
-      <path d="M16 24s-5-3-5-6.5a2.5 2.5 0 0 1 5-1 2.5 2.5 0 0 1 5 1C21 21 16 24 16 24z" />
-    </>
-  ),
   whistleblower: (
     <>
       <path d="M5 13v6h4l10 6V7L9 13z" />
@@ -63,9 +42,58 @@ const icons: Record<PracticeArea["icon"], React.ReactNode> = {
       <path d="M23 12a5 5 0 0 1 0 8M26 9a9 9 0 0 1 0 14" />
     </>
   ),
+  car: (
+    <>
+      <path d="M4 21v-4.5L7.5 10h17l3.5 6.5V21z" />
+      <path d="M8 16.5h16" />
+      <circle cx="9.5" cy="21.5" r="2.5" />
+      <circle cx="22.5" cy="21.5" r="2.5" />
+    </>
+  ),
+  motorcycle: (
+    <>
+      <circle cx="7.5" cy="21" r="4" />
+      <circle cx="24.5" cy="21" r="4" />
+      <path d="M7.5 21l5-8h7l5 8" />
+      <path d="M12.5 13l-1.5-3H8M19.5 13l2-4h3" />
+    </>
+  ),
+  pedestrian: (
+    <>
+      <circle cx="17" cy="5.5" r="2.5" />
+      <path d="M16 10l-2.5 8 3.5 4v6" />
+      <path d="M13.5 18l-4 5.5" />
+      <path d="M15.5 12.5l-5 2.5M16.5 11.5l3.5 3.5 3.5-1" />
+    </>
+  ),
+  slip: (
+    <>
+      <circle cx="10" cy="8" r="2.5" />
+      <path d="M11.5 11.5l4.5 6 6.5 1" />
+      <path d="M16 17.5l-4 5.5" />
+      <path d="M13 13.5l7-3.5" />
+      <path d="M4 27h24" />
+      <path d="M17 24.5q2-1.5 4 0t4 0" />
+    </>
+  ),
+  bicycle: (
+    <>
+      <circle cx="7.5" cy="21" r="5" />
+      <circle cx="24.5" cy="21" r="5" />
+      <path d="M7.5 21l5-9h8l4 9" />
+      <path d="M12.5 12l4 9h-9M19.5 8.5h3M11 8.5h3l-1.5 3.5" />
+    </>
+  ),
+  workInjury: (
+    <>
+      <path d="M6.5 20a9.5 9.5 0 0 1 19 0" />
+      <path d="M4 20h24v3H4z" />
+      <path d="M16 10.5v5M12 12v4M20 12v4" />
+    </>
+  ),
 };
 
-export default function PracticeIcon({ name, className = "size-9" }: { name: PracticeArea["icon"]; className?: string }) {
+export default function PracticeIcon({ name, className = "size-9" }: { name: PracticeIconName; className?: string }) {
   return (
     <svg
       viewBox="0 0 32 32"

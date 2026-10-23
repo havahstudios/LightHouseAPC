@@ -38,11 +38,11 @@ export default function Hero() {
         </div>
 
         <h1 className="max-w-4xl text-[2.6rem] leading-[1.12] font-normal text-white sm:text-5xl md:text-[4rem]">
-          Los Angeles&apos; Trusted Employment Law Attorneys
+          Los Angeles&apos; Trusted Employment &amp; Personal Injury Attorneys
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/90 md:text-[1.35rem]">
-          Wrongfully fired, harassed or underpaid? We stand up for California workers.
+          Wrongfully fired, harassed, underpaid or injured? We stand up for California workers and accident victims.
           <br className="hidden md:block" /> Trial lawyers ready for the courtroom. No fees unless we win for you.
         </p>
 

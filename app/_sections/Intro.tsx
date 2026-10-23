@@ -33,9 +33,14 @@ export default function Intro() {
             <p>
               Standing up to an employer can feel intimidating, especially when your income is on the
               line. You don&apos;t have to do it alone. Our team can explain your rights, gather the proof
-              you need and push back against a company&apos;s lawyers so you can focus on moving forward.{" "}
+              you need and push back against a company&apos;s lawyers so you can focus on moving forward. We
+              also represent people hurt in car, motorcycle and pedestrian accidents and other{" "}
+              <Link href="/practice-areas#personal-injury" className="text-beacon-dark hover:underline">
+                personal injury cases
+              </Link>
+              .{" "}
               <Link href="/contact" className="text-beacon-dark hover:underline">
-                Contact our Los Angeles employment law office
+                Contact our {site.address.city} office
               </Link>{" "}
               today.
             </p>

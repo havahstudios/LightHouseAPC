@@ -52,7 +52,7 @@ export default function Footer() {
               <br />
               Today
             </h2>
-            <p className="mt-8 font-serif text-lg text-white">Los Angeles, CA</p>
+            <p className="mt-8 font-serif text-lg text-white">{site.address.city}</p>
             <address className="mt-3 text-sm leading-relaxed text-white/70 not-italic">
               {site.address.line1}
               <br />

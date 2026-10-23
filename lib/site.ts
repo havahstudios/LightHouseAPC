@@ -1,17 +1,20 @@
-// Firm details used across the site. Replace the placeholders once real details are ready.
+// Firm details used across the site.
+// The client asked that the attorney's name (and his personal email) never appear on the site.
 
 export const site = {
   name: "Lighthouse Law APC",
   shortName: "Lighthouse Law",
   tagline: "Trial Lawyers",
-  phone: "(000) 000-0000", // placeholder
-  phoneHref: "tel:+10000000000", // placeholder
+  phone: "(310) 487-0024",
+  phoneHref: "tel:+13104870024",
   address: {
-    line1: "000 Placeholder Ave, Suite 000", // placeholder
-    line2: "Los Angeles, CA 90000",
+    city: "Beverly Hills, CA",
+    line1: "8889 West Olympic Boulevard, Suite 226",
+    line2: "Beverly Hills, CA 90211",
   },
-  mapQuery: "Downtown Los Angeles, CA",
-  directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Downtown+Los+Angeles,+CA",
+  mapQuery: "8889 West Olympic Boulevard Suite 226, Beverly Hills, CA 90211",
+  directionsUrl:
+    "https://www.google.com/maps/dir/?api=1&destination=8889+West+Olympic+Boulevard+Suite+226,+Beverly+Hills,+CA+90211",
   // Placeholder rating — replace with the firm's real Google numbers before launch.
   google: { rating: "5.0", reviewCount: "100+" },
   // Drop a video file in /public/videos and put its path here (e.g. "/videos/hero.mp4").

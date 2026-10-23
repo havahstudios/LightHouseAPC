@@ -19,8 +19,8 @@ const plex = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: `Los Angeles Employment & Trial Lawyers | ${site.name}`,
-  description: `${site.name} is a Los Angeles trial law firm fighting for California workers facing wrongful termination, discrimination, harassment, retaliation and unpaid wages. Free, confidential consultations.`,
+  title: `Los Angeles Employment & Personal Injury Trial Lawyers | ${site.name}`,
+  description: `${site.name} is a Los Angeles trial law firm fighting for California workers facing wrongful termination, discrimination, harassment, retaliation and unpaid wages, and for people injured in accidents. Free, confidential consultations.`,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
