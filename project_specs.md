@@ -53,6 +53,85 @@ The layout, scroll behaviour and animations closely mirror **https://blairdefens
 
 Other inner pages (About, individual practice areas, Case Results, Blog, Contact) are **not** in this phase — nav links point to placeholder pages until we build them.
 
+## 4b. Individual practice area pages + SEO (requested 2026-10-25, awaiting approval)
+
+**Goal:** every service gets its own page, with on-page SEO built around real search data (Semrush, US database, Oct 2026).
+
+**Structure (46 pages)**
+- 2 hub pages: `/practice-areas/employment-law` → "employment lawyer los angeles" (1,900/mo) and `/practice-areas/personal-injury` → "personal injury attorney los angeles" (8,100/mo)
+- 44 service pages: `/practice-areas/<service>` (e.g. `/practice-areas/wrongful-termination`)
+- The existing `/practice-areas` page stays as the overview and links to every page.
+
+**Each page includes (on-page SEO checklist)**
+1. Unique title tag, keyword first, under 60 characters (e.g. "Los Angeles Wrongful Termination Lawyer | Lighthouse Law APC")
+2. Unique meta description with the keyword and a call to action, under 155 characters
+3. One H1 containing the primary keyword; keyword in the first 100 words
+4. H2/H3 sections using secondary variations ("attorney", "Beverly Hills", "California")
+5. ~900–1,200 words of original content: what the claim is, California law basics, signs you have a case, compensation, how the firm helps, deadlines, local LA/Beverly Hills relevance
+6. FAQ section (questions people actually search, from Semrush) with FAQPage structured data
+7. Structured data: LegalService (firm name, address, phone), BreadcrumbList
+8. Canonical URL + Open Graph tags, all on https://lighthouselawapc.com
+9. Internal links: breadcrumb, hub page, 3–4 related services, contact CTA; homepage pop-ups link to the real page
+10. Descriptive image alt text, fast static pages (pre-built at deploy)
+- Site-wide: `sitemap.xml`, `robots.txt`, `metadataBase` set to the domain.
+
+**Primary keyword per page** (monthly searches · difficulty 0–100, lower = easier)
+
+| Page | Primary keyword | Vol | KD |
+|---|---|---|---|
+| Wrongful Termination | wrongful termination lawyer los angeles | 1,900 | 29 |
+| Whistleblower Violations | los angeles whistleblower lawyer | 590 | 4 |
+| Workplace Harassment | los angeles workplace harassment lawyer | 140 | 12 |
+| Wage & Hour Violations | los angeles wage and hour lawyer | 480 | 37 |
+| Employment Discrimination | los angeles employment discrimination lawyer | 590 | 30 |
+| Employment Retaliation | los angeles retaliation lawyer | 210 | 5 |
+| Age Discrimination | los angeles age discrimination lawyer | 390 | 16 |
+| Civil Rights Discrimination | civil rights attorney los angeles | 590 | 20 |
+| Disability Discrimination | los angeles disability discrimination lawyer | 590 | 14 |
+| Equal Pay Act | equal pay attorney los angeles | 50 | 6 |
+| Gender Discrimination | los angeles gender discrimination lawyer | 210 | 5 |
+| Hostile Work Environment | hostile work environment lawyer los angeles | 170 | 14 |
+| Labor Law Violations | labor law attorney los angeles | 1,900 | 55 |
+| Family and Medical Leave Act | fmla attorney los angeles | 170 | 6 |
+| Class Action | employment class action lawyer los angeles | 110 | 15 |
+| Pregnancy Discrimination | los angeles pregnancy discrimination lawyer | 320 | 4 |
+| Racial Discrimination | racial discrimination attorney los angeles | 260 | 15 |
+| Religious Discrimination | los angeles religious discrimination lawyer | 170 | 3 |
+| Severance Package | severance lawyer los angeles | 50 | 3 |
+| Sexual Harassment | los angeles sexual harassment lawyer | 1,300 | 22 |
+| Wrongful Discharge (Public Policy) | wrongful discharge lawyer los angeles | 20 | 0 |
+| Marital Status Discrimination | los angeles marital status discrimination lawyer | 40 | 8 |
+| Car Accidents | car accident lawyer los angeles | 6,600 | 42 |
+| Motorcycle Accidents | motorcycle accident lawyer los angeles | 3,600 | 15 |
+| Pedestrian Accidents | los angeles pedestrian accident lawyer | 1,600 | 21 |
+| Slip & Fall Accidents | los angeles slip and fall lawyer | 1,000 | 22 |
+| Bicycle Accidents | los angeles bicycle accident lawyer | 2,900 | 30 |
+| Work Injury | work injury lawyer los angeles | 320 | 41 |
+| Aviation Accident | aviation accident lawyer los angeles | 170 | 19 |
+| Uber & Lyft Accident | uber accident lawyer los angeles (+ lyft 590) | 1,000 | 20 |
+| Electric Scooter Accident | los angeles scooter accident lawyer | 50 | 4 |
+| Brain Injury | brain injury attorney los angeles | 1,900 | 17 |
+| Burn Injury | los angeles burn injury lawyer | 480 | 16 |
+| Bus Accident | bus accident lawyer los angeles | 1,000 | 14 |
+| Dog Bite | dog bite lawyer los angeles | 1,300 | 18 |
+| General Negligence | negligence lawyer los angeles | 30 | 0 |
+| Animal Attack | animal attack lawyer los angeles | 30 | 0 |
+| Premises Liability | los angeles premises liability lawyer | 590 | 6 |
+| Spinal Cord Injury | spinal cord injury lawyer los angeles | 1,000 | 19 |
+| Traffic Accident | traffic accident attorney los angeles | 260 | 29 |
+| Train Accident | train accident lawyer los angeles | 320 | 8 |
+| Truck Accident | truck accident lawyer los angeles | 3,600 | 38 |
+| Construction Accident | los angeles construction accident lawyer | 720 | 13 |
+| Wrongful Death | los angeles wrongful death lawyer | 1,900 | 18 |
+
+**Data & code**
+- Page content lives in `lib/content/services/` (one file per group), so text is easy to edit without touching code.
+- One shared page template `app/practice-areas/[slug]/page.tsx` renders every service; hub pages get their own template.
+
+**Important before launch:** all legal content is general information written for the firm. The attorney should review it for accuracy and California State Bar advertising rules (no guarantees, "Attorney Advertising" notice stays in the footer). No attorney name anywhere.
+
+**Done =** all 46 pages live, each passing the checklist above, sitemap lists them, build passes, spot-checked on desktop and phone.
+
 ## 5. Data models & storage
 Supabase table `consultation_requests`:
 | column | type |
