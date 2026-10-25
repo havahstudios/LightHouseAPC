@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ButtonLink from "@/components/ButtonLink";
 import PracticeIcon from "@/components/PracticeIcon";
 import { practiceGroups } from "@/lib/content/practiceAreas";
@@ -7,6 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: `Practice Areas | Employment Law & Personal Injury | ${site.name}`,
   description: `${site.name} represents Los Angeles workers and injury victims in employment law and personal injury cases. Free, confidential consultations.`,
+  alternates: { canonical: "/practice-areas" },
 };
 
 // Every practice area, grouped into Employment Law and Personal Injury.
@@ -44,18 +46,30 @@ export default function PracticeAreasPage() {
         >
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
             <div className="max-w-3xl">
-              <h2 className="text-4xl font-light md:text-[2.75rem]">{group.title}</h2>
+              <h2 className="text-4xl font-light md:text-[2.75rem]">
+                <Link href={`/practice-areas/${group.id}`} className="transition-colors hover:text-beacon-dark">
+                  {group.title}
+                </Link>
+              </h2>
               <p className="mt-5 text-[0.95rem] leading-8">{group.intro}</p>
             </div>
 
             <ul className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {group.areas.map((area) => (
-                <li key={area.title} className="rounded-sm border border-line bg-white p-7">
-                  <div className="flex items-center gap-3">
-                    {area.icon && <PracticeIcon name={area.icon} className="size-7 shrink-0" />}
-                    <h3 className="text-lg leading-snug font-normal">{area.title}</h3>
-                  </div>
-                  <p className="mt-3 text-sm leading-7">{area.summary}</p>
+                <li key={area.slug}>
+                  <Link
+                    href={`/practice-areas/${area.slug}`}
+                    className="group flex h-full flex-col rounded-sm border border-line bg-white p-7 transition-colors hover:border-beacon"
+                  >
+                    <span className="flex items-center gap-3">
+                      {area.icon && <PracticeIcon name={area.icon} className="size-7 shrink-0" />}
+                      <h3 className="text-lg leading-snug font-normal transition-colors group-hover:text-beacon-dark">
+                        {area.title}
+                      </h3>
+                    </span>
+                    <span className="mt-3 flex-1 text-sm leading-7">{area.summary}</span>
+                    <span className="mt-5 text-xs font-semibold tracking-[0.16em] text-beacon-dark uppercase">Learn more</span>
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -37,6 +37,30 @@ export const injuryB: Record<string, ServiceContent> = {
           "Depending on the accident, liable parties may include the bus driver, the bus company or transit agency, maintenance contractors, manufacturers, or other drivers. Injured people may recover medical expenses, lost wages and pain and suffering.",
         ],
       },
+      {
+        heading: "Injuries to bus passengers",
+        paragraphs: [
+          "Most buses don't have seatbelts, and many passengers ride standing. When a bus brakes hard, swerves or collides with another vehicle, passengers can be thrown into seats, poles and windows, causing head injuries, fractures and back and neck injuries. Older riders are particularly vulnerable.",
+          "If you were injured on a bus, write down the bus line and number, the time and location, and the names of other passengers who saw what happened. Many buses have interior and exterior cameras, so asking the operator to preserve video quickly can be crucial evidence for your claim.",
+        ],
+      },
+      {
+        heading: "How to file a claim against a public transit agency",
+        paragraphs: [
+          "Claims against public agencies like LA Metro, city bus systems and school districts follow a specific process under the California Government Claims Act. Getting it right is essential.",
+        ],
+        bullets: [
+          "Identify the correct public agency responsible for the bus",
+          "File a written government claim, generally within six months",
+          "Include the date, location, description of the incident and injuries",
+          "Wait for the agency to accept or reject the claim",
+          "If rejected, a lawsuit generally must be filed within six months of the rejection notice",
+          "Keep copies of everything you submit and receive",
+        ],
+        closing: [
+          "Missing a step or deadline can end a claim before it begins. A bus accident lawyer can handle the government claim process and make sure your rights are protected.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -97,6 +121,30 @@ export const injuryB: Record<string, ServiceContent> = {
           "Keep records of medical bills and missed work",
         ],
       },
+      {
+        heading: "Dog bites and children",
+        paragraphs: [
+          "Children are among the most frequent victims of dog bites, and because of their height, bites often involve the face, head and neck. These injuries can require reconstructive surgery and leave scars that affect a child as they grow. Many children also experience lasting fear or anxiety around animals.",
+          "Compensation for a child may include medical care, future plastic surgery, counseling and pain and suffering. California generally gives minors additional time to file injury claims, but acting quickly helps preserve evidence and witness memories. Any settlement for a minor typically requires court approval.",
+        ],
+      },
+      {
+        heading: "Compensation in dog bite cases",
+        paragraphs: [
+          "Dog bite injuries can lead to significant costs and lasting effects. Compensation may cover both immediate and long-term needs.",
+        ],
+        bullets: [
+          "Emergency care, stitches and antibiotics",
+          "Rabies treatment if vaccination status is unknown",
+          "Plastic or reconstructive surgery for scarring",
+          "Physical therapy for nerve or muscle damage",
+          "Counseling for fear, anxiety or trauma",
+          "Lost wages and pain and suffering",
+        ],
+        closing: [
+          "Photographs taken throughout the healing process help show the severity of injuries and scarring. A dog bite lawyer can work with medical providers to document future treatment needs.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -155,6 +203,30 @@ export const injuryB: Record<string, ServiceContent> = {
           "California follows pure comparative negligence. That means if you were partly at fault, you can still recover — your compensation is reduced by your share of fault. Even if you were 30% responsible, you could still recover 70% of your damages. Most negligence claims must be filed within two years.",
         ],
       },
+      {
+        heading: "Negligent security and preventable crimes",
+        paragraphs: [
+          "One type of negligence claim involves property owners who fail to provide reasonable security. When a crime is foreseeable — for example, because of prior similar incidents at a property — owners of apartments, hotels, parking structures and businesses may need to take reasonable measures like adequate lighting, working locks, cameras or security staff.",
+          "If you were assaulted or injured in a place where obvious security problems were ignored, you may have a claim against the property owner in addition to the person who harmed you. Evidence of prior incidents and the owner's security practices is often central to these cases.",
+        ],
+      },
+      {
+        heading: "Proving negligence",
+        paragraphs: [
+          "Negligence cases are built on evidence that shows what the other party did or failed to do, and how it led to your injury.",
+        ],
+        bullets: [
+          "Photos and video of the scene and the hazard",
+          "Witness statements describing what happened",
+          "Incident reports and police reports",
+          "Safety rules, policies or industry standards that were ignored",
+          "Medical records connecting your injuries to the incident",
+          "Expert opinions when technical issues are involved",
+        ],
+        closing: [
+          "The sooner evidence is gathered, the stronger the case tends to be. A negligence lawyer can preserve evidence, identify every responsible party and calculate the full value of your losses.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -209,6 +281,30 @@ export const injuryB: Record<string, ServiceContent> = {
         heading: "Injuries and compensation",
         paragraphs: [
           "Animal attacks can cause bites, lacerations, broken bones, infections, scarring and lasting anxiety, especially in children. Compensation may include medical bills, plastic surgery, counseling, lost income and pain and suffering. Report the attack to animal control, get medical care and keep records. Claims generally must be filed within two years.",
+        ],
+      },
+      {
+        heading: "Horses, livestock and exotic animals",
+        paragraphs: [
+          "Animal injuries in Southern California aren't limited to dogs. Riding stables, ranches and equestrian centers can be responsible when poorly trained horses, faulty equipment or inadequate supervision lead to injuries. Livestock that escapes onto roads can cause serious vehicle crashes.",
+          "Owners of wild or exotic animals are generally held to a stricter standard because these animals are inherently dangerous. Liability waivers signed at recreational facilities may limit some claims, but they don't always protect a business from gross negligence. A lawyer can review any waiver you signed.",
+        ],
+      },
+      {
+        heading: "Steps to take after an animal attack",
+        paragraphs: [
+          "Animal attacks can be chaotic and frightening. Once you're safe, these steps can help protect your health and your claim.",
+        ],
+        bullets: [
+          "Get medical care right away to reduce infection risk",
+          "Identify the animal and its owner",
+          "Ask about vaccination records",
+          "Report the attack to animal control",
+          "Photograph your injuries and the location",
+          "Get witness names and contact information",
+        ],
+        closing: [
+          "Keep records of all medical treatment and expenses. If the attack happened at a business, ask for an incident report and keep a copy.",
         ],
       },
     ],
@@ -272,6 +368,30 @@ export const injuryB: Record<string, ServiceContent> = {
           "Injuries caused by dangerous conditions on public property — such as broken sidewalks or poorly maintained parks — involve special rules. Claims generally require a written government claim within six months. Other premises liability claims generally must be filed within two years.",
         ],
       },
+      {
+        heading: "Apartment and landlord injury claims",
+        paragraphs: [
+          "Landlords in California must maintain common areas — stairs, hallways, parking garages, pools and walkways — in reasonably safe condition, and must repair dangerous conditions they know about. Tenants and guests injured because of broken stairs, missing handrails, inadequate lighting, faulty wiring or code violations may have claims.",
+          "Written repair requests are often key evidence. If you reported a dangerous condition and the landlord didn't fix it before someone got hurt, that history can be powerful proof that the landlord knew about the hazard. Keep copies of emails, texts and maintenance requests.",
+        ],
+      },
+      {
+        heading: "Evidence in premises liability cases",
+        paragraphs: [
+          "Premises liability cases often hinge on what the owner knew and when. Evidence that shows the hazard and the owner's awareness of it is key.",
+        ],
+        bullets: [
+          "Photos and video of the dangerous condition",
+          "Incident reports made at the time",
+          "Maintenance and inspection records",
+          "Prior complaints or similar incidents at the property",
+          "Building code requirements that were violated",
+          "Witnesses who saw the hazard or your injury",
+        ],
+        closing: [
+          "Property owners and their insurers may repair a hazard quickly after an injury. Photographing the condition right away and asking that evidence be preserved can make a major difference.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -329,6 +449,30 @@ export const injuryB: Record<string, ServiceContent> = {
         heading: "Planning for the future",
         paragraphs: [
           "Spinal cord injuries often require surgeries, rehabilitation, mobility equipment, home and vehicle modifications, ongoing therapy and in-home care. We work with medical experts and life-care planners to calculate these costs over a lifetime, along with lost earning capacity and pain and suffering. Claims generally must be filed within two years.",
+        ],
+      },
+      {
+        heading: "Back and neck injuries that aren't paralysis",
+        paragraphs: [
+          "Not every spinal injury involves paralysis, but many still cause life-changing pain and limitations. Herniated and bulging discs, fractured vertebrae, pinched nerves and whiplash-related injuries can cause chronic pain, numbness, weakness and limited mobility, sometimes requiring surgery or spinal fusion.",
+          "Insurers often argue these injuries are pre-existing or degenerative. Careful medical documentation, imaging comparisons and opinions from treating physicians can show how the accident caused or worsened the condition. Under California law, aggravating a pre-existing condition is still compensable.",
+        ],
+      },
+      {
+        heading: "Steps to protect a spinal cord injury claim",
+        paragraphs: [
+          "Spinal cord injury cases are complex and high-stakes. Taking the right steps early helps protect your recovery.",
+        ],
+        bullets: [
+          "Follow all medical and rehabilitation recommendations",
+          "Keep records of every appointment, prescription and expense",
+          "Document daily limitations and changes in your life",
+          "Avoid early settlement offers before future needs are known",
+          "Don't post about your injury or activities on social media",
+          "Consult a lawyer before giving statements to insurers",
+        ],
+        closing: [
+          "The full cost of a spinal cord injury often isn't clear for months. A spinal cord injury lawyer can work with experts to project future needs before any settlement is considered.",
         ],
       },
     ],
@@ -389,6 +533,30 @@ export const injuryB: Record<string, ServiceContent> = {
           "If the at-fault driver fled or doesn't have enough insurance, your own uninsured or underinsured motorist coverage may help pay for your injuries. Report a hit-and-run to police right away. Most traffic accident claims must be filed within two years.",
         ],
       },
+      {
+        heading: "Freeway crashes and multi-vehicle pileups",
+        paragraphs: [
+          "Los Angeles freeways like the 405, 101, 110 and 10 are some of the busiest in the country. Sudden slowdowns, aggressive lane changes and distracted driving can trigger chain-reaction crashes involving several vehicles, making it harder to determine who's responsible for each impact.",
+          "In multi-vehicle crashes, insurers often point fingers at each other. Evidence like vehicle damage patterns, event data recorder information, witness accounts and video can help sort out the sequence of impacts. California law allows fault to be divided among multiple drivers based on their share of responsibility.",
+        ],
+      },
+      {
+        heading: "Damages after a traffic accident",
+        paragraphs: [
+          "After a traffic accident, compensation can cover both financial losses and the personal impact of your injuries.",
+        ],
+        bullets: [
+          "Emergency care, hospital stays and surgeries",
+          "Physical therapy and ongoing treatment",
+          "Lost wages and reduced earning ability",
+          "Vehicle repair or replacement and rental costs",
+          "Pain, suffering and emotional distress",
+          "Loss of enjoyment of life",
+        ],
+        closing: [
+          "Keep receipts, bills and pay records, and write down how your injuries affect your daily routine. This information helps demonstrate the full value of your claim.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -445,6 +613,30 @@ export const injuryB: Record<string, ServiceContent> = {
         heading: "Strict deadlines for public rail claims",
         paragraphs: [
           "Many passenger rail systems in Los Angeles are run by public agencies. Claims against government entities generally require a written government claim within six months of the accident. Claims against private railroads generally must be filed within two years. Federal rules may also apply, so early legal help matters.",
+        ],
+      },
+      {
+        heading: "Light rail and street-level crossings",
+        paragraphs: [
+          "Parts of Los Angeles' Metro Rail system run at street level, sharing intersections with cars, cyclists and pedestrians. Collisions can occur when signals malfunction, gates fail to lower, sightlines are blocked, or drivers and pedestrians are confused by complex intersections.",
+          "Investigating these crashes often involves reviewing signal timing records, maintenance logs, train operator logs and onboard video. Because Metro is a public agency, the six-month government claim deadline generally applies, so it's important to start the process quickly.",
+        ],
+      },
+      {
+        heading: "Injuries common in train accidents",
+        paragraphs: [
+          "Train accidents can cause a wide range of injuries, from falls on platforms to catastrophic injuries in collisions.",
+        ],
+        bullets: [
+          "Head and brain injuries",
+          "Spinal cord and back injuries",
+          "Broken bones and fractures",
+          "Crush injuries and amputations",
+          "Cuts and lacerations from debris",
+          "Psychological trauma and PTSD",
+        ],
+        closing: [
+          "Seek medical care right away and keep records of all treatment. Because rail cases often involve public agencies, documenting your injuries early supports a timely government claim.",
         ],
       },
     ],
@@ -507,6 +699,30 @@ export const injuryB: Record<string, ServiceContent> = {
           "Trucking companies and their insurers respond fast after a crash. We investigate just as quickly, work with accident reconstruction experts, identify every insurance policy, and fight for compensation for medical care, lost income, future needs and pain and suffering. Claims generally must be filed within two years.",
         ],
       },
+      {
+        heading: "Federal trucking safety rules",
+        paragraphs: [
+          "Commercial truck drivers and companies must follow Federal Motor Carrier Safety Administration rules. These include hours-of-service limits that restrict how long drivers can be on the road, requirements for regular vehicle inspections and maintenance, cargo securement rules, and drug and alcohol testing.",
+          "Violations of these rules can be strong evidence of negligence. Fatigued drivers pushing past their hours, worn brakes that weren't replaced, and overloaded or improperly secured cargo are common factors in serious truck crashes. Records documenting compliance — or the lack of it — can make or break a case.",
+        ],
+      },
+      {
+        heading: "Common causes of truck accidents",
+        paragraphs: [
+          "Truck accidents often result from a combination of driver behavior, company practices and equipment issues.",
+        ],
+        bullets: [
+          "Driver fatigue from long hours",
+          "Speeding to meet delivery schedules",
+          "Distracted or impaired driving",
+          "Brake failures and poor maintenance",
+          "Overloaded or improperly secured cargo",
+          "Wide turns and blind-spot collisions",
+        ],
+        closing: [
+          "Trucking company policies, such as unrealistic delivery deadlines, can also contribute. Uncovering these practices can reveal additional parties who share responsibility.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -565,6 +781,30 @@ export const injuryB: Record<string, ServiceContent> = {
         heading: "Bystanders and passersby",
         paragraphs: [
           "Construction accidents don't only affect workers. Pedestrians and drivers can be hurt by falling debris, blocked sidewalks or unsafe detours. Injured bystanders may bring personal injury claims directly. Claims generally must be filed within two years, or six months for public projects.",
+        ],
+      },
+      {
+        heading: "Scaffolding and fall protection",
+        paragraphs: [
+          "Falls are the leading cause of death in construction. Cal/OSHA requires fall protection — like guardrails, safety nets or personal fall arrest systems — in many situations where workers are at height, along with properly built and inspected scaffolding and safe ladder use.",
+          "When a general contractor or subcontractor fails to provide required fall protection, inspect scaffolding or train workers, they may be liable for resulting injuries. Photos of the site, safety records, inspection reports and witness accounts from coworkers can help establish what safety measures were missing.",
+        ],
+      },
+      {
+        heading: "Steps to take after a construction accident",
+        paragraphs: [
+          "After a construction site injury, these steps can help protect your health and your legal rights.",
+        ],
+        bullets: [
+          "Get medical treatment and report the injury in writing",
+          "Note the names of the general contractor and subcontractors",
+          "Photograph the area, equipment and safety measures",
+          "Get contact information for coworkers who saw the accident",
+          "Keep copies of medical records and workers' comp paperwork",
+          "Talk with a lawyer about possible third-party claims",
+        ],
+        closing: [
+          "Construction sites change quickly, so evidence can disappear. Acting promptly helps preserve photos, equipment and witness accounts.",
         ],
       },
     ],
@@ -626,6 +866,30 @@ export const injuryB: Record<string, ServiceContent> = {
         paragraphs: [
           "Wrongful death damages go to the eligible family members, and are usually divided according to each person's loss. Damages may include loss of financial support, loss of household services, funeral and burial expenses, and the loss of love, companionship, comfort and guidance.",
           "Wrongful death claims generally must be filed within two years of the death, and claims against government entities require a government claim within six months.",
+        ],
+      },
+      {
+        heading: "Survival actions and the estate's claims",
+        paragraphs: [
+          "In addition to a wrongful death claim by family members, the estate of the person who died may bring a survival action. This claim recovers losses the person suffered before death, such as medical expenses and lost wages, and in some circumstances other damages, depending on the facts and when the case is filed.",
+          "Wrongful death and survival claims are often pursued together. Understanding which family members can bring which claims, and how recoveries are divided, can be complicated. We guide families through each step with care and clear communication.",
+        ],
+      },
+      {
+        heading: "How a wrongful death lawyer helps families",
+        paragraphs: [
+          "Families facing a wrongful death claim are also coping with grief. A wrongful death lawyer handles the legal work so families can focus on each other.",
+        ],
+        bullets: [
+          "Investigating the cause of death and gathering evidence",
+          "Identifying all responsible parties and insurance policies",
+          "Working with experts to calculate financial losses",
+          "Coordinating wrongful death and survival claims",
+          "Negotiating with insurers and defense attorneys",
+          "Taking the case to trial if necessary",
+        ],
+        closing: [
+          "We approach every case with compassion and keep families informed at each step. A free, confidential consultation can help you understand your options.",
         ],
       },
     ],

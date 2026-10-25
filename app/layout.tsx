@@ -19,8 +19,11 @@ const plex = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: `Los Angeles Employment & Personal Injury Trial Lawyers | ${site.name}`,
-  description: `${site.name} is a Los Angeles trial law firm fighting for California workers facing wrongful termination, discrimination, harassment, retaliation and unpaid wages, and for people injured in accidents. Free, confidential consultations.`,
+  metadataBase: new URL(site.url),
+  title: "Los Angeles Employment & Injury Lawyers | Lighthouse Law APC",
+  description:
+    "Lighthouse Law fights for Los Angeles workers and accident victims: wrongful termination, harassment, wage claims and personal injury. Free consultation.",
+  openGraph: { siteName: site.name, type: "website", locale: "en_US" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

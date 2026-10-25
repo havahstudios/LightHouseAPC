@@ -53,7 +53,7 @@ The layout, scroll behaviour and animations closely mirror **https://blairdefens
 
 Other inner pages (About, individual practice areas, Case Results, Blog, Contact) are **not** in this phase — nav links point to placeholder pages until we build them.
 
-## 4b. Individual practice area pages + SEO (requested 2026-10-25, awaiting approval)
+## 4b. Individual practice area pages + SEO (requested 2026-10-25, approved, built 2026-10-25)
 
 **Goal:** every service gets its own page, with on-page SEO built around real search data (Semrush, US database, Oct 2026).
 
@@ -173,3 +173,4 @@ Copy will be **original text written for Lighthouse Law** — we copy the refere
 ## 10. Status
 - 2026-09-27: Homepage (Phase 1) built and tested locally. Form shows a "not connected yet" message until Supabase keys are added.
 - 2026-10-22: Live on Vercel (project `light-house-apc`, auto-deploys from GitHub `main`). Domain lighthouselawapc.com (GoDaddy DNS) attached; www redirects to the main domain. The domain also hosts Microsoft 365 email — never change its MX or root TXT records.
+- 2026-10-25: 46 practice pages live (44 services + 2 hubs) with titles, descriptions, canonicals, LegalService/Breadcrumb/FAQ structured data, sitemap.xml and robots.txt. Readable text per page ~790–1,125 words (avg ~940). Content awaits attorney review.

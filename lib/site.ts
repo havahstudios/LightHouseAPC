@@ -3,6 +3,7 @@
 
 export const site = {
   name: "Lighthouse Law APC",
+  url: "https://lighthouselawapc.com", // official address used for Google (canonical links, sitemap)
   shortName: "Lighthouse Law",
   tagline: "Trial Lawyers",
   phone: "(310) 487-0024",

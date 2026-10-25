@@ -53,7 +53,7 @@ export default function PracticeAreas() {
                   ))}
               </ul>
               <Link
-                href={`/practice-areas#${group.id}`}
+                href={`/practice-areas/${group.id}`}
                 className="mt-6 inline-block border-b border-beacon pb-1 text-sm text-beacon-dark transition hover:text-ink"
               >
                 All {group.title.toLowerCase()} services
@@ -85,12 +85,20 @@ export default function PracticeAreas() {
               </button>
             </div>
             <p className="mt-6 text-[0.95rem] leading-8">{selected.area.summary}</p>
-            <Link
-              href={`/practice-areas#${selected.group.id}`}
-              className="mt-8 inline-block text-xs font-semibold tracking-[0.18em] text-beacon-dark uppercase transition hover:text-ink"
-            >
-              View all {selected.group.title.toLowerCase()} services
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
+              <Link
+                href={`/practice-areas/${selected.area.slug}`}
+                className="text-xs font-semibold tracking-[0.18em] text-beacon-dark uppercase transition hover:text-ink"
+              >
+                Learn more about {selected.area.title.toLowerCase()}
+              </Link>
+              <Link
+                href={`/practice-areas/${selected.group.id}`}
+                className="text-xs font-semibold tracking-[0.18em] text-stone uppercase transition hover:text-ink"
+              >
+                All {selected.group.title.toLowerCase()} services
+              </Link>
+            </div>
           </div>
         )}
       </Modal>

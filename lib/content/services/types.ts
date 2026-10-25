@@ -4,6 +4,7 @@ export type ServiceSection = {
   heading: string; // becomes an H2
   paragraphs: string[];
   bullets?: string[]; // optional checklist shown after the paragraphs
+  closing?: string[]; // optional paragraphs shown after the checklist
 };
 
 export type ServiceFaq = {

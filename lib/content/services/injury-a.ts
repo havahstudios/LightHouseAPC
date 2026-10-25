@@ -37,6 +37,30 @@ export const injuryA: Record<string, ServiceContent> = {
           "California follows pure comparative negligence. Even if you were partly at fault, you can still recover, though your compensation is reduced by your percentage of fault. Most claims must be filed within two years, and claims involving a government vehicle or road may require a formal claim within six months.",
         ],
       },
+      {
+        heading: "Dealing with insurance companies after a crash",
+        paragraphs: [
+          "Shortly after a crash, you'll likely hear from the other driver's insurance adjuster. They may sound helpful, but their goal is to limit what the company pays. Common tactics include asking for a recorded statement, requesting broad access to your medical records, or making a quick settlement offer before the full extent of your injuries is known.",
+          "Once you accept a settlement and sign a release, you usually can't reopen your claim — even if your injuries turn out to be worse than expected. Let your lawyer handle communications, and don't sign anything until you understand your full medical picture and the value of your claim.",
+        ],
+      },
+      {
+        heading: "Common causes of car accidents in Los Angeles",
+        paragraphs: [
+          "Most car crashes are preventable. Identifying the cause is an important part of proving who's responsible, and in Los Angeles, a handful of dangerous behaviors account for many serious collisions.",
+        ],
+        bullets: [
+          "Distracted driving, including texting and using apps",
+          "Speeding and aggressive lane changes on freeways",
+          "Running red lights and stop signs",
+          "Driving under the influence of alcohol or drugs",
+          "Unsafe left turns at busy intersections",
+          "Following too closely in stop-and-go traffic",
+        ],
+        closing: [
+          "Phone records, vehicle data, traffic cameras and witness statements can help prove what the other driver was doing. When a commercial vehicle or a driver working for a company caused the crash, the employer may share responsibility too.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -95,6 +119,30 @@ export const injuryA: Record<string, ServiceContent> = {
         heading: "Compensation for injured riders",
         paragraphs: [
           "Motorcycle crashes frequently cause fractures, road rash, spinal injuries and brain injuries. Compensation may include medical bills, future care, lost wages, gear and bike damage, and pain and suffering. California's comparative negligence rules mean you can still recover even if you share some fault. Claims are generally due within two years.",
+        ],
+      },
+      {
+        heading: "Common motorcycle crash scenarios in Los Angeles",
+        paragraphs: [
+          "Left-turn collisions are among the most dangerous crashes for riders: a driver turning left at an intersection misjudges a motorcycle's speed or simply fails to see it. Lane-change crashes, rear-end collisions in stop-and-go freeway traffic, and dooring on busy streets are also common.",
+          "Road hazards can play a role too. Potholes, uneven pavement, gravel and poorly marked construction zones pose a much greater danger to motorcycles than to cars. When a dangerous road condition contributed to a crash, a public agency may share responsibility — and the six-month government claim deadline may apply.",
+        ],
+      },
+      {
+        heading: "Evidence that helps motorcycle accident claims",
+        paragraphs: [
+          "Because insurers are quick to blame riders, strong evidence matters even more in motorcycle cases. The goal is to show exactly what the other driver did and how the crash happened.",
+        ],
+        bullets: [
+          "Photos of the scene, skid marks and vehicle positions",
+          "Helmet camera or dashcam footage",
+          "Damage to your bike and protective gear",
+          "Police reports and witness statements",
+          "Nearby business or traffic camera video",
+          "Medical records documenting all of your injuries",
+        ],
+        closing: [
+          "Don't repair your motorcycle or throw away damaged gear until your lawyer has documented it. These items can show the force and direction of impact and help counter claims that you were riding unsafely.",
         ],
       },
     ],
@@ -157,6 +205,30 @@ export const injuryA: Record<string, ServiceContent> = {
           "Compensation may include emergency care, surgery, rehabilitation, lost wages, future care needs and pain and suffering. If a city bus or dangerous road design contributed, a government claim may be required within six months. Other claims generally must be filed within two years.",
         ],
       },
+      {
+        heading: "Injuries common in pedestrian collisions",
+        paragraphs: [
+          "Because pedestrians absorb the full force of an impact, injuries are often severe: broken legs and pelvises, head and brain injuries, spinal injuries, internal injuries and serious soft tissue damage. Many victims need surgery, extended rehabilitation and time away from work.",
+          "Documenting these injuries thoroughly matters. Follow your doctors' treatment plans, keep every bill and record, and keep notes about pain, limitations and missed activities. This information helps show the true impact of the collision on your life and supports a claim for full compensation.",
+        ],
+      },
+      {
+        heading: "Steps to take after being hit by a car",
+        paragraphs: [
+          "After a pedestrian accident, your health comes first. Once you're safe, these steps can help protect your right to compensation.",
+        ],
+        bullets: [
+          "Call 911 and get medical attention, even for injuries that seem minor",
+          "Get the driver's name, license, plate number and insurance",
+          "Photograph the scene, crosswalk, signals and your injuries",
+          "Collect contact information from witnesses",
+          "Note nearby cameras at businesses or homes",
+          "Avoid discussing fault with the driver or their insurer",
+        ],
+        closing: [
+          "If you can't do these things because of your injuries, a family member or your lawyer can help gather information afterward. Acting quickly helps preserve video and witness memories.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -215,6 +287,30 @@ export const injuryA: Record<string, ServiceContent> = {
         heading: "Common hazards and injuries",
         paragraphs: [
           "Falls are often caused by wet floors, uneven sidewalks, broken stairs, poor lighting, loose mats, missing handrails and cluttered walkways. Injuries can include broken hips and wrists, back injuries and head trauma. Compensation may cover medical bills, lost wages and pain and suffering. Claims generally must be filed within two years, or six months for public property.",
+        ],
+      },
+      {
+        heading: "Slip and falls at stores and restaurants",
+        paragraphs: [
+          "Grocery stores, big-box retailers and restaurants see heavy foot traffic and frequent spills. Businesses are expected to regularly inspect aisles and floors, clean up hazards promptly and warn customers with signs or barriers when needed.",
+          "Key questions in these cases include how long the hazard was on the floor, whether employees walked past it, how often the store inspects, and whether its own policies were followed. Store inspection logs, employee testimony and surveillance footage often answer these questions — which is why preserving that evidence quickly is so important.",
+        ],
+      },
+      {
+        heading: "Slip and falls on sidewalks and public property",
+        paragraphs: [
+          "Many falls in Los Angeles happen on cracked or uplifted sidewalks, often caused by tree roots, as well as in parks, public buildings and transit stations. Claims involving public property follow special rules.",
+        ],
+        bullets: [
+          "A written government claim is generally required within six months",
+          "You must show the condition was dangerous, not just a minor defect",
+          "The public entity must have known about the hazard or created it",
+          "Prior complaints or repair requests can be important evidence",
+          "Photos with measurements of the defect help show its size",
+          "Adjacent property owners may also share responsibility in some cases",
+        ],
+        closing: [
+          "Because the deadlines are short and the rules are technical, speaking with a slip and fall lawyer soon after a fall on public property is especially important.",
         ],
       },
     ],
@@ -277,6 +373,30 @@ export const injuryA: Record<string, ServiceContent> = {
           "Get medical care, call the police, photograph the scene and your bike, keep your helmet and damaged gear, and collect witness information. Avoid making statements about fault to insurers. Claims generally must be filed within two years, or six months for road-condition claims against a public entity.",
         ],
       },
+      {
+        heading: "Proving fault when a driver says they didn't see you",
+        paragraphs: [
+          "“I didn't see the cyclist” is one of the most common things drivers say after a bike crash. But failing to see a cyclist who was there to be seen isn't an excuse; drivers have a duty to watch for bikes, check mirrors and blind spots, and give cyclists the required space.",
+          "Evidence like traffic camera or doorbell video, bike-mounted cameras, GPS ride data, damage patterns on the bike and car, and witness statements can show what really happened. Bicycle crash reconstruction can also help establish speed and position at the moment of impact.",
+        ],
+      },
+      {
+        heading: "California laws that protect cyclists",
+        paragraphs: [
+          "California has several laws designed to protect people on bikes. Knowing these rules can help show when a driver acted unlawfully.",
+        ],
+        bullets: [
+          "Drivers must give at least three feet when passing a cyclist",
+          "Drivers must change lanes to pass when possible, if it's safe",
+          "Cyclists may use the full lane when it's too narrow to share",
+          "Drivers must check for cyclists before opening doors into traffic",
+          "Drivers must yield to cyclists in bike lanes when turning",
+          "Cyclists have the same rights and duties as drivers on the road",
+        ],
+        closing: [
+          "When a driver violates one of these rules and causes a crash, that violation can be strong evidence of negligence. A bicycle accident lawyer can identify the rules that apply to your crash.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -334,6 +454,30 @@ export const injuryA: Record<string, ServiceContent> = {
         heading: "Protecting yourself after a workplace injury",
         paragraphs: [
           "Report your injury to your employer in writing as soon as possible, get medical treatment, and keep records of everything. It's illegal for your employer to retaliate against you for reporting an injury or filing a workers' compensation claim. If you were fired after getting hurt, you may have an employment claim as well.",
+        ],
+      },
+      {
+        heading: "Common workplace injuries",
+        paragraphs: [
+          "Workplace injuries range from sudden accidents to injuries that build up over time. Common examples include falls, being struck by equipment or vehicles, lifting injuries, repetitive stress injuries like carpal tunnel syndrome, exposure to toxic substances, and injuries in vehicle crashes while driving for work.",
+          "Even if your injury developed gradually, it may be covered by workers' compensation. And if a defective tool, a negligent driver or another contractor played a part, a separate third-party claim may let you recover damages workers' compensation doesn't cover, like pain and suffering and full lost income.",
+        ],
+      },
+      {
+        heading: "Workers' comp benefits and their limits",
+        paragraphs: [
+          "Workers' compensation provides important benefits, but it doesn't make injured workers whole. Understanding what it does and doesn't cover helps explain why a third-party claim can matter.",
+        ],
+        bullets: [
+          "Covers: medical treatment related to the injury",
+          "Covers: temporary disability payments, usually about two-thirds of wages up to a limit",
+          "Covers: permanent disability benefits based on a rating",
+          "Covers: supplemental job displacement benefits in some cases",
+          "Does not cover: pain and suffering",
+          "Does not cover: full lost wages or loss of quality of life",
+        ],
+        closing: [
+          "A third-party personal injury claim can fill these gaps. If you have both a workers' compensation claim and a third-party claim, they need to be coordinated carefully, including any reimbursement owed to the workers' compensation carrier.",
         ],
       },
     ],
@@ -395,6 +539,30 @@ export const injuryA: Record<string, ServiceContent> = {
           "Injured passengers may recover medical costs, lost income and pain and suffering. Families who lost a loved one may bring wrongful death claims. Deadlines vary widely — from two years under California law to shorter periods for government defendants and different rules for international travel — so prompt action is important.",
         ],
       },
+      {
+        heading: "Why early investigation matters",
+        paragraphs: [
+          "After an aviation accident, the NTSB typically takes control of the wreckage and begins its investigation. Its reports can take a year or more to finalize, and NTSB reports often can't be used directly as evidence in court. Injured people and families usually need their own independent investigation.",
+          "Experts in aviation mechanics, pilot procedures and air traffic control can review maintenance records, flight data, communications recordings and weather conditions. Identifying every responsible party early — operators, manufacturers and maintenance providers — helps ensure no important claim or deadline is missed.",
+        ],
+      },
+      {
+        heading: "Common causes of aviation accidents",
+        paragraphs: [
+          "Aviation accidents rarely have a single cause. Investigations often uncover a chain of events involving people, equipment and conditions.",
+        ],
+        bullets: [
+          "Pilot error, fatigue or inadequate training",
+          "Mechanical failures and defective parts",
+          "Improper maintenance or missed inspections",
+          "Air traffic control errors",
+          "Weather-related decisions and poor visibility",
+          "Fuel problems or improper loading",
+        ],
+        closing: [
+          "Identifying each contributing factor helps determine who may be liable. Because manufacturers and operators often have extensive resources, families benefit from attorneys who can retain qualified aviation experts early.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -453,6 +621,30 @@ export const injuryA: Record<string, ServiceContent> = {
           "Rideshare drivers are generally classified as independent contractors, so claims typically proceed through the companies' insurance policies rather than against the companies directly. In some situations, though, there may be claims against the company itself. Every case depends on its facts. Claims generally must be filed within two years.",
         ],
       },
+      {
+        heading: "Injured as a rideshare passenger",
+        paragraphs: [
+          "If you were hurt while riding in an Uber or Lyft, you're usually in a strong position: as a passenger, you're rarely at fault. Your claim may be against the rideshare driver's coverage, another at-fault driver, or both. When the rideshare driver was carrying you, the company's $1 million liability policy generally applies.",
+          "Rideshare insurers are large, sophisticated companies. Keep your trip receipt, screenshots of the driver and vehicle details, and any messages through the app. Get medical care right away and keep records of every appointment and expense related to your injuries.",
+        ],
+      },
+      {
+        heading: "Uninsured drivers and rideshare coverage",
+        paragraphs: [
+          "Rideshare insurance can also help when another driver causes a crash and doesn't have enough insurance. Coverage depends on the trip status at the time of the collision.",
+        ],
+        bullets: [
+          "During a trip, rideshare policies typically include uninsured and underinsured motorist coverage",
+          "Passengers may be protected if an uninsured driver hits the rideshare vehicle",
+          "Drivers may have coverage through the rideshare policy and their own policy",
+          "Hit-and-run crashes may fall under uninsured motorist coverage",
+          "Medical payments coverage may help with immediate bills",
+          "Your own health insurance can cover treatment while the claim is pending",
+        ],
+        closing: [
+          "Sorting out overlapping policies can be complicated. A rideshare accident lawyer can identify every source of coverage and handle communications with each insurer.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -509,6 +701,30 @@ export const injuryA: Record<string, ServiceContent> = {
         heading: "Scooter rules in California",
         paragraphs: [
           "California requires riders to have a driver's license or permit, prohibits riding on sidewalks in most cases, and requires helmets for riders under 18. Following — or breaking — these rules can affect a claim, but under comparative negligence you may still recover even if you share some fault. Claims generally must be filed within two years, or six months for public entities.",
+        ],
+      },
+      {
+        heading: "Injuries from scooter crashes",
+        paragraphs: [
+          "Electric scooters offer little protection in a crash. Riders commonly suffer head injuries, facial fractures, broken wrists and arms from bracing a fall, and serious road rash. Pedestrians struck by scooters can also suffer fractures and head injuries, especially older adults.",
+          "Prompt medical care is important — head injuries in particular may not show symptoms right away. Photograph the scooter, its ID number, the scene and any road defects, and save your rental app records showing your ride. That information can help establish what went wrong and who should be responsible.",
+        ],
+      },
+      {
+        heading: "Steps to take after a scooter accident",
+        paragraphs: [
+          "After a scooter crash, quick steps can protect both your health and your claim.",
+        ],
+        bullets: [
+          "Get medical attention, especially for any head injury",
+          "Photograph the scooter, its ID number and the scene",
+          "Take pictures of potholes, cracks or debris that caused the fall",
+          "Get driver and witness contact information if a vehicle was involved",
+          "Screenshot your ride details in the rental app",
+          "Report the crash to the rental company and keep a copy",
+        ],
+        closing: [
+          "Keep the clothes and helmet you were wearing. If the scooter malfunctioned, note what happened — brakes failing, sudden acceleration or a battery problem — as specifically as possible.",
         ],
       },
     ],
@@ -570,6 +786,30 @@ export const injuryA: Record<string, ServiceContent> = {
           "Serious brain injuries can require years of care. We work with medical experts, life-care planners and economists to account for current and future medical treatment, rehabilitation, lost income and earning capacity, home care, and the loss of quality of life. Claims generally must be filed within two years.",
         ],
       },
+      {
+        heading: "Supporting families of brain injury survivors",
+        paragraphs: [
+          "Brain injuries affect entire families. Loved ones may become caregivers, manage appointments and finances, and adjust to changes in personality or behavior. California law may allow a spouse to seek damages for loss of consortium — the loss of companionship and support caused by a serious injury.",
+          "We work with families to understand day-to-day needs and document them carefully. Journals noting symptoms, changes in mood, memory lapses and new limitations can be powerful evidence, especially when medical imaging doesn't fully capture the injury's impact.",
+        ],
+      },
+      {
+        heading: "Long-term effects of traumatic brain injury",
+        paragraphs: [
+          "Even after initial recovery, many people with TBIs live with lasting effects that can change their work, relationships and independence. These long-term consequences should be part of any claim.",
+        ],
+        bullets: [
+          "Memory problems and difficulty learning new information",
+          "Trouble concentrating or making decisions",
+          "Headaches, dizziness and sensitivity to light or sound",
+          "Depression, anxiety, irritability and mood swings",
+          "Sleep disturbances and chronic fatigue",
+          "Increased risk of later neurological conditions",
+        ],
+        closing: [
+          "Specialists like neurologists, neuropsychologists and vocational experts can help show how these effects impact daily life and the ability to work, now and in the future.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -627,6 +867,30 @@ export const injuryA: Record<string, ServiceContent> = {
         heading: "Who can be held responsible?",
         paragraphs: [
           "Depending on the cause, liable parties may include property owners and landlords, product manufacturers, employers' contractors, utility companies or negligent drivers. We investigate the cause, preserve evidence and consult fire and product experts. Claims generally must be filed within two years.",
+        ],
+      },
+      {
+        heading: "Degrees of burn injuries",
+        paragraphs: [
+          "Burns are classified by depth. First-degree burns affect only the outer layer of skin. Second-degree burns reach deeper layers and often blister. Third-degree burns destroy the full thickness of the skin and may damage nerves, while fourth-degree burns extend into muscle and bone.",
+          "Deeper burns frequently require skin grafts, reconstructive surgery and long-term scar management, and they carry a high risk of infection. The location of a burn matters too — burns to the face, hands and joints can affect appearance and function in lasting ways. Your claim should reflect both the medical treatment and these long-term consequences.",
+        ],
+      },
+      {
+        heading: "Steps to take after a burn injury",
+        paragraphs: [
+          "After a burn injury, medical care comes first. Once you're safe, these steps can help protect your claim.",
+        ],
+        bullets: [
+          "Get emergency treatment and follow up with a burn specialist",
+          "Photograph your injuries throughout healing",
+          "Keep the product, device or item involved, if possible",
+          "Get the names of witnesses and responders",
+          "Request fire department or incident reports",
+          "Keep records of all medical bills and missed work",
+        ],
+        closing: [
+          "Avoid giving recorded statements to insurers before speaking with a lawyer. Burn cases often require expert investigation into how a fire started or why a product failed.",
         ],
       },
     ],

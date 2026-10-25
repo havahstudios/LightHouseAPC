@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
 import Hero from "./_sections/Hero";
 import Intro from "./_sections/Intro";
@@ -13,6 +14,10 @@ import VideoStatement from "./_sections/VideoStatement";
 import PracticeAreas from "./_sections/PracticeAreas";
 import ClosingCta from "./_sections/ClosingCta";
 import BlogPosts from "./_sections/BlogPosts";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 // Homepage — sections appear in the same order as the reference site.
 // Every section after the hero gently fades in as you scroll to it.

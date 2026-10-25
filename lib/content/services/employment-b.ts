@@ -39,6 +39,30 @@ export const employmentB: Record<string, ServiceContent> = {
           "Claims are generally filed first with the California Civil Rights Department within three years. Remedies may include lost wages, emotional distress damages, punitive damages and attorney's fees.",
         ],
       },
+      {
+        heading: "Documenting a hostile work environment",
+        paragraphs: [
+          "Because hostile work environment claims often depend on a pattern of conduct, documentation is critical. Keep a private log, outside of company systems, with the date, time, what was said or done, who was involved and who witnessed it. Save harassing texts, emails, chat messages and social media posts.",
+          "Note how the harassment affects you — missed sleep, anxiety, medical visits or time off — and keep records of any medical or counseling treatment. If you report to HR, do it in writing and keep a copy of your report and any response. This kind of record can turn a “he said, she said” situation into a clear, credible case.",
+        ],
+      },
+      {
+        heading: "How courts decide if harassment is severe or pervasive",
+        paragraphs: [
+          "When deciding whether a workplace was hostile, courts look at the full picture rather than a single moment in isolation. California law directs that harassment cases are rarely appropriate to dismiss early, recognizing that these questions usually belong to a jury.",
+        ],
+        bullets: [
+          "How often the conduct happened",
+          "How severe it was, including any threats or physical contact",
+          "Whether it was humiliating or merely offensive",
+          "Whether it interfered with your ability to work",
+          "Who was involved, especially supervisors or managers",
+          "Whether the employer responded once it knew",
+        ],
+        closing: [
+          "Even if you continued to perform your job well, the harassment can still be unlawful. You don't have to prove your productivity suffered — only that the environment became hostile or abusive because of a protected characteristic.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -99,6 +123,30 @@ export const employmentB: Record<string, ServiceContent> = {
         paragraphs: [
           "Labor law claims can be brought as a wage claim with the California Labor Commissioner, an individual lawsuit, a class action, or a representative action under California's Private Attorneys General Act (PAGA). The right approach depends on the violations, how many workers are affected and the recovery available. We'll explain your options clearly.",
           "And remember: it's illegal for an employer to retaliate against you for asserting your labor law rights.",
+        ],
+      },
+      {
+        heading: "Expense reimbursement and paid sick leave",
+        paragraphs: [
+          "California employers must reimburse employees for necessary business expenses. That can include mileage for driving your own car for work, a portion of your personal cell phone bill if you use it for work, required tools, uniforms and home-office costs when remote work is required.",
+          "California also requires paid sick leave for most employees. Employers must allow workers to accrue or receive at least five days (40 hours) per year under current law, and can't retaliate against employees for using it. Denied sick leave, unpaid expenses and similar violations are often overlooked — but they're enforceable and can carry penalties.",
+        ],
+      },
+      {
+        heading: "Records to keep if you suspect labor violations",
+        paragraphs: [
+          "Labor law claims are often about numbers, so records matter. Employers are required to keep accurate payroll and time records, but having your own copies helps you spot problems and supports your claim if records are incomplete or altered.",
+        ],
+        bullets: [
+          "Pay stubs and wage statements",
+          "Your own notes of start, end and break times",
+          "Schedules, timesheets and photos of time clocks",
+          "Texts or emails asking you to work off the clock or skip breaks",
+          "Receipts for work expenses like mileage, phone and tools",
+          "Any contractor agreement or job description",
+        ],
+        closing: [
+          "California employees also have the right to request copies of their payroll records and personnel file. If your employer fails to provide them within the legal deadline, it may owe a penalty. A labor law attorney can help request these records and review them for violations.",
         ],
       },
     ],
@@ -165,6 +213,30 @@ export const employmentB: Record<string, ServiceContent> = {
           "Refusing to reinstate you to the same or a comparable job",
         ],
       },
+      {
+        heading: "Interference vs. retaliation claims",
+        paragraphs: [
+          "Leave law violations generally fall into two categories. An interference claim arises when an employer denies, discourages or delays leave you're entitled to — for example, refusing your request, demanding unnecessary paperwork or calling you constantly during leave to make you work.",
+          "A retaliation claim arises when an employer punishes you for taking or requesting leave, such as firing, demoting or writing you up afterward. Both are illegal under CFRA and the FMLA. Keep copies of your leave requests, medical certifications and any communications about your leave or return to work.",
+        ],
+      },
+      {
+        heading: "Tips for requesting protected leave",
+        paragraphs: [
+          "How you request leave can help protect your rights. You don't have to use specific legal terms like “FMLA” or “CFRA” — you just need to give your employer enough information to know your leave may be protected. Still, clear communication avoids disputes later.",
+        ],
+        bullets: [
+          "Give as much notice as you reasonably can, ideally in writing",
+          "Explain that the leave is for a serious health condition, a new child or a family member's care",
+          "Provide medical certification if your employer requests it",
+          "Keep copies of all leave paperwork and approvals",
+          "Confirm your expected return date in writing",
+          "Document any pressure to work during leave or to return early",
+        ],
+        closing: [
+          "If your leave is denied, your hours are cut afterward, or you're told your job no longer exists when you return, those are warning signs. An FMLA attorney can review what happened and explain your options under both federal and California law.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -225,6 +297,30 @@ export const employmentB: Record<string, ServiceContent> = {
         paragraphs: [
           "A class representative is the employee who brings the case on behalf of the group. You'll work with your lawyers, provide information about your experience, and help make sure the class is treated fairly. Retaliation against workers who bring or join these claims is illegal.",
           "Many employers require arbitration agreements, which can affect how group claims proceed. We review these agreements carefully as part of evaluating your options.",
+        ],
+      },
+      {
+        heading: "Common class action claims in California",
+        paragraphs: [
+          "Many employment class actions involve wage and hour practices applied across an entire workforce: time-rounding policies that consistently shave off minutes, unpaid security checks, unpaid pre-shift meetings, failure to include bonuses in the overtime rate, or systematic meal break violations.",
+          "Other group claims involve misclassification — for example, a company treating an entire category of workers as independent contractors or salaried exempt managers when they should be paid overtime. Because each worker's losses add up across a large group, these cases can be an effective way to hold employers accountable for widespread violations.",
+        ],
+      },
+      {
+        heading: "Steps in an employment class action",
+        paragraphs: [
+          "Class actions follow a structured process that usually takes longer than an individual case. Understanding the stages can help set expectations.",
+        ],
+        bullets: [
+          "Investigation of the employer's policies and practices",
+          "Filing the complaint on behalf of the proposed class",
+          "Exchanging documents, payroll data and witness information",
+          "Class certification, where the court decides if the case can proceed as a group",
+          "Notice to class members about their rights",
+          "Settlement or trial, with court approval of any settlement",
+        ],
+        closing: [
+          "Throughout the case, the court oversees the process to protect class members' interests. If a settlement is reached, class members generally receive notice and an opportunity to participate or opt out. We'll explain each step along the way.",
         ],
       },
     ],
@@ -290,6 +386,30 @@ export const employmentB: Record<string, ServiceContent> = {
           "Keep copies of your announcement, accommodation requests, doctor's notes and any changes to your job afterward. Claims are generally filed with the California Civil Rights Department within three years. Remedies may include lost wages, reinstatement, emotional distress damages and attorney's fees.",
         ],
       },
+      {
+        heading: "Lactation accommodations at work",
+        paragraphs: [
+          "California requires employers to provide reasonable break time for employees who need to express breast milk, along with a private space other than a bathroom that is close to the work area, shielded from view and free from intrusion. The space must have a surface for a breast pump, a place to sit and access to electricity.",
+          "Employers also must provide access to a sink with running water and a refrigerator or cooler for storing milk nearby. Denying lactation breaks or retaliating against employees who request them is illegal. If your employer isn't meeting these requirements, you can raise the issue or file a complaint with the Labor Commissioner.",
+        ],
+      },
+      {
+        heading: "Accommodations during pregnancy",
+        paragraphs: [
+          "California law requires employers to provide reasonable accommodations for conditions related to pregnancy, childbirth and related medical conditions when an employee requests them with the advice of a healthcare provider. These accommodations help you keep working safely.",
+        ],
+        bullets: [
+          "More frequent or longer breaks",
+          "Permission to sit or stand as needed",
+          "Temporary transfer to a less strenuous or hazardous position",
+          "Modified duties or lifting restrictions",
+          "Adjusted schedules for prenatal appointments",
+          "Time off for pregnancy-related conditions",
+        ],
+        closing: [
+          "Request accommodations in writing and keep your doctor's notes. Employers can't force you to take leave if an accommodation would allow you to keep working, and they can't retaliate for asking. If your request was denied, a pregnancy discrimination lawyer can help.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -349,6 +469,30 @@ export const employmentB: Record<string, ServiceContent> = {
         heading: "Your legal options",
         paragraphs: [
           "Claims under FEHA are generally filed with the California Civil Rights Department within three years. Section 1981 claims can go directly to federal court and have their own deadline. Remedies may include back pay, front pay, emotional distress damages, punitive damages and attorney's fees.",
+        ],
+      },
+      {
+        heading: "Section 1981: a powerful federal tool",
+        paragraphs: [
+          "In addition to California law and Title VII, racial discrimination victims can often bring claims under 42 U.S.C. § 1981, a federal civil rights law that protects the right to make and enforce contracts — including employment — free from racial discrimination.",
+          "Section 1981 claims have advantages: they don't require filing with an administrative agency first, they generally allow a longer filing period than many agency deadlines, and they don't have the damages caps that apply to Title VII. A lawyer can evaluate which combination of state and federal claims makes sense for your case.",
+        ],
+      },
+      {
+        heading: "Documenting racial discrimination",
+        paragraphs: [
+          "Racial discrimination often builds over time through repeated incidents, unequal treatment and patterns that become clear only when viewed together. Careful documentation helps turn individual experiences into a compelling case.",
+        ],
+        bullets: [
+          "Exact words of any slurs, comments or jokes, with dates and witnesses",
+          "Screenshots of messages, emails or posts",
+          "Comparisons of discipline, pay and promotions with coworkers of other races",
+          "Policies applied differently to you, such as dress or hair rules",
+          "Your complaints to HR and any responses",
+          "Changes in how you were treated after complaining",
+        ],
+        closing: [
+          "Store your notes outside of company systems. If you report racial harassment or discrimination, do so in writing and keep a copy. Retaliation for reporting is illegal and can be its own claim.",
         ],
       },
     ],
@@ -411,6 +555,30 @@ export const employmentB: Record<string, ServiceContent> = {
           "Document your accommodation requests and your employer's responses. Claims are generally filed with the California Civil Rights Department within three years, or with the EEOC under federal law. Remedies may include lost wages, reinstatement, emotional distress damages and attorney's fees.",
         ],
       },
+      {
+        heading: "What counts as undue hardship?",
+        paragraphs: [
+          "Employers often say an accommodation would be an “undue hardship.” Under federal law, the U.S. Supreme Court has clarified that this means a substantial burden in the overall context of the business — not just a minor cost or inconvenience. California law likewise requires employers to show significant difficulty or expense.",
+          "Coworker grumbling, scheduling adjustments or minor administrative costs usually don't meet that standard. Employers are also expected to explore alternatives, like voluntary shift swaps, before denying a request. If your accommodation request was rejected with little discussion, you may have a claim.",
+        ],
+      },
+      {
+        heading: "How to request a religious accommodation",
+        paragraphs: [
+          "Making a clear request helps start the accommodation process. You don't need to use legal language, but you should let your employer know that the request is based on your religious beliefs or practices.",
+        ],
+        bullets: [
+          "Put your request in writing and keep a copy",
+          "Explain the religious practice and what change you need",
+          "Suggest possible solutions, like shift swaps or schedule adjustments",
+          "Respond to reasonable requests for information",
+          "Note how and when your employer responds",
+          "Document any negative treatment after your request",
+        ],
+        closing: [
+          "Your employer may propose alternatives, and the process should be a good-faith conversation. If the employer refuses without discussing options, penalizes you for asking, or harasses you because of your faith, a religious discrimination lawyer can help you understand your rights.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -467,6 +635,30 @@ export const employmentB: Record<string, ServiceContent> = {
         heading: "Can severance be negotiated?",
         paragraphs: [
           "Often, yes. Employers are usually more willing to improve an offer when there are signs of potential legal claims, when you have long tenure or key relationships, or when the agreement asks for broad restrictions. We evaluate your situation and negotiate on your behalf.",
+        ],
+      },
+      {
+        heading: "Clauses that deserve a second look",
+        paragraphs: [
+          "Some severance terms carry consequences long after you sign. Broad non-disparagement clauses can restrict what you say about your former employer. Confidentiality clauses may limit discussing the agreement itself. Clawback provisions can require you to repay severance if you breach the agreement. And “no-rehire” clauses can affect your future career in your industry.",
+          "California generally prohibits non-compete agreements, and many restrictive covenants are unenforceable. Agreements also can't waive certain rights, like unpaid wages that are already owed or the right to file a complaint with a government agency. A careful review can help you understand what's enforceable and what's negotiable.",
+        ],
+      },
+      {
+        heading: "Leverage in severance negotiations",
+        paragraphs: [
+          "Employers offer severance for many reasons, including to reduce legal risk. Understanding what gives you leverage can help you decide whether to negotiate and what to ask for.",
+        ],
+        bullets: [
+          "Signs your termination may have been discriminatory or retaliatory",
+          "Unpaid wages, commissions or bonuses you're owed",
+          "Recent complaints, leave or accommodation requests before termination",
+          "Long tenure and strong performance history",
+          "Broad restrictions the employer wants you to accept",
+          "Timing near vesting dates for equity or retirement benefits",
+        ],
+        closing: [
+          "Negotiable terms may include the severance amount, health insurance coverage, the reference you receive, how your departure is described, and the scope of confidentiality. A severance lawyer can evaluate your leverage and negotiate on your behalf.",
         ],
       },
     ],
@@ -528,6 +720,30 @@ export const employmentB: Record<string, ServiceContent> = {
           "Remedies can include lost wages, emotional distress damages, punitive damages and attorney's fees. Under recent California law, many settlement agreements can no longer silence survivors about the facts of sexual harassment.",
         ],
       },
+      {
+        heading: "Harassment doesn't have to be sexual desire",
+        paragraphs: [
+          "Sexual harassment under California law doesn't require that the harasser be motivated by sexual desire. Harassment based on sex — including hostility toward someone because of their gender, sexual orientation or gender identity — is also prohibited. And harassment can occur between people of the same sex.",
+          "California employers with five or more employees must provide sexual harassment prevention training to supervisors and employees. When an employer skips training, ignores complaints or protects a high-performing harasser, that can strengthen a claim. Harassment that continues after a report is especially serious.",
+        ],
+      },
+      {
+        heading: "Options for reporting sexual harassment",
+        paragraphs: [
+          "You have several options for reporting sexual harassment, and you can use more than one. Choosing the right path depends on your safety, your goals and the deadlines that apply.",
+        ],
+        bullets: [
+          "Report internally to HR, a manager or a designated contact",
+          "File a complaint with the California Civil Rights Department",
+          "File a charge with the federal EEOC",
+          "Report criminal conduct, like assault, to the police",
+          "Seek a restraining order if you feel unsafe",
+          "Consult a sexual harassment lawyer about a civil claim",
+        ],
+        closing: [
+          "You don't have to report internally before speaking with a lawyer. A confidential consultation can help you understand your options, protect your job and plan your next steps.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -587,6 +803,30 @@ export const employmentB: Record<string, ServiceContent> = {
           "Wrongful discharge in violation of public policy claims are generally subject to a two-year statute of limitations, which is shorter than some related claims. Early advice helps protect your rights.",
         ],
       },
+      {
+        heading: "Public policy must come from a law",
+        paragraphs: [
+          "Not every unfair firing violates public policy. California courts require that the policy be fundamental, benefit the public at large, and be grounded in a constitutional or statutory provision — not merely a company rule or an employee's personal sense of fairness.",
+          "For example, firing someone for refusing to falsify safety inspection reports, for reporting wage theft, or for taking time off to vote or serve on a jury implicates policies found in state law. An experienced lawyer can identify the specific statutes that support your claim and pair this claim with others, like retaliation or discrimination.",
+        ],
+      },
+      {
+        heading: "Evidence in public policy termination cases",
+        paragraphs: [
+          "Because these claims depend on why you were fired, evidence connecting your protected action to the termination is essential. Timing, communications and how the employer reacted to your conduct all matter.",
+        ],
+        bullets: [
+          "Records of what you refused to do or what you reported",
+          "The date of your refusal or report and the date you were fired",
+          "Messages showing pressure to break the law",
+          "Statements by managers about your actions",
+          "Your performance history before the termination",
+          "The employer's stated reason for firing you",
+        ],
+        closing: [
+          "If the employer's explanation doesn't match the facts, or appeared only after you took a protected stand, that can support a claim. A wrongful discharge lawyer can evaluate the evidence and identify the public policies involved.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -644,6 +884,30 @@ export const employmentB: Record<string, ServiceContent> = {
         heading: "Taking action",
         paragraphs: [
           "FEHA applies to employers with five or more employees. Claims are generally filed with the California Civil Rights Department within three years. Remedies may include lost wages, emotional distress damages and attorney's fees.",
+        ],
+      },
+      {
+        heading: "Benefits and marital status",
+        paragraphs: [
+          "Marital status issues sometimes arise through benefits and policies rather than hiring or firing decisions. California law requires that registered domestic partners receive the same rights and benefits as spouses in many contexts, and employers generally can't offer different terms of employment based on marital status.",
+          "Because federal law doesn't list marital status as protected, claims are typically brought under California's Fair Employment and Housing Act. If you suspect a decision about your job was influenced by being single, married, divorced or widowed, gathering details about comments and comparisons with coworkers can help evaluate your claim.",
+        ],
+      },
+      {
+        heading: "Evidence of marital status bias",
+        paragraphs: [
+          "Marital status discrimination is often revealed through comments and assumptions rather than explicit policies. Paying attention to what decision-makers say — and how they treat employees with different family situations — can help identify discrimination.",
+        ],
+        bullets: [
+          "Interview or performance questions about marriage or divorce",
+          "Comments about a spouse's job or family plans",
+          "Assignments or travel given based on marital status",
+          "Different treatment after a marriage, divorce or separation",
+          "Benefits offered differently to married and unmarried employees",
+          "Witnesses who heard related comments",
+        ],
+        closing: [
+          "Write down what was said, when and by whom. If you raise concerns and are treated worse afterward, that may be retaliation. A lawyer can help determine whether marital status or a related protected characteristic played a role.",
         ],
       },
     ],

@@ -45,6 +45,13 @@ export const employmentA: Record<string, ServiceContent> = {
           "Timing matters. Discrimination and retaliation claims under FEHA generally must be filed with the California Civil Rights Department (CRD) within three years. Claims for wrongful termination in violation of public policy are generally subject to a two-year deadline, and some claims have much shorter windows. Talking with a lawyer early helps protect your options.",
         ],
       },
+      {
+        heading: "Forced to quit? Constructive discharge may count as a firing",
+        paragraphs: [
+          "Some employers avoid firing someone by making their job so miserable they resign. California law recognizes this as constructive discharge. If your employer knowingly allowed working conditions so intolerable or aggravated that a reasonable person would feel forced to quit, your resignation may be treated as a termination.",
+          "Examples include severe or ongoing harassment that management ignored, a drastic pay cut or demotion meant to push you out, or being ordered to break the law to keep your job. Because these claims depend heavily on the details, talk with a wrongful termination lawyer before you resign if you can — and keep records of what led up to your decision.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -106,6 +113,30 @@ export const employmentA: Record<string, ServiceContent> = {
         paragraphs: [
           "Under Labor Code 1102.5, once an employee shows that their protected report was a contributing factor in the employer's decision, the employer must prove by clear and convincing evidence that it would have made the same decision anyway. That framework gives whistleblowers meaningful leverage.",
           "Remedies may include reinstatement, lost wages and benefits, emotional distress damages, civil penalties and attorney's fees. Some claims also allow punitive damages.",
+        ],
+      },
+      {
+        heading: "Steps to protect yourself as a whistleblower",
+        paragraphs: [
+          "Before and after you report, a few careful steps can make a big difference. Put your concerns in writing when you can, and keep a personal copy of what you reported, to whom and when. Write down any changes in how you're treated afterward, such as new criticism, schedule changes or being excluded from meetings.",
+          "Be careful with company documents: taking confidential records can create problems, so ask a lawyer what you can safely keep. Avoid discussing your report on social media. Some whistleblower claims under federal law have very short filing deadlines — sometimes just weeks — so getting advice early protects your options.",
+        ],
+      },
+      {
+        heading: "Evidence that strengthens a whistleblower retaliation claim",
+        paragraphs: [
+          "Whistleblower cases are often won or lost on the paper trail. The goal is to show what you reported, when you reported it, who knew about it, and how your treatment changed afterward. Gathering this information early — while memories are fresh and records still exist — makes your claim far stronger.",
+        ],
+        bullets: [
+          "Copies of your written reports, emails or complaint forms",
+          "Notes from meetings where you raised concerns, with dates and attendees",
+          "Performance reviews from before and after your report",
+          "Any discipline, schedule changes or demotions that followed",
+          "Names of coworkers who witnessed the conduct or your report",
+          "Agency complaint numbers if you reported to a government body",
+        ],
+        closing: [
+          "Keep these materials somewhere personal and secure, not only on a work computer or phone. If you're unsure whether a document is confidential, ask your lawyer before taking it. We'll help you organize the timeline into a clear, compelling story.",
         ],
       },
     ],
@@ -170,6 +201,30 @@ export const employmentA: Record<string, ServiceContent> = {
           "Your employer is legally required to take reasonable steps to prevent and correct harassment — and it cannot retaliate against you for reporting it.",
         ],
       },
+      {
+        heading: "Harassment by customers, clients and contractors",
+        paragraphs: [
+          "Harassment doesn't only come from coworkers and bosses. California law also protects employees from harassment by non-employees — customers, clients, vendors and independent contractors — when the employer knew or should have known about it and failed to take immediate, appropriate corrective action.",
+          "That can apply to restaurant servers harassed by regular customers, healthcare workers mistreated by patients' family members, or sales staff harassed by a key client. Employers can't ignore harassment because the harasser brings in business. If you've reported harassment from someone outside the company and nothing changed, you may have a claim.",
+        ],
+      },
+      {
+        heading: "What employers are required to do",
+        paragraphs: [
+          "California places real obligations on employers when it comes to harassment. Employers must take all reasonable steps to prevent harassment from occurring — not just respond after the fact. That includes having a written anti-harassment policy, a clear complaint process, prompt and impartial investigations, and appropriate corrective action when harassment is found.",
+        ],
+        bullets: [
+          "A written policy that explains how to report harassment",
+          "Multiple ways to complain, including someone other than your direct supervisor",
+          "Prompt, thorough and impartial investigations",
+          "Confidentiality to the extent possible",
+          "Corrective action that actually stops the behavior",
+          "Regular harassment prevention training for supervisors and employees",
+        ],
+        closing: [
+          "When an employer skips these steps — ignoring complaints, conducting a sham investigation, or moving the victim instead of the harasser — it can strengthen your case. An employer's failure to prevent harassment can also be its own claim under California law.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -229,6 +284,30 @@ export const employmentA: Record<string, ServiceContent> = {
         heading: "Penalties employers may owe",
         paragraphs: [
           "Beyond the unpaid wages themselves, California law can add significant amounts: one extra hour of pay for each day a meal or rest break was missed, interest, waiting time penalties of up to 30 days' wages for late final pay, wage statement penalties, and attorney's fees. Workers can generally recover unpaid wages going back three years, and sometimes four.",
+        ],
+      },
+      {
+        heading: "Meal and rest break rules in California",
+        paragraphs: [
+          "Non-exempt employees in California are generally entitled to a 30-minute, uninterrupted, duty-free meal break before the end of the fifth hour of work, and a second meal break for shifts over 10 hours. Rest breaks of 10 paid minutes are generally required for every four hours worked or major fraction of four hours.",
+          "If your employer doesn't provide a compliant meal break, it generally owes you one additional hour of pay at your regular rate for that day — and one more hour for a missed rest break. Being expected to stay on call, answer your phone or remain at your station during a break can mean the break didn't legally happen. These premiums add up quickly over months and years.",
+        ],
+      },
+      {
+        heading: "How to tell if you've been underpaid",
+        paragraphs: [
+          "Many workers don't realize they're owed money until they look closely at their pay. Start by comparing the hours you actually worked with the hours on your wage statements. Then look for patterns that suggest pay is being shaved or premiums aren't being paid.",
+        ],
+        bullets: [
+          "Pay stubs that never show overtime, even on long weeks",
+          "Time records that are rounded or edited by managers",
+          "Work done before clocking in, like security checks or setup",
+          "Breaks that are routinely interrupted, late or skipped",
+          "Bonuses or commissions that aren't included in your overtime rate",
+          "Final paychecks that arrived days or weeks late",
+        ],
+        closing: [
+          "Keep your own record of start and end times, breaks and any off-the-clock work. Photos of schedules, texts from managers asking you to work during breaks, and copies of pay stubs are all useful. A wage and hour lawyer can calculate what you may be owed, including penalties.",
         ],
       },
     ],
@@ -295,6 +374,30 @@ export const employmentA: Record<string, ServiceContent> = {
           "In California, most discrimination claims start with a complaint to the Civil Rights Department (CRD), generally within three years of the discriminatory act. The CRD can issue a right-to-sue notice so your case can proceed in court. Federal claims are filed with the EEOC, generally within 300 days in California. A lawyer can choose the best path and handle the filing for you.",
         ],
       },
+      {
+        heading: "Discrimination during hiring and promotions",
+        paragraphs: [
+          "Discrimination often happens before a job even starts. Employers can't refuse to hire, steer applicants into lower-paying roles, or ask discriminatory interview questions based on protected characteristics. In California, most employers also can't ask about criminal history before a conditional job offer, and they can't ask about salary history.",
+          "Promotion decisions are another common flashpoint. When qualified employees from one group are repeatedly passed over in favor of less-experienced colleagues, or when promotion criteria seem to change depending on the candidate, discrimination may be at work. Records of job postings, interview notes and who was ultimately chosen can become important evidence.",
+        ],
+      },
+      {
+        heading: "Steps to take if you suspect discrimination",
+        paragraphs: [
+          "If you believe you're being treated differently because of who you are, careful steps now can protect your rights later. Discrimination cases are built on details, and those details are easiest to capture as they happen.",
+        ],
+        bullets: [
+          "Write down specific incidents, comments and decisions, with dates",
+          "Keep copies of reviews, emails and messages that show how you were treated",
+          "Note how coworkers in similar roles were treated differently",
+          "Report the concern in writing if it's safe to do so, and keep a copy",
+          "Avoid signing any agreement or resignation before getting advice",
+          "Talk to a lawyer about deadlines for filing with the CRD or EEOC",
+        ],
+        closing: [
+          "You don't have to prove your case before talking to a lawyer. In a free consultation, we'll listen to what happened, explain the laws that may apply, and help you decide on next steps.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -355,6 +458,30 @@ export const employmentA: Record<string, ServiceContent> = {
         heading: "What you can recover",
         paragraphs: [
           "Depending on the claim, retaliation victims may recover lost wages and benefits, reinstatement, emotional distress damages, civil penalties, attorney's fees and, in some cases, punitive damages. Laws that prohibit retaliation include FEHA, Labor Code sections 98.6 and 1102.5, and federal statutes.",
+        ],
+      },
+      {
+        heading: "Retaliation can be a claim even if the original complaint isn't",
+        paragraphs: [
+          "An important point many workers don't realize: you can win a retaliation claim even if the underlying complaint doesn't turn into a successful lawsuit. If you reasonably and in good faith complained about discrimination, unpaid wages or unsafe conditions, and your employer punished you for speaking up, the retaliation itself is illegal.",
+          "That's why retaliation claims are often stronger than the original issue. Courts look at what happened after you spoke up: how quickly the negative treatment followed, whether your record was clean before, and whether the employer's explanation holds up. Keep copies of your complaint and note every change that followed.",
+        ],
+      },
+      {
+        heading: "Evidence that helps prove retaliation",
+        paragraphs: [
+          "Because retaliation cases usually turn on timing and motive, the most useful evidence is anything that shows how your employer's attitude changed after you spoke up. Building a clear before-and-after picture is often the key.",
+        ],
+        bullets: [
+          "The date and content of your complaint or request",
+          "Who you told and who else learned about it",
+          "Performance reviews and praise from before the complaint",
+          "New criticism, write-ups or schedule changes afterward",
+          "Comments from managers referencing your complaint",
+          "How the employer explained its decision, and whether that explanation changed",
+        ],
+        closing: [
+          "Keep a private journal and save copies of relevant messages. Even small changes — being left off emails, losing a key account or being moved to a worse shift — can add up to a pattern. We'll help you connect the dots.",
         ],
       },
     ],
@@ -419,6 +546,30 @@ export const employmentA: Record<string, ServiceContent> = {
           "The ADEA, passed in 1967, protects workers 40 and older at employers with 20 or more employees. California's FEHA protects the same age group but applies to employers with just five or more employees and often allows broader remedies, including uncapped emotional distress and punitive damages.",
         ],
       },
+      {
+        heading: "Age discrimination in layoffs and reorganizations",
+        paragraphs: [
+          "Layoffs and restructurings are some of the most common settings for age discrimination. An employer may describe a layoff as a cost-saving measure while selecting older workers disproportionately, eliminating a position only to recreate it with a new title for a younger hire, or using criteria like “energy” or “cultural fit” that disguise age bias.",
+          "If you were included in a group layoff, your employer may be required to give you information about the ages of employees selected and not selected when it asks you to waive age claims. That information can reveal patterns. A lawyer can review the data and your severance agreement before you decide whether to sign.",
+        ],
+      },
+      {
+        heading: "Signs of age bias to document",
+        paragraphs: [
+          "Age discrimination can be subtle, so it helps to watch for patterns and write them down as they happen. Many cases are built on a series of small incidents that, together, show age played a role in how you were treated.",
+        ],
+        bullets: [
+          "Comments about your age, retirement plans or being “set in your ways”",
+          "Being excluded from training on new technology or systems",
+          "Younger employees receiving the assignments or clients you used to handle",
+          "A new manager replacing experienced staff with younger hires",
+          "Being encouraged to take early retirement or a buyout",
+          "Your duties being given to a younger employee after you're let go",
+        ],
+        closing: [
+          "Keep notes with dates, names and witnesses. Save performance reviews that show your track record. If you're offered a severance agreement, have it reviewed before signing — it may include a waiver of age discrimination claims.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -476,6 +627,30 @@ export const employmentA: Record<string, ServiceContent> = {
         heading: "How we approach civil rights cases",
         paragraphs: [
           "We start by listening. Then we gather the evidence — documents, witnesses and comparisons with how others were treated — and identify every claim available to you. We handle agency filings, negotiations with the employer and, when needed, litigation in court.",
+        ],
+      },
+      {
+        heading: "Retaliation for standing up for civil rights",
+        paragraphs: [
+          "Civil rights laws don't just prohibit discrimination — they also protect people who oppose it. If you complained about discriminatory treatment, supported a coworker's complaint, testified in an investigation or refused to carry out a discriminatory instruction, your employer cannot punish you for it.",
+          "Retaliation for opposing discrimination is one of the most frequently filed claims with both the EEOC and the California Civil Rights Department. It may lead to the same remedies as the underlying discrimination, including lost wages and emotional distress damages. Document your complaint and anything that changed afterward.",
+        ],
+      },
+      {
+        heading: "Choosing the right civil rights claims",
+        paragraphs: [
+          "Many workplace civil rights cases can be brought under more than one law, and the choice matters. Different laws have different filing deadlines, procedures, damages caps and courts. A strategic approach can significantly affect the strength and value of a case.",
+        ],
+        bullets: [
+          "FEHA: broad California protections with no cap on emotional distress damages",
+          "Title VII: federal protections with an EEOC filing requirement and damages caps",
+          "Section 1981: racial discrimination claims without an agency filing requirement",
+          "ADA and ADEA: federal disability and age protections",
+          "Labor Code protections for retaliation and whistleblowing",
+          "Claims against individual harassers under California law",
+        ],
+        closing: [
+          "We evaluate every available claim and recommend the approach that best protects your interests. Whether your case belongs before an agency, in state court or in federal court, we'll explain why and guide you through the process.",
         ],
       },
     ],
@@ -539,6 +714,30 @@ export const employmentA: Record<string, ServiceContent> = {
           "Helpful evidence includes your accommodation requests and the employer's responses, medical notes, the timing of any discipline or termination, and how the employer treated other employees. We help collect and organize this evidence to show what really happened.",
         ],
       },
+      {
+        heading: "Mental health conditions are protected too",
+        paragraphs: [
+          "Disability protections aren't limited to physical conditions. Depression, anxiety, PTSD, bipolar disorder and other mental health conditions can qualify as disabilities under California law when they limit a major life activity such as concentrating, sleeping or working.",
+          "Employees with mental health conditions can request reasonable accommodations like adjusted schedules, a quieter workspace, temporary leave for treatment or modified duties. Employers must keep medical information confidential and can't treat employees worse because of a diagnosis or stereotypes about mental illness. If you were disciplined or let go after disclosing a mental health condition, you may have a claim.",
+        ],
+      },
+      {
+        heading: "Common reasonable accommodations",
+        paragraphs: [
+          "Reasonable accommodations are changes that help an employee with a disability perform the essential functions of the job. They don't have to be expensive or complicated, and many cost employers little or nothing. The right accommodation depends on your condition and your role.",
+        ],
+        bullets: [
+          "Modified work schedules or flexible start times",
+          "Remote or hybrid work arrangements",
+          "Ergonomic chairs, standing desks or assistive technology",
+          "Temporary light duty or adjusted job tasks",
+          "Leave for treatment, surgery or recovery",
+          "Reassignment to a vacant position you're qualified for",
+        ],
+        closing: [
+          "Make accommodation requests in writing and keep copies of any doctor's notes. If your employer refuses, ignores your request, or offers something that doesn't work without discussing alternatives, it may be violating its duty to accommodate and engage in the interactive process.",
+        ],
+      },
     ],
     faqs: [
       {
@@ -596,6 +795,30 @@ export const employmentA: Record<string, ServiceContent> = {
         paragraphs: [
           "California law protects your right to discuss and ask about wages, and employers can't rely on salary history to set pay. Larger employers must include pay ranges in job postings and provide a position's pay scale on request. Retaliation for asking about pay is illegal.",
           "Employees who win an equal pay claim may recover the wage difference, interest, an equal amount as liquidated damages, and attorney's fees.",
+        ],
+      },
+      {
+        heading: "How pay discrimination claims are proven",
+        paragraphs: [
+          "Equal pay cases usually start by identifying a comparator — a coworker of a different sex, race or ethnicity doing substantially similar work for more pay. From there, the burden shifts to the employer to prove the gap is explained entirely by legitimate factors applied reasonably.",
+          "Helpful evidence includes pay stubs, offer letters, job descriptions, performance reviews and posted pay ranges. California's pay transparency rules, which require many employers to publish pay ranges and maintain pay records, can make it easier to spot disparities. Employers must keep wage records for years, and those records can be requested as part of a claim.",
+        ],
+      },
+      {
+        heading: "Steps to take if you suspect unequal pay",
+        paragraphs: [
+          "Discovering that a coworker earns more for similar work can be upsetting. Before raising the issue, it helps to gather information so you can make your case clearly and protect yourself from retaliation.",
+        ],
+        bullets: [
+          "Write down what you know about the coworker's role, duties and pay",
+          "Compare job descriptions, responsibilities and performance metrics",
+          "Request the pay scale for your position in writing",
+          "Keep copies of your offer letter, raises and reviews",
+          "Note any comments about why your pay is lower",
+          "Document any negative treatment after you ask about pay",
+        ],
+        closing: [
+          "California law protects your right to ask about and discuss pay. If you raise concerns and your employer retaliates — or refuses to correct an unjustified gap — an equal pay attorney can help you pursue the difference in wages, liquidated damages and attorney's fees.",
         ],
       },
     ],
@@ -657,6 +880,30 @@ export const employmentA: Record<string, ServiceContent> = {
         paragraphs: [
           "We look at pay data, promotion histories, comments from decision-makers, performance reviews and how similarly situated employees were treated. Claims usually begin with a complaint to the California Civil Rights Department, generally within three years, before moving to court.",
           "Remedies may include back pay, front pay, emotional distress damages, punitive damages and attorney's fees.",
+        ],
+      },
+      {
+        heading: "Caregiver and family-status bias",
+        paragraphs: [
+          "Gender discrimination frequently shows up as assumptions about family responsibilities. Mothers may be passed over for travel-heavy roles or promotions because managers assume they're less committed. Fathers may be mocked or penalized for taking bonding leave. Both can reflect illegal sex stereotyping.",
+          "California law protects employees from discrimination based on sex, pregnancy and related conditions, and it guarantees job-protected family leave for eligible employees. When decisions are based on stereotypes about how people of a certain gender should balance work and family, the law may provide a remedy.",
+        ],
+      },
+      {
+        heading: "Evidence in gender discrimination cases",
+        paragraphs: [
+          "Gender discrimination cases often depend on comparisons: how you were treated versus colleagues of another gender in similar roles. Patterns across a team or department can also be powerful evidence that bias played a role.",
+        ],
+        bullets: [
+          "Pay, bonus and raise histories compared with similar colleagues",
+          "Promotion decisions and the qualifications of those selected",
+          "Comments or jokes about gender from decision-makers",
+          "Differences in discipline for similar conduct",
+          "Assignments, clients or opportunities given to others",
+          "Changes in treatment after pregnancy, leave or transition",
+        ],
+        closing: [
+          "Save documents and messages, and keep notes of conversations. If you report discrimination, do it in writing. California law protects you from retaliation for raising these concerns, and a lawyer can help you understand the strength of your claim.",
         ],
       },
     ],

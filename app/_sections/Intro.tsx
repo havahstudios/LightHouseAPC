@@ -35,7 +35,7 @@ export default function Intro() {
               line. You don&apos;t have to do it alone. Our team can explain your rights, gather the proof
               you need and push back against a company&apos;s lawyers so you can focus on moving forward. We
               also represent people hurt in car, motorcycle and pedestrian accidents and other{" "}
-              <Link href="/practice-areas#personal-injury" className="text-beacon-dark hover:underline">
+              <Link href="/practice-areas/personal-injury" className="text-beacon-dark hover:underline">
                 personal injury cases
               </Link>
               .{" "}
