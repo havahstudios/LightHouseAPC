@@ -22,6 +22,20 @@
   /* Slow zoom and sideways drift on the top photo */
   --animate-slow-drift: slow-drift 18s ease-in-out infinite alternate;
 
+  /* Dropdown menus fade in and settle into place */
+  --animate-menu-in: menu-in 180ms ease-out;
+
+  @keyframes menu-in {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   /* Lighthouse beam on the password page, sweeping gently side to side */
   --animate-beam-sweep: beam-sweep 9s ease-in-out infinite alternate;
 

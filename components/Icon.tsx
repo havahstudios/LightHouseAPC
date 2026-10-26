@@ -8,6 +8,7 @@ const paths = {
   arrowLeft: <path d="M19 12H5m6-6-6 6 6 6" />,
   arrowRight: <path d="M5 12h14m-6-6 6 6-6 6" />,
   check: <path d="m5 12.5 4.5 4.5L19 7.5" />,
+  chevronDown: <path d="m6 9 6 6 6-6" />,
   close: <path d="M6 6l12 12M18 6 6 18" />,
   pin: (
     <>

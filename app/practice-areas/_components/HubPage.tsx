@@ -1,5 +1,3 @@
-import Link from "next/link";
-import PracticeIcon from "@/components/PracticeIcon";
 import type { HubPageData } from "@/lib/content/services";
 import { practiceGroups } from "@/lib/content/practiceAreas";
 import { breadcrumbSchema, faqSchema, legalServiceSchema } from "@/lib/seo";
@@ -7,6 +5,7 @@ import ContentSection from "./ContentSection";
 import FaqSection from "./FaqSection";
 import JsonLd from "./JsonLd";
 import PracticeHero from "./PracticeHero";
+import PracticeRow from "./PracticeRow";
 import PracticeSidebar from "./PracticeSidebar";
 
 // Layout for a group page (/practice-areas/employment-law or /practice-areas/personal-injury).
@@ -40,24 +39,10 @@ export default function HubPage({ data }: { data: HubPageData }) {
             <section>
               <h2 className="text-2xl leading-snug font-normal md:text-[2rem]">Our {group.title.toLowerCase()} services</h2>
               <p className="mt-5 text-[1rem] leading-8">{group.intro}</p>
-              <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+              <ul className="mt-8 border-t border-line">
                 {group.areas.map((area) => (
                   <li key={area.slug}>
-                    <Link
-                      href={`/practice-areas/${area.slug}`}
-                      className="group flex h-full flex-col border border-line bg-white p-6 transition-colors hover:border-beacon"
-                    >
-                      <span className="flex items-center gap-3">
-                        {area.icon && <PracticeIcon name={area.icon} className="size-7 shrink-0" />}
-                        <span className="font-serif text-lg text-ink transition-colors group-hover:text-beacon-dark">
-                          {area.title}
-                        </span>
-                      </span>
-                      <span className="mt-3 flex-1 text-sm leading-6">{area.summary}</span>
-                      <span className="mt-4 text-xs font-semibold tracking-[0.16em] text-beacon-dark uppercase">
-                        Learn more
-                      </span>
-                    </Link>
+                    <PracticeRow area={area} />
                   </li>
                 ))}
               </ul>

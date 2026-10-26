@@ -132,6 +132,11 @@ Other inner pages (About, individual practice areas, Case Results, Blog, Contact
 
 **Done =** all 46 pages live, each passing the checklist above, sitemap lists them, build passes, spot-checked on desktop and phone.
 
+## 4d. Practice area navigation (requested 2026-10-25)
+- Header "Practice Areas" opens a dropdown panel: choose Employment Law or Personal Injury on the left, that group's services listed as links on the right, plus links to each group page and the full list. Keyboard and screen-reader friendly; closes on Escape or when you move away.
+- Phone menu: "Practice Areas" expands into the two groups and their links.
+- `/practice-areas` page: services shown as a list of rows that clearly look clickable (arrow button, hover highlight), not boxes.
+
 ## 4c. Password-protected preview (requested 2026-10-25)
 - While the site is in review, every page requires a password (`/unlock` page, styled to match the brand).
 - Password lives in the `SITE_PASSWORD` setting (Vercel + `.env.local`), never in code. Removing the setting turns the gate off.

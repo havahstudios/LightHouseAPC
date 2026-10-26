@@ -20,6 +20,7 @@ export type PracticeIconName =
 export type PracticeArea = {
   title: string;
   slug: string; // page address: /practice-areas/<slug>
+  shortTitle?: string; // shorter name for menus and lists, when the full title is long
   keyword: string; // main Google search phrase this page targets (Semrush research, Oct 2026)
   summary: string;
   icon?: PracticeIconName;
@@ -188,6 +189,7 @@ export const practiceGroups: PracticeGroup[] = [
       {
         title: "Wrongful Discharge in Violation of Public Policy",
         slug: "wrongful-discharge",
+        shortTitle: "Wrongful Discharge (Public Policy)",
         keyword: "wrongful discharge lawyer los angeles",
         summary:
           "You can't be fired for refusing to break the law, serving on a jury, or exercising a legal right. These claims protect workers who do the right thing.",
