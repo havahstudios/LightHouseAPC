@@ -61,7 +61,7 @@ export default function ConsultationForm({ source }: Props) {
 
       <div>
         <label htmlFor={id("message")} className="sr-only">Describe your case</label>
-        <textarea id={id("message")} name="message" required maxLength={5000} rows={3} placeholder="Briefly describe what happened at work" className={`${inputClass} resize-y`} />
+        <textarea id={id("message")} name="message" required maxLength={5000} rows={3} placeholder="Briefly describe what happened" className={`${inputClass} resize-y`} />
       </div>
 
       {/* Spam trap: hidden from people, bots fill it in */}
