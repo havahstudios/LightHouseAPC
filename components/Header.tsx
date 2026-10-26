@@ -57,12 +57,18 @@ export default function Header() {
           <Logo />
 
           <div className="hidden flex-col items-end gap-3 lg:flex">
-            <a
-              href={site.phoneHref}
-              className="font-serif text-[1.35rem] font-normal text-white transition-colors hover:text-beacon-light"
-            >
-              Call us at: {site.phone}
-            </a>
+            <div className="flex items-center gap-3">
+              <span className="text-[0.62rem] font-semibold tracking-[0.2em] text-white/55 uppercase">
+                Free consultation
+              </span>
+              <a
+                href={site.phoneHref}
+                className="group inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-1.5 text-[0.82rem] font-medium tracking-[0.06em] text-white transition-colors hover:border-beacon hover:bg-beacon hover:text-ink"
+              >
+                <Icon name="phone" className="size-3.5 text-beacon transition-colors group-hover:text-ink" strokeWidth={1.8} />
+                {site.phone}
+              </a>
+            </div>
             <nav aria-label="Main">
               <ul className="flex items-center gap-7">
                 {nav.map((item) => {
