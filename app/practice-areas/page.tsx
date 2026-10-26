@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BackgroundImage from "@/components/BackgroundImage";
 import ButtonLink from "@/components/ButtonLink";
 import Icon from "@/components/Icon";
 import { practiceGroups } from "@/lib/content/practiceAreas";
-import { site } from "@/lib/site";
+import { darkScrim, photos, site } from "@/lib/site";
 import PracticeRow from "./_components/PracticeRow";
 
 export const metadata: Metadata = {
@@ -16,8 +17,9 @@ export const metadata: Metadata = {
 export default function PracticeAreasPage() {
   return (
     <>
-      <section className="bg-ink pt-44 pb-20 md:pb-24">
-        <div className="mx-auto max-w-6xl px-5 sm:px-8">
+      <section className="relative overflow-hidden bg-ink pt-44 pb-20 md:pb-24">
+        <BackgroundImage src={photos.hero} overlay={darkScrim} priority />
+        <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
           <span className="mb-7 block h-[3px] w-16 bg-beacon" />
           <h1 className="text-4xl font-light text-white md:text-6xl">Practice Areas</h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75">
@@ -72,17 +74,17 @@ export default function PracticeAreasPage() {
         </section>
       ))}
 
-      <section className="bg-navy py-16">
+      <section className="border-t-2 border-beacon bg-white py-16">
         <div className="mx-auto flex max-w-6xl flex-col gap-8 px-5 sm:px-8 md:flex-row md:items-center md:justify-between">
           <div>
-            <h2 className="text-3xl font-light text-white">Not sure which one fits your situation?</h2>
-            <p className="mt-3 text-white/70">
+            <h2 className="text-3xl font-light">Not sure which one fits your situation?</h2>
+            <p className="mt-3 text-stone">
               Tell us what happened. We&apos;ll explain your options in a free, confidential consultation.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-6">
             <ButtonLink href="/contact">Get a Free Consultation</ButtonLink>
-            <a href={site.phoneHref} className="font-serif text-xl text-beacon transition hover:text-beacon-light">
+            <a href={site.phoneHref} className="font-serif text-xl text-ink transition hover:text-beacon-dark">
               {site.phone}
             </a>
           </div>

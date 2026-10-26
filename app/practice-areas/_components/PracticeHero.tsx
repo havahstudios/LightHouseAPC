@@ -1,5 +1,6 @@
+import BackgroundImage from "@/components/BackgroundImage";
 import ButtonLink from "@/components/ButtonLink";
-import { site } from "@/lib/site";
+import { darkScrim, site } from "@/lib/site";
 import Breadcrumbs, { type Crumb } from "./Breadcrumbs";
 
 type Props = {
@@ -7,13 +8,15 @@ type Props = {
   eyebrow: string;
   title: string;
   lead: string;
+  image: string;
 };
 
-// Navy banner at the top of every practice page: breadcrumbs, H1, short lead and call buttons.
-export default function PracticeHero({ crumbs, eyebrow, title, lead }: Props) {
+// Banner at the top of every practice page: photo, breadcrumbs, H1, short lead and call buttons.
+export default function PracticeHero({ crumbs, eyebrow, title, lead, image }: Props) {
   return (
-    <section className="bg-ink pt-40 pb-16 md:pt-44 md:pb-20">
-      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+    <section className="relative overflow-hidden bg-ink pt-40 pb-16 md:pt-44 md:pb-20">
+      <BackgroundImage src={image} overlay={darkScrim} priority />
+      <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
         <Breadcrumbs crumbs={crumbs} />
         <p className="mt-10 flex items-center gap-3 text-xs font-semibold tracking-[0.2em] text-beacon uppercase">
           <span className="h-px w-8 bg-beacon" />

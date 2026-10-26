@@ -42,3 +42,12 @@ export const photos = {
   palms: "https://images.unsplash.com/photo-1580655653885-65763b2597d0?w=2400&q=80",
   office: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=2400&q=80",
 };
+
+// Photo behind each practice group's page banners.
+export const groupPhotos: Record<string, string> = {
+  "employment-law": photos.skyline,
+  "personal-injury": photos.palms,
+};
+
+// Dark fade laid over photos in dark bands: strongest on the left where text sits.
+export const darkScrim = "bg-linear-to-r from-ink via-ink/88 to-ink/60";

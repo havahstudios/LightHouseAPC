@@ -1,5 +1,6 @@
 import type { HubPageData } from "@/lib/content/services";
 import { practiceGroups } from "@/lib/content/practiceAreas";
+import { groupPhotos } from "@/lib/site";
 import { breadcrumbSchema, faqSchema, legalServiceSchema } from "@/lib/seo";
 import ContentSection from "./ContentSection";
 import FaqSection from "./FaqSection";
@@ -25,7 +26,7 @@ export default function HubPage({ data }: { data: HubPageData }) {
       <JsonLd data={breadcrumbSchema(crumbs)} />
       <JsonLd data={faqSchema(content.faqs)} />
 
-      <PracticeHero crumbs={crumbs} eyebrow="Practice Areas" title={content.h1} lead={content.intro[0]} />
+      <PracticeHero crumbs={crumbs} eyebrow="Practice Areas" title={content.h1} lead={content.intro[0]} image={groupPhotos[group.id]} />
 
       <div className="bg-shell py-16 md:py-24">
         <div className="mx-auto grid max-w-6xl gap-14 px-5 sm:px-8 lg:grid-cols-[minmax(0,1fr)_320px]">

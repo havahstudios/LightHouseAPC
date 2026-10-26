@@ -3,7 +3,7 @@ import { areasServed } from "@/lib/content/home";
 import { findArea, type ServicePageData } from "@/lib/content/services";
 import type { ServiceSection } from "@/lib/content/services/types";
 import { breadcrumbSchema, faqSchema, legalServiceSchema } from "@/lib/seo";
-import { site } from "@/lib/site";
+import { groupPhotos, site } from "@/lib/site";
 import ContentSection from "./ContentSection";
 import FaqSection from "./FaqSection";
 import JsonLd from "./JsonLd";
@@ -88,7 +88,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       <JsonLd data={breadcrumbSchema(crumbs)} />
       <JsonLd data={faqSchema(content.faqs)} />
 
-      <PracticeHero crumbs={crumbs} eyebrow={group.title} title={content.h1} lead={content.intro[0]} />
+      <PracticeHero crumbs={crumbs} eyebrow={group.title} title={content.h1} lead={content.intro[0]} image={groupPhotos[group.id]} />
 
       <div className="bg-shell py-16 md:py-24">
         <div className="mx-auto grid max-w-6xl gap-14 px-5 sm:px-8 lg:grid-cols-[minmax(0,1fr)_320px]">
