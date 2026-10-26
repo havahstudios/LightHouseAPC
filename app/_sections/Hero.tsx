@@ -9,11 +9,12 @@ import VideoModal from "@/components/VideoModal";
 import { photos, site } from "@/lib/site";
 
 // Full-screen opening section: background, headline, button and angled bottom edge.
+// It grows taller on short screens so the button never slips behind the angled edge.
 export default function Hero() {
   const [videoOpen, setVideoOpen] = useState(false);
 
   return (
-    <section className="relative flex min-h-[680px] items-center overflow-hidden bg-ink md:h-[100svh] md:min-h-[760px]">
+    <section className="relative flex min-h-[680px] items-center overflow-hidden bg-ink md:min-h-[max(100svh,760px)]">
       {/* Background: a video when one is added, otherwise a slowly drifting photo */}
       <div className="absolute inset-0">
         {site.heroVideo ? (
@@ -24,7 +25,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-ink/60" />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-5 pt-36 pb-48 sm:px-8 md:pb-40">
+      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-5 pt-36 pb-48 sm:px-8 md:pb-64">
         <div className="mb-6 flex items-center gap-3">
           <span className="flex size-11 items-center justify-center rounded-full bg-white font-serif text-xl font-medium text-ink">
             G
