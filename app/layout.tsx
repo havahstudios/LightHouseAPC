@@ -3,6 +3,7 @@ import { IBM_Plex_Sans, Roboto_Slab } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GoogleRatingBadge from "@/components/GoogleRatingBadge";
+import SiteChrome from "@/components/SiteChrome";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -30,10 +31,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${robotoSlab.variable} ${plex.variable}`}>
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <GoogleRatingBadge />
+        <SiteChrome
+          header={<Header />}
+          footer={
+            <>
+              <Footer />
+              <GoogleRatingBadge />
+            </>
+          }
+        >
+          {children}
+        </SiteChrome>
       </body>
     </html>
   );

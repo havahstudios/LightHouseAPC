@@ -132,6 +132,13 @@ Other inner pages (About, individual practice areas, Case Results, Blog, Contact
 
 **Done =** all 46 pages live, each passing the checklist above, sitemap lists them, build passes, spot-checked on desktop and phone.
 
+## 4c. Password-protected preview (requested 2026-10-25)
+- While the site is in review, every page requires a password (`/unlock` page, styled to match the brand).
+- Password lives in the `SITE_PASSWORD` setting (Vercel + `.env.local`), never in code. Removing the setting turns the gate off.
+- After a correct password, a secure cookie keeps the visitor in for 30 days.
+- Allowed without a password: the unlock page itself, site assets, and `/email-logo.png` (needed by notification emails).
+- Deploys: every push to GitHub `main` builds on Vercel and goes live on lighthouselawapc.com automatically.
+
 ## 5. Data models & storage
 Supabase table `consultation_requests`:
 | column | type |

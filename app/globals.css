@@ -22,6 +22,18 @@
   /* Slow zoom and sideways drift on the top photo */
   --animate-slow-drift: slow-drift 18s ease-in-out infinite alternate;
 
+  /* Lighthouse beam on the password page, sweeping gently side to side */
+  --animate-beam-sweep: beam-sweep 9s ease-in-out infinite alternate;
+
+  @keyframes beam-sweep {
+    from {
+      transform: rotate(-14deg);
+    }
+    to {
+      transform: rotate(14deg);
+    }
+  }
+
   @keyframes slow-drift {
     from {
       transform: scale(1.05) translateX(0);

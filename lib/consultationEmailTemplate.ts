@@ -12,8 +12,8 @@ const SERIF = "Georgia, 'Times New Roman', serif";
 const SANS = "'Helvetica Neue', Helvetica, Arial, sans-serif";
 
 // Logo image hosted on the website (public/email-logo.png). Email apps need a full web address.
-// Switch to https://lighthouselawapc.com/email-logo.png once the domain points at Vercel.
-const LOGO_URL = "https://light-house-apc.vercel.app/email-logo.png";
+// It's excluded from the password gate in proxy.ts so emails can always load it.
+const LOGO_URL = "https://lighthouselawapc.com/email-logo.png";
 
 // Builds the subject, HTML and plain-text versions of the "new consultation request" email.
 // Uses tables and inline styles because that's what email apps (Gmail, Outlook) support.
