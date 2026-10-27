@@ -137,12 +137,13 @@ export default function Footer() {
           <FooterLinks title="About Us" links={aboutLinks} />
           <FooterLinks title="Resources" links={resourceLinks} />
         </div>
-        <div className="mx-auto mt-12 max-w-6xl border-t border-line px-5 pt-6 text-xs text-stone sm:px-8">
+        <div className="mx-auto mt-12 max-w-6xl border-t border-line px-5 pt-6 text-xs text-stone sm:px-8 sm:pb-28">
           <p>
             <Link href="/disclaimer" className="hover:text-ink">Disclaimer</Link> |{" "}
             <Link href="/privacy-policy" className="hover:text-ink">Privacy Policy</Link> | ©{" "}
             {new Date().getFullYear()} {site.name}. All Rights Reserved.
           </p>
+          {/* Extra space below (sm:pb-28) keeps the floating rating card from covering this text */}
           <p className="mt-3 leading-5">
             Attorney Advertising. This website is for informational purposes only and does not constitute legal
             advice. Prior results do not guarantee a similar outcome.
