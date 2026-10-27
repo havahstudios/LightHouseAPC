@@ -141,8 +141,11 @@ export default function Footer() {
           <p>
             <Link href="/disclaimer" className="hover:text-ink">Disclaimer</Link> |{" "}
             <Link href="/privacy-policy" className="hover:text-ink">Privacy Policy</Link> | ©{" "}
-            {new Date().getFullYear()} {site.name}. All Rights Reserved. Attorney Advertising. Prior results
-            do not guarantee a similar outcome.
+            {new Date().getFullYear()} {site.name}. All Rights Reserved.
+          </p>
+          <p className="mt-3 leading-5">
+            Attorney Advertising. This website is for informational purposes only and does not constitute legal
+            advice. Prior results do not guarantee a similar outcome.
           </p>
         </div>
       </section>
