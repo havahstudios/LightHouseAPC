@@ -2,6 +2,7 @@ import Link from "next/link";
 import BackgroundImage from "@/components/BackgroundImage";
 import ConsultationForm from "@/components/ConsultationForm";
 import FooterLinks from "@/components/FooterLinks";
+import HavahCredit from "@/components/HavahCredit";
 import Icon, { type IconName } from "@/components/Icon";
 import Logo from "@/components/Logo";
 import { areasServed } from "@/lib/content/home";
@@ -138,11 +139,14 @@ export default function Footer() {
           <FooterLinks title="Resources" links={resourceLinks} />
         </div>
         <div className="mx-auto mt-12 max-w-6xl border-t border-line px-5 pt-6 text-xs text-stone sm:px-8 sm:pb-28">
-          <p>
-            <Link href="/disclaimer" className="hover:text-ink">Disclaimer</Link> |{" "}
-            <Link href="/privacy-policy" className="hover:text-ink">Privacy Policy</Link> | ©{" "}
-            {new Date().getFullYear()} {site.name}. All Rights Reserved.
-          </p>
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <p>
+              <Link href="/disclaimer" className="hover:text-ink">Disclaimer</Link> |{" "}
+              <Link href="/privacy-policy" className="hover:text-ink">Privacy Policy</Link> | ©{" "}
+              {new Date().getFullYear()} {site.name}. All Rights Reserved.
+            </p>
+            <HavahCredit />
+          </div>
           {/* Extra space below (sm:pb-28) keeps the floating rating card from covering this text */}
           <p className="mt-3 leading-5">
             Attorney Advertising. This website is for informational purposes only and does not constitute legal
