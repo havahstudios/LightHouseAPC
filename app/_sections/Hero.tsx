@@ -6,7 +6,7 @@ import ButtonLink from "@/components/ButtonLink";
 import Icon from "@/components/Icon";
 import Stars from "@/components/Stars";
 import VideoModal from "@/components/VideoModal";
-import { photos, site } from "@/lib/site";
+import { photos, show, site } from "@/lib/site";
 
 // Full-screen opening section: background, headline, button and angled bottom edge.
 // It grows taller on short screens so the button never slips behind the angled edge.
@@ -26,17 +26,19 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-[1400px] px-5 pt-36 pb-48 sm:px-8 md:pb-64">
-        <div className="mb-6 flex items-center gap-3">
-          <span className="flex size-11 items-center justify-center rounded-full bg-white font-serif text-xl font-medium text-ink">
-            G
-          </span>
-          <span>
-            <span className="block text-sm text-white">
-              <strong className="font-semibold">{site.google.reviewCount}</strong> Google reviews
+        {show.googleRating && (
+          <div className="mb-6 flex items-center gap-3">
+            <span className="flex size-11 items-center justify-center rounded-full bg-white font-serif text-xl font-medium text-ink">
+              G
             </span>
-            <Stars className="size-5" />
-          </span>
-        </div>
+            <span>
+              <span className="block text-sm text-white">
+                <strong className="font-semibold">{site.google.reviewCount}</strong> Google reviews
+              </span>
+              <Stars className="size-5" />
+            </span>
+          </div>
+        )}
 
         <h1 className="max-w-4xl text-[2.6rem] leading-[1.12] font-normal text-white sm:text-5xl md:text-[4rem]">
           Los Angeles&apos; Trusted Employment &amp; Personal Injury Attorneys
@@ -62,19 +64,22 @@ export default function Hero() {
         <polygon points="0,0 100,100 0,100" className="fill-shell" />
       </svg>
 
-      {/* Video play button */}
-      <button
-        type="button"
-        onClick={() => setVideoOpen(true)}
-        className="group absolute right-6 bottom-24 z-20 flex size-20 items-center justify-center rounded-full bg-beacon/35 md:right-[9%] md:bottom-28 md:size-24"
-        aria-label="Play firm video"
-      >
-        <span className="flex size-14 items-center justify-center rounded-full bg-beacon text-white transition-colors duration-300 group-hover:bg-beacon-dark md:size-16">
-          <Icon name="play" className="ml-1 size-6" />
-        </span>
-      </button>
-
-      <VideoModal open={videoOpen} onClose={() => setVideoOpen(false)} src={site.firmVideo} />
+      {/* Video play button (only once a firm video has been added) */}
+      {site.firmVideo && (
+        <>
+          <button
+            type="button"
+            onClick={() => setVideoOpen(true)}
+            className="group absolute right-6 bottom-24 z-20 flex size-20 items-center justify-center rounded-full bg-beacon/35 md:right-[9%] md:bottom-28 md:size-24"
+            aria-label="Play firm video"
+          >
+            <span className="flex size-14 items-center justify-center rounded-full bg-beacon text-white transition-colors duration-300 group-hover:bg-beacon-dark md:size-16">
+              <Icon name="play" className="ml-1 size-6" />
+            </span>
+          </button>
+          <VideoModal open={videoOpen} onClose={() => setVideoOpen(false)} src={site.firmVideo} />
+        </>
+      )}
     </section>
   );
 }

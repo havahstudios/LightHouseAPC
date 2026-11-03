@@ -6,28 +6,35 @@ import BackgroundImage from "@/components/BackgroundImage";
 import VideoModal from "@/components/VideoModal";
 import { photos, site } from "@/lib/site";
 
-// Large centered statement over a dark photo, with a play button for the firm video.
+// Large centered statement over a dark photo. The play button appears once a firm video is added.
 export default function VideoStatement() {
   const [open, setOpen] = useState(false);
+  const hasVideo = Boolean(site.firmVideo);
 
   return (
-    <section className="relative flex min-h-[560px] items-center overflow-hidden bg-ink py-28 md:min-h-[720px]">
+    <section
+      className={`relative flex items-center overflow-hidden bg-ink ${
+        hasVideo ? "min-h-[560px] py-28 md:min-h-[720px]" : "min-h-[380px] py-24 md:min-h-[460px]"
+      }`}
+    >
       <BackgroundImage src={photos.palms} overlay="bg-ink/75" />
       <div className="relative mx-auto max-w-4xl px-5 text-center sm:px-8">
         <h2 className="text-3xl leading-snug font-light text-white md:text-[2.9rem] md:leading-tight">
-            A Guiding Light for Workers
-            <br className="hidden md:block" /> Through Difficult Times
+          A Guiding Light for Workers
+          <br className="hidden md:block" /> Through Difficult Times
         </h2>
-        <button
+        {hasVideo && (
+          <button
             type="button"
             onClick={() => setOpen(true)}
             className="group mx-auto mt-16 flex size-24 items-center justify-center rounded-full border border-white/80 text-white transition-colors duration-300 hover:border-beacon hover:bg-beacon hover:text-ink"
             aria-label="Play firm video"
           >
             <Icon name="play" className="ml-1 size-7" />
-        </button>
+          </button>
+        )}
       </div>
-      <VideoModal open={open} onClose={() => setOpen(false)} src={site.firmVideo} />
+      {hasVideo && <VideoModal open={open} onClose={() => setOpen(false)} src={site.firmVideo} />}
     </section>
   );
 }

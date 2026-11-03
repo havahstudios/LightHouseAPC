@@ -23,6 +23,17 @@ export const site = {
   firmVideo: null as string | null,
 };
 
+// Sections that still show sample content. Switch one to true once the firm provides the
+// real version (and update the matching text in lib/site.ts or lib/content/home.ts).
+export const show = {
+  googleRating: false, // "100+ Google reviews" badge in the hero + floating rating card
+  stats: false, // 15+ years / 100+ reviews / 1,000+ workers
+  caseResults: false, // sample case results
+  testimonials: false, // sample client reviews
+  awards: false, // blank award badge slider
+  blog: false, // sample blog cards (no real articles yet)
+};
+
 export const nav = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },

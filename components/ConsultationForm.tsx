@@ -6,7 +6,7 @@ import Icon from "@/components/Icon";
 type Status = "idle" | "sending" | "success" | "error";
 
 type Props = {
-  source: "case-review" | "footer";
+  source: "case-review" | "footer" | "contact";
 };
 
 const inputClass =

@@ -15,7 +15,7 @@ export type ConsultationResult =
   | { ok: false; status: number; error: string };
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const SOURCES = ["case-review", "footer"];
+const SOURCES = ["case-review", "footer", "contact"];
 
 // Checks the form fields and returns a friendly error message, or null if all is well.
 function validate(input: ConsultationInput): string | null {

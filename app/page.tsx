@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
+import { show } from "@/lib/site";
 import Hero from "./_sections/Hero";
 import Intro from "./_sections/Intro";
 import Stats from "./_sections/Stats";
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 
 // Homepage — sections appear in the same order as the reference site.
 // Every section after the hero gently fades in as you scroll to it.
+// Sections showing sample content stay hidden until switched on in lib/site.ts (`show`).
 export default function Home() {
   return (
     <>
@@ -28,30 +30,38 @@ export default function Home() {
       <FadeIn>
         <Intro />
       </FadeIn>
-      <FadeIn>
-        <Stats />
-      </FadeIn>
+      {show.stats && (
+        <FadeIn>
+          <Stats />
+        </FadeIn>
+      )}
       <FadeIn>
         <CaseReviewBand />
       </FadeIn>
+      {show.awards && (
+        <FadeIn>
+          <TrustSlider />
+        </FadeIn>
+      )}
+      {show.caseResults && (
+        <FadeIn>
+          <CaseResults />
+        </FadeIn>
+      )}
       <FadeIn>
-        <TrustSlider />
+        <Location />
       </FadeIn>
       <FadeIn>
         <WhyHire />
       </FadeIn>
       <FadeIn>
-        <CaseResults />
-      </FadeIn>
-      <FadeIn>
-        <Location />
-      </FadeIn>
-      <FadeIn>
         <Process />
       </FadeIn>
-      <FadeIn>
-        <Testimonials />
-      </FadeIn>
+      {show.testimonials && (
+        <FadeIn>
+          <Testimonials />
+        </FadeIn>
+      )}
       <FadeIn>
         <VideoStatement />
       </FadeIn>
@@ -61,9 +71,11 @@ export default function Home() {
       <FadeIn>
         <ClosingCta />
       </FadeIn>
-      <FadeIn>
-        <BlogPosts />
-      </FadeIn>
+      {show.blog && (
+        <FadeIn>
+          <BlogPosts />
+        </FadeIn>
+      )}
     </>
   );
 }

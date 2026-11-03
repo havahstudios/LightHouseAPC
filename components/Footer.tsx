@@ -3,6 +3,7 @@ import BackgroundImage from "@/components/BackgroundImage";
 import ConsultationForm from "@/components/ConsultationForm";
 import FooterLinks from "@/components/FooterLinks";
 import HavahCredit from "@/components/HavahCredit";
+import HiddenOn from "@/components/HiddenOn";
 import Icon, { type IconName } from "@/components/Icon";
 import Logo from "@/components/Logo";
 import { areasServed } from "@/lib/content/home";
@@ -33,72 +34,75 @@ const socials: { name: IconName; label: string }[] = [
 export default function Footer() {
   return (
     <footer>
-      {/* Consultation form, over a darkened photo */}
-      <section className="relative overflow-hidden bg-ink py-20 md:py-24">
-        <BackgroundImage src={photos.signing} overlay={darkScrim} />
-        <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
-          <div>
-            <h2 className="mb-10 text-3xl font-light text-white md:text-[2.5rem]">
-              Get a Free Consultation, 24/7
-            </h2>
-            <ConsultationForm source="footer" />
-          </div>
-        </div>
-      </section>
-
-      {/* Contact details + map (light, so it contrasts with the dark form above) */}
-      <section className="grid border-t-2 border-beacon bg-shell lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
-        <div className="bg-sand px-5 py-16 sm:px-8 lg:py-20 lg:pr-12 lg:pl-[max(2rem,calc((100vw-72rem)/2))]">
-          <div>
-            <h2 className="text-3xl font-light md:text-[2.5rem] md:leading-tight">
-              Contact Us
-              <br />
-              Today
-            </h2>
-            <p className="mt-8 font-serif text-lg text-ink">{site.address.city}</p>
-            <address className="mt-3 text-sm leading-relaxed text-stone not-italic">
-              {site.address.line1}
-              <br />
-              {site.address.line2}
-            </address>
-            <p className="mt-5 text-sm text-stone">
-              Phone:{" "}
-              <a href={site.phoneHref} className="text-beacon-dark transition hover:text-ink">
-                {site.phone}
-              </a>
-            </p>
-            <a
-              href={site.directionsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-7 inline-block border-b border-beacon pb-1 text-sm text-beacon-dark transition hover:text-ink"
-            >
-              Get Directions
-            </a>
-            <div className="mt-10 flex gap-3">
-              {socials.map((s) => (
-                <a
-                  key={s.name}
-                  href="#"
-                  aria-label={s.label}
-                  className="flex size-10 items-center justify-center rounded-[3px] bg-navy text-beacon transition-colors hover:bg-ink"
-                >
-                  <Icon name={s.name} className="size-5" />
-                </a>
-              ))}
+      {/* The contact page has its own form and map, so these two bands are skipped there */}
+      <HiddenOn paths={["/contact"]}>
+        {/* Consultation form, over a darkened photo */}
+        <section className="relative overflow-hidden bg-ink py-20 md:py-24">
+          <BackgroundImage src={photos.signing} overlay={darkScrim} />
+          <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
+            <div>
+              <h2 className="mb-10 text-3xl font-light text-white md:text-[2.5rem]">
+                Get a Free Consultation, 24/7
+              </h2>
+              <ConsultationForm source="footer" />
             </div>
           </div>
-        </div>
-        <div className="min-h-[360px]">
-          <iframe
-            title={`${site.name} office map`}
-            src={`https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&output=embed`}
-            className="h-full min-h-[360px] w-full grayscale-[0.6]"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
-      </section>
+        </section>
+
+        {/* Contact details + map (light, so it contrasts with the dark form above) */}
+        <section className="grid border-t-2 border-beacon bg-shell lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
+          <div className="bg-sand px-5 py-16 sm:px-8 lg:py-20 lg:pr-12 lg:pl-[max(2rem,calc((100vw-72rem)/2))]">
+            <div>
+              <h2 className="text-3xl font-light md:text-[2.5rem] md:leading-tight">
+                Contact Us
+                <br />
+                Today
+              </h2>
+              <p className="mt-8 font-serif text-lg text-ink">{site.address.city}</p>
+              <address className="mt-3 text-sm leading-relaxed text-stone not-italic">
+                {site.address.line1}
+                <br />
+                {site.address.line2}
+              </address>
+              <p className="mt-5 text-sm text-stone">
+                Phone:{" "}
+                <a href={site.phoneHref} className="text-beacon-dark transition hover:text-ink">
+                  {site.phone}
+                </a>
+              </p>
+              <a
+                href={site.directionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-7 inline-block border-b border-beacon pb-1 text-sm text-beacon-dark transition hover:text-ink"
+              >
+                Get Directions
+              </a>
+              <div className="mt-10 flex gap-3">
+                {socials.map((s) => (
+                  <a
+                    key={s.name}
+                    href="#"
+                    aria-label={s.label}
+                    className="flex size-10 items-center justify-center rounded-[3px] bg-navy text-beacon transition-colors hover:bg-ink"
+                  >
+                    <Icon name={s.name} className="size-5" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="min-h-[360px]">
+            <iframe
+              title={`${site.name} office map`}
+              src={`https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&output=embed`}
+              className="h-full min-h-[360px] w-full grayscale-[0.6]"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </section>
+      </HiddenOn>
 
       {/* About + areas served */}
       <section className="bg-shell py-16 md:py-20">

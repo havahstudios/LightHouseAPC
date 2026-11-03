@@ -15,11 +15,18 @@ const SANS = "'Helvetica Neue', Helvetica, Arial, sans-serif";
 // It's excluded from the password gate in proxy.ts so emails can always load it.
 const LOGO_URL = "https://lighthouselawapc.com/email-logo.png";
 
+// Which form on the site the request came from, shown in the email header.
+const FORM_LABELS: Record<string, string> = {
+  "case-review": "Case review form",
+  footer: "Footer form",
+  contact: "Contact page",
+};
+
 // Builds the subject, HTML and plain-text versions of the "new consultation request" email.
 // Uses tables and inline styles because that's what email apps (Gmail, Outlook) support.
 export function buildConsultationEmail(input: ConsultationInput) {
   const firstName = input.name.split(" ")[0];
-  const where = input.source === "footer" ? "Footer form" : "Case review form";
+  const where = FORM_LABELS[input.source] ?? "Website form";
   const received = new Date().toLocaleString("en-US", {
     timeZone: "America/Los_Angeles",
     month: "short",

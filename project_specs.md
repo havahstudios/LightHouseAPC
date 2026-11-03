@@ -144,6 +144,11 @@ Other inner pages (About, individual practice areas, Case Results, Blog, Contact
 - Allowed without a password: the unlock page itself, site assets, and `/email-logo.png` (needed by notification emails).
 - Deploys: every push to GitHub `main` builds on Vercel and goes live on lighthouselawapc.com automatically.
 
+## 4e. Pre-launch content cleanup + new pages (requested 2026-11-02)
+- **Hidden until real content arrives** (switches in `lib/site.ts` → `show`): Google rating badges, stats, sample case results, sample testimonials, award badges, sample blog cards. Video play buttons only appear once a firm video is added.
+- **Contact page** (`/contact`): banner, consultation form, phone/address/directions, map, "what happens next" steps. The footer's duplicate form and map are hidden on this page.
+- **Privacy Policy** (`/privacy-policy`) and **Disclaimer** (`/disclaimer`): plain-language pages written for a California law firm website; the attorney should review before launch.
+
 ## 5. Data models & storage
 Supabase table `consultation_requests`:
 | column | type |

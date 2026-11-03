@@ -3,13 +3,13 @@
 import { useState } from "react";
 import Icon from "@/components/Icon";
 import Stars from "@/components/Stars";
-import { site } from "@/lib/site";
+import { show, site } from "@/lib/site";
 
 // Small floating rating card pinned to the bottom-left corner, like the reference site.
 export default function GoogleRatingBadge() {
   const [visible, setVisible] = useState(true);
 
-  if (!visible) return null;
+  if (!show.googleRating || !visible) return null;
 
   return (
     <div

@@ -11,11 +11,8 @@ const pages: Record<string, string> = {
   about: "About Us",
   resources: "Resources",
   "areas-served": "Areas Served",
-  contact: "Contact Us",
   "case-results": "Case Results",
   reviews: "Client Reviews",
-  disclaimer: "Disclaimer",
-  "privacy-policy": "Privacy Policy",
 };
 
 export function generateStaticParams() {
