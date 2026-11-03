@@ -32,14 +32,20 @@ export const show = {
   testimonials: false, // sample client reviews
   awards: false, // blank award badge slider
   blog: false, // sample blog cards (no real articles yet)
+  socials: false, // Facebook / LinkedIn / Instagram icons (no accounts linked yet)
+  unfinishedPages: false, // links to Resources, Areas Served, Case Results, Reviews ("coming soon" pages)
 };
 
 export const nav = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Practice Areas", href: "/practice-areas" },
-  { label: "Resources", href: "/resources" },
-  { label: "Areas Served", href: "/areas-served" },
+  ...(show.unfinishedPages
+    ? [
+        { label: "Resources", href: "/resources" },
+        { label: "Areas Served", href: "/areas-served" },
+      ]
+    : []),
   { label: "Contact", href: "/contact" },
 ];
 

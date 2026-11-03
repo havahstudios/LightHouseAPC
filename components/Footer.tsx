@@ -7,20 +7,28 @@ import HiddenOn from "@/components/HiddenOn";
 import Icon, { type IconName } from "@/components/Icon";
 import Logo from "@/components/Logo";
 import { areasServed } from "@/lib/content/home";
-import { darkScrim, photos, site } from "@/lib/site";
+import { darkScrim, photos, show, site } from "@/lib/site";
 
+// Links to "coming soon" pages only appear once those pages are ready (show.unfinishedPages).
 const aboutLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Our Attorneys", href: "/about" },
-  { label: "Case Results", href: "/case-results" },
-  { label: "Client Reviews", href: "/reviews" },
-  { label: "Areas We Serve", href: "/areas-served" },
+  ...(show.unfinishedPages
+    ? [
+        { label: "Case Results", href: "/case-results" },
+        { label: "Client Reviews", href: "/reviews" },
+        { label: "Areas We Serve", href: "/areas-served" },
+      ]
+    : []),
 ];
 
 const resourceLinks = [
-  { label: "Blog", href: "/resources" },
-  { label: "FAQ", href: "/resources" },
+  ...(show.unfinishedPages
+    ? [
+        { label: "Blog", href: "/resources" },
+        { label: "FAQ", href: "/resources" },
+      ]
+    : []),
   { label: "Practice Areas", href: "/practice-areas" },
   { label: "Contact", href: "/contact" },
 ];
@@ -78,18 +86,20 @@ export default function Footer() {
               >
                 Get Directions
               </a>
-              <div className="mt-10 flex gap-3">
-                {socials.map((s) => (
-                  <a
-                    key={s.name}
-                    href="#"
-                    aria-label={s.label}
-                    className="flex size-10 items-center justify-center rounded-[3px] bg-navy text-beacon transition-colors hover:bg-ink"
-                  >
-                    <Icon name={s.name} className="size-5" />
-                  </a>
-                ))}
-              </div>
+              {show.socials && (
+                <div className="mt-10 flex gap-3">
+                  {socials.map((s) => (
+                    <a
+                      key={s.name}
+                      href="#"
+                      aria-label={s.label}
+                      className="flex size-10 items-center justify-center rounded-[3px] bg-navy text-beacon transition-colors hover:bg-ink"
+                    >
+                      <Icon name={s.name} className="size-5" />
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
           <div className="min-h-[360px]">

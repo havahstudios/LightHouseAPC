@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import BackgroundImage from "@/components/BackgroundImage";
@@ -19,6 +20,9 @@ export function generateStaticParams() {
 }
 
 export const dynamicParams = false;
+
+// Keep these unfinished pages out of Google until they have real content.
+export const metadata: Metadata = { robots: { index: false } };
 
 export default async function PlaceholderPage({ params }: PageProps<"/[...slug]">) {
   const { slug } = await params;
