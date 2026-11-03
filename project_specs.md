@@ -149,6 +149,9 @@ Other inner pages (About, individual practice areas, Case Results, Blog, Contact
 - **Contact page** (`/contact`): banner, consultation form, phone/address/directions, map, "what happens next" steps. The footer's duplicate form and map are hidden on this page.
 - **Privacy Policy** (`/privacy-policy`) and **Disclaimer** (`/disclaimer`): plain-language pages written for a California law firm website; the attorney should review before launch.
 
+- **About page** (`/about`, requested 2026-11-02): general firm page with no attorney names (client request). Covers who the firm is, how it works (values), the two practice groups with links, and the Beverly Hills office + areas served. Ends with a contact call to action.
+- **Google Search Console**: verify the domain with a DNS TXT record in GoDaddy and submit `/sitemap.xml`. Google can't read password-protected pages, so indexing starts only once the password gate is removed.
+
 ## 5. Data models & storage
 Supabase table `consultation_requests`:
 | column | type |

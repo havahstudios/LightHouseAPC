@@ -6,6 +6,7 @@ import { site } from "@/lib/site";
 const priorities: Record<string, number> = {
   "": 1,
   "/practice-areas": 0.9,
+  "/about": 0.7,
   "/contact": 0.7,
   "/privacy-policy": 0.2,
   "/disclaimer": 0.2,
@@ -17,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/practice-areas",
     ...allPracticeSlugs().map((slug) => `/practice-areas/${slug}`),
+    "/about",
     "/contact",
     "/privacy-policy",
     "/disclaimer",

@@ -8,7 +8,6 @@ import { darkScrim, photos, site } from "@/lib/site";
 
 // Temporary "coming soon" pages for menu links until the inner pages are built.
 const pages: Record<string, string> = {
-  about: "About Us",
   resources: "Resources",
   "areas-served": "Areas Served",
   "case-results": "Case Results",
