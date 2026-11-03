@@ -163,7 +163,7 @@ Supabase table `consultation_requests`:
 - **Supabase** — saves form submissions.
 - **Vercel** — hosting.
 - **Google Maps embed** — office map (no API key needed for basic embed).
-- **Resend** — emails each new consultation request to havahstudios@gmail.com (added 2026-09-27 at user request). Free tier; sends from `onboarding@resend.dev` until the firm's own domain is verified.
+- **Resend** — emails each new consultation request to the firm's address and havahstudios@gmail.com (recipients set in `CONSULTATION_EMAIL_TO`). Domain lighthouselawapc.com verified in Resend 2026-11-02 (DKIM/SPF records at GoDaddy); sends from website@lighthouselawapc.com.
 
 ## 7. Content & assets
 Copy will be **original text written for Lighthouse Law** — we copy the reference's design, not its words, photos, video or logos (those are the other firm's property). Until you send real assets I'll use tasteful placeholders.
@@ -171,7 +171,7 @@ Copy will be **original text written for Lighthouse Law** — we copy the refere
 ## 8. What "done" looks like
 - Homepage with all 17 sections above, visually matching the reference's layout, spacing, typography and effects, in Lighthouse branding.
 - Works on phone, tablet and desktop.
-- Consultation form saves to Supabase, emails the request to havahstudios@gmail.com (reply goes straight to the visitor), and shows success / error messages. The request counts as received if either the Supabase save or the email succeeds, so a lead is never lost when one service is down.
+- Consultation form saves to Supabase, emails the request to the firm and havahstudios@gmail.com (reply goes straight to the visitor), and shows success / error messages. The request counts as received if either the Supabase save or the email succeeds, so a lead is never lost when one service is down.
 - `npm run build` passes with no errors; no console errors; tested in the browser.
 
 ## 9. Answers so far
