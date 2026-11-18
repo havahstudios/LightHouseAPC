@@ -3,7 +3,7 @@ import { site } from "@/lib/site";
 // Navy card with the office address, phone and a map.
 export default function Location() {
   return (
-    <section className="bg-shell pb-20 md:pb-28">
+    <section className="bg-shell pt-16 pb-20 md:pt-24 md:pb-28">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
           <div className="grid items-center gap-10 bg-navy px-7 py-12 md:grid-cols-2 md:px-14 md:py-16">
             <div>
