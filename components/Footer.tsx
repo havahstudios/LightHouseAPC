@@ -151,7 +151,9 @@ export default function Footer() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p>
               <Link href="/disclaimer" className="hover:text-ink">Disclaimer</Link> |{" "}
-              <Link href="/privacy-policy" className="hover:text-ink">Privacy Policy</Link> | ©{" "}
+              <Link href="/privacy-policy" className="hover:text-ink">Privacy Policy</Link> |{" "}
+              {/* Login for the firm to edit the blog, results and About page */}
+              <Link href="/admin" rel="nofollow" className="hover:text-ink">Admin Login</Link> | ©{" "}
               {new Date().getFullYear()} {site.name}. All Rights Reserved.
             </p>
             <HavahCredit />
