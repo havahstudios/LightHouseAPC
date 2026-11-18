@@ -20,7 +20,7 @@ export async function saveAboutAction(_prev: AboutFormState, formData: FormData)
   const error = await savePageSections(supabase, "about", aboutDefaults, values);
   if (error) return { error };
   revalidatePath("/about");
-  revalidatePath("/admin/about"); // re-load the form with the saved text
+  revalidatePath("/admin/about"); // refresh the admin page with the saved text
   console.log("[admin] save about: done");
   return { success: "Saved. The About page is updated." };
 }

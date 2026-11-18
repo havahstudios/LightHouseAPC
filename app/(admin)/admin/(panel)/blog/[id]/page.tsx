@@ -16,7 +16,7 @@ export default async function EditPostPage({ params, searchParams }: PageProps<"
     <>
       <Link href="/admin/blog" className="text-sm text-beacon-dark hover:text-ink">← All posts</Link>
       <h1 className="mt-3 mb-8 text-3xl font-light md:text-4xl">Edit post</h1>
-      <PostForm key={post.updated_at} post={post} justCreated={saved === "1"} />
+      <PostForm post={post} justCreated={saved === "1"} />
       <div className="mt-14 border-t border-line pt-8">
         <DeletePostButton id={post.id} />
       </div>

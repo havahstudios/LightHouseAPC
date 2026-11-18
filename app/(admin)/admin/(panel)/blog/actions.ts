@@ -38,7 +38,7 @@ export async function savePostAction(_prev: PostFormState, formData: FormData): 
   }
 
   refreshBlogPages(result.post.slug, result.previousSlug);
-  // Re-load this edit page so the form shows the saved version.
+  // Refresh this edit page's data (e.g. the cover photo preview).
   revalidatePath(`/admin/blog/${result.post.id}`);
   console.log("[admin] save post: done", result.post.slug);
   if (!id) redirect(`/admin/blog/${result.post.id}?saved=1`);

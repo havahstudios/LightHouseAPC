@@ -13,8 +13,7 @@ export default async function AdminAboutPage() {
       <p className="mt-2 mb-8 max-w-2xl text-stone">
         Change any heading or paragraph, then click Save. Empty boxes go back to the original text.
       </p>
-      {/* The key re-creates the form whenever the saved text changes */}
-      <AboutForm key={JSON.stringify(current)} sections={aboutDefaults.map((d) => current[d.key])} />
+      <AboutForm sections={aboutDefaults.map((d) => current[d.key])} />
     </>
   );
 }

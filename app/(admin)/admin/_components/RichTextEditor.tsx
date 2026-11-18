@@ -79,6 +79,8 @@ export default function RichTextEditor({ name, defaultValue, minHeight = "min-h-
             key={b.title}
             type="button"
             title={b.title}
+            // Keep the cursor in the text while clicking a button, so the formatting applies where you are typing.
+            onMouseDown={(e) => e.preventDefault()}
             onClick={b.run}
             className={`rounded-[3px] px-2.5 py-1.5 text-xs font-semibold transition-colors ${
               b.active ? "bg-ink text-white" : "text-ink hover:bg-sand"

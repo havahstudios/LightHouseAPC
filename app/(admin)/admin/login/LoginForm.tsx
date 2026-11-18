@@ -1,16 +1,16 @@
 "use client";
 
-import { useActionState } from "react";
 import { login, type LoginState } from "./actions";
 import Field, { inputClass } from "../_components/Field";
 import FormNotice from "../_components/FormNotice";
 import SubmitButton from "../_components/SubmitButton";
+import { useKeptForm } from "../_components/useKeptForm";
 
 export default function LoginForm() {
-  const [state, action] = useActionState<LoginState, FormData>(login, {});
+  const { state, pending, onSubmit } = useKeptForm<LoginState>(login, {});
 
   return (
-    <form action={action} className="space-y-5">
+    <form onSubmit={onSubmit} className="space-y-5">
       <FormNotice error={state.error} />
       <Field label="Email" htmlFor="email">
         <input id="email" name="email" type="email" autoComplete="email" required className={inputClass} />
@@ -18,7 +18,7 @@ export default function LoginForm() {
       <Field label="Password" htmlFor="password">
         <input id="password" name="password" type="password" autoComplete="current-password" required className={inputClass} />
       </Field>
-      <SubmitButton pendingText="Logging in…">Log in</SubmitButton>
+      <SubmitButton pending={pending} pendingText="Logging in…">Log in</SubmitButton>
     </form>
   );
 }

@@ -16,7 +16,7 @@ export default async function EditResultPage({ params, searchParams }: PageProps
     <>
       <Link href="/admin/results" className="text-sm text-beacon-dark hover:text-ink">← All results</Link>
       <h1 className="mt-3 mb-8 text-3xl font-light md:text-4xl">Edit result</h1>
-      <ResultForm key={result.updated_at} result={result} justCreated={saved === "1"} />
+      <ResultForm result={result} justCreated={saved === "1"} />
       <div className="mt-14 border-t border-line pt-8">
         <DeleteResultButton id={result.id} />
       </div>

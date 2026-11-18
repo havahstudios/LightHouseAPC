@@ -10,6 +10,14 @@ const COLUMNS = "id, slug, title, summary, body, cover_image, practice_slug, pub
 const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
 const IMAGE_TYPES: Record<string, string> = { "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp" };
 
+// Deletes a cover photo from storage when it's no longer used (only photos uploaded through /admin).
+async function removeCoverFile(db: AdminDb, url: string | null | undefined) {
+  const marker = "/storage/v1/object/public/blog-images/";
+  if (!url?.includes(marker)) return;
+  const { error } = await db.storage.from("blog-images").remove([decodeURIComponent(url.split(marker)[1])]);
+  if (error) console.error("removeCoverFile failed:", error.message);
+}
+
 export async function listAllPosts(db: AdminDb): Promise<BlogPost[]> {
   const { data, error } = await db.from("blog_posts").select(COLUMNS).order("updated_at", { ascending: false });
   if (error) console.error("listAllPosts failed:", error.message);
@@ -83,14 +91,17 @@ export async function savePost(db: AdminDb, input: PostInput): Promise<SaveResul
     if (error.code === "23505") return { error: "Another post already uses this web address. Please change it." };
     return { error: "The post couldn't be saved. Please try again." };
   }
+  if (existing?.cover_image && existing.cover_image !== coverImage) await removeCoverFile(db, existing.cover_image);
   return { post: data as BlogPost, previousSlug: existing && existing.slug !== slug ? existing.slug : null };
 }
 
 export async function deletePost(db: AdminDb, id: string): Promise<{ error?: string; slug?: string }> {
-  const { data, error } = await db.from("blog_posts").delete().eq("id", id).select("slug").maybeSingle();
+  const { data, error } = await db.from("blog_posts").delete().eq("id", id).select("slug, cover_image").maybeSingle();
   if (error) {
     console.error("deletePost failed:", error.message);
     return { error: "The post couldn't be deleted. Please try again." };
   }
-  return { slug: (data as { slug: string } | null)?.slug };
+  const deleted = data as { slug: string; cover_image: string | null } | null;
+  await removeCoverFile(db, deleted?.cover_image);
+  return { slug: deleted?.slug };
 }

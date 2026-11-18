@@ -7,11 +7,13 @@ type Props = {
   pendingText?: string;
   variant?: "primary" | "danger" | "quiet";
   formAction?: (formData: FormData) => void;
+  pending?: boolean; // pass when the form is sent with useKeptForm
 };
 
 // Form button that shows "Saving…" while the form is being sent.
-export default function SubmitButton({ children, pendingText = "Saving…", variant = "primary", formAction }: Props) {
-  const { pending } = useFormStatus();
+export default function SubmitButton({ children, pendingText = "Saving…", variant = "primary", formAction, pending: pendingProp }: Props) {
+  const status = useFormStatus();
+  const pending = pendingProp ?? status.pending;
   const styles = {
     primary: "bg-ink text-white hover:bg-navy",
     danger: "border border-red-300 text-red-700 hover:bg-red-50",

@@ -35,7 +35,7 @@ export async function saveResultAction(_prev: ResultFormState, formData: FormDat
   }
 
   refreshResultPages(outcome.result.slug, outcome.previousSlug);
-  // Re-load this edit page so the form shows the saved version.
+  // Refresh this edit page's data (e.g. the cover photo preview).
   revalidatePath(`/admin/results/${outcome.result.id}`);
   console.log("[admin] save result: done", outcome.result.slug);
   if (!id) redirect(`/admin/results/${outcome.result.id}?saved=1`);

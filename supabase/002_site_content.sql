@@ -165,6 +165,9 @@ on conflict (id) do update
       file_size_limit = excluded.file_size_limit,
       allowed_mime_types = excluded.allowed_mime_types;
 
+drop policy if exists "Admins list blog images" on storage.objects;
+create policy "Admins list blog images" on storage.objects
+  for select to authenticated using (bucket_id = 'blog-images' and public.is_admin());
 drop policy if exists "Admins upload blog images" on storage.objects;
 create policy "Admins upload blog images" on storage.objects
   for insert to authenticated with check (bucket_id = 'blog-images' and public.is_admin());

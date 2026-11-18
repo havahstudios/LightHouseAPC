@@ -1,21 +1,21 @@
 "use client";
 
-import { useActionState } from "react";
 import Link from "next/link";
 import type { SectionDefault } from "@/lib/cms/pageSections";
 import Field, { inputClass } from "../../_components/Field";
 import FormNotice from "../../_components/FormNotice";
 import RichTextEditor from "../../_components/RichTextEditor";
 import SubmitButton from "../../_components/SubmitButton";
+import { useKeptForm } from "../../_components/useKeptForm";
 import { saveAboutAction, type AboutFormState } from "./actions";
 
 // One block per About page section, in the order they appear on the page.
 export default function AboutForm({ sections }: { sections: SectionDefault[] }) {
-  const [state, action] = useActionState<AboutFormState, FormData>(saveAboutAction, {});
+  const { state, pending, onSubmit } = useKeptForm<AboutFormState>(saveAboutAction, {});
 
   const saveBar = (
     <div className="flex flex-wrap items-center gap-4">
-      <SubmitButton>Save changes</SubmitButton>
+      <SubmitButton pending={pending}>Save changes</SubmitButton>
       <Link href="/about" target="_blank" className="text-sm text-beacon-dark hover:text-ink">
         View About page ↗
       </Link>
@@ -23,7 +23,7 @@ export default function AboutForm({ sections }: { sections: SectionDefault[] }) 
   );
 
   return (
-    <form action={action} className="space-y-6">
+    <form onSubmit={onSubmit} className="space-y-6">
       <FormNotice error={state.error} success={state.success} />
       {saveBar}
       {sections.map((section) => (

@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { practiceGroups } from "@/lib/content/practiceAreas";
@@ -10,20 +10,27 @@ import Field, { inputClass } from "../../../_components/Field";
 import FormNotice from "../../../_components/FormNotice";
 import RichTextEditor from "../../../_components/RichTextEditor";
 import SubmitButton from "../../../_components/SubmitButton";
+import { useKeptForm } from "../../../_components/useKeptForm";
 import { savePostAction, type PostFormState } from "../actions";
 
 // Write or edit a blog post.
 export default function PostForm({ post, justCreated }: { post: BlogPost | null; justCreated?: boolean }) {
-  const [state, action] = useActionState<PostFormState, FormData>(
+  const { state, pending, onSubmit } = useKeptForm<PostFormState>(
     savePostAction,
     justCreated ? { success: post?.published ? "Saved. The post is live on the website." : "Saved as a draft." } : {},
   );
   const [title, setTitle] = useState(post?.title ?? "");
   const [slug, setSlug] = useState(post?.slug ?? "");
   const [slugEdited, setSlugEdited] = useState(Boolean(post));
+  const coverInput = useRef<HTMLInputElement>(null);
+
+  // After a successful save the photo is uploaded, so clear the file box (otherwise it would upload again).
+  useEffect(() => {
+    if (state.success && coverInput.current) coverInput.current.value = "";
+  }, [state]);
 
   return (
-    <form action={action} className="space-y-8">
+    <form onSubmit={onSubmit} className="space-y-8">
       <FormNotice error={state.error} success={state.success} />
       <input type="hidden" name="id" value={post?.id ?? ""} />
 
@@ -68,7 +75,7 @@ export default function PostForm({ post, justCreated }: { post: BlogPost | null;
               </span>
             </label>
             <div className="mt-5 flex flex-wrap gap-3">
-              <SubmitButton>Save</SubmitButton>
+              <SubmitButton pending={pending}>Save</SubmitButton>
               {post?.published && (
                 <Link href={`/blog/${post.slug}`} target="_blank" className="self-center text-sm text-beacon-dark hover:text-ink">
                   View post ↗
@@ -88,7 +95,7 @@ export default function PostForm({ post, justCreated }: { post: BlogPost | null;
                 </label>
               </div>
             )}
-            <input id="cover" name="cover" type="file" accept="image/jpeg,image/png,image/webp" className="block w-full text-sm text-stone file:mr-3 file:rounded-[3px] file:border-0 file:bg-sand file:px-3 file:py-2 file:text-sm file:font-semibold file:text-ink" />
+            <input ref={coverInput} id="cover" name="cover" type="file" accept="image/jpeg,image/png,image/webp" className="block w-full text-sm text-stone file:mr-3 file:rounded-[3px] file:border-0 file:bg-sand file:px-3 file:py-2 file:text-sm file:font-semibold file:text-ink" />
           </Field>
 
           <Field label="Related practice area" htmlFor="practice_slug" hint="Adds a link to that practice page at the end of the post.">

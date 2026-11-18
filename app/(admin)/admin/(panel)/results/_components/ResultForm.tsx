@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { practiceGroups } from "@/lib/content/practiceAreas";
 import type { CaseResult } from "@/lib/cms/types";
@@ -9,13 +9,14 @@ import Field, { inputClass } from "../../../_components/Field";
 import FormNotice from "../../../_components/FormNotice";
 import RichTextEditor from "../../../_components/RichTextEditor";
 import SubmitButton from "../../../_components/SubmitButton";
+import { useKeptForm } from "../../../_components/useKeptForm";
 import { saveResultAction, type ResultFormState } from "../actions";
 
 const caseTypes = practiceGroups.flatMap((g) => g.areas.map((a) => a.title));
 
 // Add or edit a case result: the card (amount, type, summary) and the full story behind it.
 export default function ResultForm({ result, justCreated }: { result: CaseResult | null; justCreated?: boolean }) {
-  const [state, action] = useActionState<ResultFormState, FormData>(
+  const { state, pending, onSubmit } = useKeptForm<ResultFormState>(
     saveResultAction,
     justCreated ? { success: result?.published ? "Saved. The result is live on the website." : "Saved as a draft." } : {},
   );
@@ -26,7 +27,7 @@ export default function ResultForm({ result, justCreated }: { result: CaseResult
   const autoSlug = (a: string, t: string) => !slugEdited && setSlug(slugify(`${a} ${t}`));
 
   return (
-    <form action={action} className="space-y-8">
+    <form onSubmit={onSubmit} className="space-y-8">
       <FormNotice error={state.error} success={state.success} />
       <input type="hidden" name="id" value={result?.id ?? ""} />
 
@@ -88,7 +89,7 @@ export default function ResultForm({ result, justCreated }: { result: CaseResult
               </span>
             </label>
             <div className="mt-5 flex flex-wrap gap-3">
-              <SubmitButton>Save</SubmitButton>
+              <SubmitButton pending={pending}>Save</SubmitButton>
               {result?.published && (
                 <Link href={`/case-results/${result.slug}`} target="_blank" className="self-center text-sm text-beacon-dark hover:text-ink">
                   View result ↗
