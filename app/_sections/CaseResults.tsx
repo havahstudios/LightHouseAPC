@@ -1,31 +1,37 @@
 import ButtonLink from "@/components/ButtonLink";
-import { caseResults } from "@/lib/content/home";
+import ResultCard from "@/components/ResultCard";
+import { listPublishedResults } from "@/lib/cms/results";
 
-// Stacked list of past results with big serif headings.
-export default function CaseResults() {
+// "Recent Results" on the homepage: the first three published results (set in /admin).
+// Hidden until at least one result is published.
+export default async function CaseResults() {
+  const results = await listPublishedResults(3);
+  if (results.length === 0) return null;
+
   return (
     <section className="bg-shell py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <div>
-          <p className="flex items-center gap-4 text-xs font-semibold tracking-[0.22em] text-ink uppercase">
-            <span className="h-px w-10 bg-beacon" />
-            Our results speak for themselves
-          </p>
-          <p className="mt-3 text-xs text-stone/80 italic">Sample results shown — to be replaced with the firm&apos;s real outcomes.</p>
+        <div className="flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <p className="flex items-center gap-4 text-xs font-semibold tracking-[0.22em] text-ink uppercase">
+              <span className="h-px w-10 bg-beacon" />
+              Recent Results
+            </p>
+            <h2 className="mt-5 max-w-xl text-4xl leading-tight font-light md:text-[2.75rem]">Results for Our Clients</h2>
+          </div>
+          <ButtonLink href="/case-results" variant="outline" className="!text-beacon-dark">
+            View All Results
+          </ButtonLink>
         </div>
 
-        <div className="mt-12 max-w-4xl space-y-14">
-          {caseResults.map((result, i) => (
-            <div key={result.title + i}>
-              <h3 className="text-4xl font-light md:text-[3.25rem]">{result.title}</h3>
-              <p className="mt-5 text-[0.95rem] leading-8">{result.body}</p>
-            </div>
+        <ul className="mt-12 grid gap-6 md:grid-cols-3">
+          {results.map((result) => (
+            <li key={result.id}>
+              <ResultCard result={result} />
+            </li>
           ))}
-        </div>
-
-        <div className="mt-14">
-          <ButtonLink href="/case-results">View All Case Results</ButtonLink>
-        </div>
+        </ul>
+        <p className="mt-8 text-xs text-stone">Prior results do not guarantee a similar outcome.</p>
       </div>
     </section>
   );

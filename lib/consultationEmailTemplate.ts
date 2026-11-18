@@ -101,7 +101,7 @@ export function buildConsultationEmail(input: ConsultationInput) {
           <!-- Logo -->
           <tr>
             <td class="px" style="padding:32px 40px 26px;border-bottom:1px solid ${LINE}">
-              <img src="${LOGO_URL}" width="200" alt="Lighthouse Law, APC — Civil Litigation Attorneys" style="display:block;width:200px;max-width:100%;height:auto;border:0">
+              <img src="${LOGO_URL}" width="300" alt="Lighthouse Law, APC — Civil Litigation Attorneys" style="display:block;width:300px;max-width:100%;height:auto;border:0">
             </td>
           </tr>
 

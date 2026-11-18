@@ -14,7 +14,11 @@ import Testimonials from "./_sections/Testimonials";
 import VideoStatement from "./_sections/VideoStatement";
 import PracticeAreas from "./_sections/PracticeAreas";
 import ClosingCta from "./_sections/ClosingCta";
-import BlogPosts from "./_sections/BlogPosts";
+import LatestPosts from "./_sections/LatestPosts";
+
+// Recent results and blog posts come from /admin; saving there refreshes this page right away,
+// and it also re-checks every 5 minutes.
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -43,11 +47,9 @@ export default function Home() {
           <TrustSlider />
         </FadeIn>
       )}
-      {show.caseResults && (
-        <FadeIn>
-          <CaseResults />
-        </FadeIn>
-      )}
+      <FadeIn>
+        <CaseResults />
+      </FadeIn>
       <FadeIn>
         <Location />
       </FadeIn>
@@ -71,11 +73,9 @@ export default function Home() {
       <FadeIn>
         <ClosingCta />
       </FadeIn>
-      {show.blog && (
-        <FadeIn>
-          <BlogPosts />
-        </FadeIn>
-      )}
+      <FadeIn>
+        <LatestPosts />
+      </FadeIn>
     </>
   );
 }

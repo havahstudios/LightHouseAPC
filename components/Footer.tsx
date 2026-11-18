@@ -6,29 +6,20 @@ import HavahCredit from "@/components/HavahCredit";
 import HiddenOn from "@/components/HiddenOn";
 import Icon, { type IconName } from "@/components/Icon";
 import Logo from "@/components/Logo";
-import { areasServed } from "@/lib/content/home";
 import { darkScrim, photos, show, site } from "@/lib/site";
 
 // Links to "coming soon" pages only appear once those pages are ready (show.unfinishedPages).
 const aboutLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  ...(show.unfinishedPages
-    ? [
-        { label: "Case Results", href: "/case-results" },
-        { label: "Client Reviews", href: "/reviews" },
-        { label: "Areas We Serve", href: "/areas-served" },
-      ]
-    : []),
+  { label: "Case Results", href: "/case-results" },
+  { label: "Areas We Serve", href: "/areas-served" },
+  ...(show.unfinishedPages ? [{ label: "Client Reviews", href: "/reviews" }] : []),
 ];
 
 const resourceLinks = [
-  ...(show.unfinishedPages
-    ? [
-        { label: "Blog", href: "/resources" },
-        { label: "FAQ", href: "/resources" },
-      ]
-    : []),
+  { label: "Blog", href: "/blog" },
+  ...(show.unfinishedPages ? [{ label: "FAQ", href: "/resources" }] : []),
   { label: "Practice Areas", href: "/practice-areas" },
   { label: "Contact", href: "/contact" },
 ];
@@ -133,8 +124,12 @@ export default function Footer() {
               Areas We Serve
             </h3>
             <p className="mt-6 text-sm leading-7">
-              {site.name} serves California and nearby communities, including{" "}
-              {areasServed.slice(0, -1).join(", ")}, and {areasServed.at(-1)}.
+              {site.name} represents clients in all 58 California counties — from Los Angeles, Orange and San
+              Diego to Fresno, Sacramento and the Bay Area.{" "}
+              <Link href="/areas-served" className="text-beacon-dark underline-offset-4 hover:underline">
+                Find your county
+              </Link>
+              .
             </p>
           </div>
         </div>

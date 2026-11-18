@@ -1,0 +1,270 @@
+import type { County } from "./types";
+
+// Central Valley (San Joaquin Valley) and the Sacramento Valley.
+// Employer names are well-known public information; they're listed as major local employers only.
+
+export const centralCounties: County[] = [
+  {
+    slug: "kern-county",
+    name: "Kern",
+    region: "Central Valley",
+    seat: "Bakersfield",
+    cities: ["Bakersfield", "Delano", "Ridgecrest", "Tehachapi", "Wasco", "Shafter", "Arvin", "McFarland"],
+    economy:
+      "Kern County produces much of California's oil and is one of the nation's top farm counties — grapes, almonds, citrus and carrots. Aerospace testing at Edwards Air Force Base and China Lake, plus wind and solar farms, round out the economy.",
+    industries: ["energy", "agriculture", "foodProcessing", "aerospace", "logistics", "corrections"],
+    employers: [
+      "Grimmway Farms",
+      "The Wonderful Company",
+      "Chevron",
+      "Edwards Air Force Base",
+      "Naval Air Weapons Station China Lake",
+      "Kern Medical",
+    ],
+  },
+  {
+    slug: "tulare-county",
+    name: "Tulare",
+    region: "Central Valley",
+    seat: "Visalia",
+    cities: ["Visalia", "Tulare", "Porterville", "Dinuba", "Lindsay", "Exeter", "Farmersville"],
+    economy:
+      "Tulare County is one of the country's leading dairy and citrus producers. Dairies, cheese plants, citrus packing houses and food manufacturers employ many workers, alongside regional hospitals and distribution centers.",
+    industries: ["agriculture", "foodProcessing", "logistics", "healthcare"],
+    employers: [
+      "Kaweah Health",
+      "Ruiz Foods",
+      "Saputo (Tulare cheese plant)",
+      "Sierra View Medical Center",
+      "Dairies and citrus packing houses",
+    ],
+  },
+  {
+    slug: "kings-county",
+    name: "Kings",
+    region: "Central Valley",
+    seat: "Hanford",
+    cities: ["Hanford", "Lemoore", "Corcoran", "Avenal"],
+    economy:
+      "Kings County farms grow cotton, pistachios and milk for large cheese plants. Naval Air Station Lemoore and two state prisons are among the biggest employers.",
+    industries: ["agriculture", "foodProcessing", "military", "corrections"],
+    employers: [
+      "Naval Air Station Lemoore",
+      "Leprino Foods (Lemoore)",
+      "California State Prison, Corcoran",
+      "Avenal State Prison",
+      "Adventist Health Hanford",
+    ],
+  },
+  {
+    slug: "fresno-county",
+    name: "Fresno",
+    region: "Central Valley",
+    seat: "Fresno",
+    cities: ["Fresno", "Clovis", "Sanger", "Reedley", "Selma", "Kerman", "Kingsburg", "Coalinga"],
+    economy:
+      "Fresno County is one of the most productive farm counties in the United States — almonds, grapes, raisins, poultry and more. Large poultry and food-processing plants, hospitals, Fresno State and growing distribution centers employ much of the workforce.",
+    industries: ["agriculture", "foodProcessing", "healthcare", "logistics", "education", "government"],
+    employers: [
+      "Foster Farms",
+      "Sun-Maid Growers",
+      "Community Health System",
+      "Saint Agnes Medical Center",
+      "California State University, Fresno",
+      "Amazon fulfillment centers",
+    ],
+  },
+  {
+    slug: "madera-county",
+    name: "Madera",
+    region: "Central Valley",
+    seat: "Madera",
+    cities: ["Madera", "Chowchilla", "Oakhurst"],
+    economy:
+      "Madera County grows almonds, pistachios and wine grapes, and is home to Valley Children's Hospital. Two large state prisons near Chowchilla and Yosemite tourism near Oakhurst also provide jobs.",
+    industries: ["agriculture", "foodProcessing", "healthcare", "corrections", "hospitality"],
+    employers: [
+      "Valley Children's Healthcare",
+      "Central California Women's Facility",
+      "Valley State Prison",
+      "Nut processors and wineries",
+    ],
+  },
+  {
+    slug: "merced-county",
+    name: "Merced",
+    region: "Central Valley",
+    seat: "Merced",
+    cities: ["Merced", "Los Banos", "Atwater", "Livingston", "Dos Palos", "Hilmar"],
+    economy:
+      "Merced County is a major farm and ranch county with dairies, almond orchards and some of the state's largest poultry and cheese plants. UC Merced has also become a growing employer.",
+    industries: ["agriculture", "foodProcessing", "education", "healthcare"],
+    employers: [
+      "Foster Farms (Livingston)",
+      "Hilmar Cheese Company",
+      "University of California, Merced",
+      "Mercy Medical Center Merced",
+      "Merced County government",
+    ],
+  },
+  {
+    slug: "stanislaus-county",
+    name: "Stanislaus",
+    region: "Central Valley",
+    seat: "Modesto",
+    cities: ["Modesto", "Turlock", "Ceres", "Riverbank", "Oakdale", "Patterson", "Newman"],
+    economy:
+      "Stanislaus County is a food-processing capital: wineries, poultry plants, nut processors and canneries line Highway 99, while Patterson has become a major distribution hub.",
+    industries: ["foodProcessing", "agriculture", "wine", "logistics", "healthcare"],
+    employers: [
+      "E. & J. Gallo Winery",
+      "Foster Farms (Turlock)",
+      "Blue Diamond Growers (Salida)",
+      "Doctors Medical Center",
+      "Memorial Medical Center",
+      "Amazon fulfillment centers",
+    ],
+  },
+  {
+    slug: "san-joaquin-county",
+    name: "San Joaquin",
+    region: "Central Valley",
+    seat: "Stockton",
+    cities: ["Stockton", "Tracy", "Manteca", "Lodi", "Lathrop", "Ripon", "Escalon"],
+    economy:
+      "San Joaquin County has exploded as a warehouse and logistics center along I-5 and I-205. Lodi's wine country, the Port of Stockton, farms and new manufacturing plants add thousands more jobs.",
+    industries: ["logistics", "agriculture", "wine", "manufacturing", "ports", "healthcare"],
+    employers: [
+      "Amazon fulfillment centers (Tracy and Stockton)",
+      "Tesla (Lathrop)",
+      "St. Joseph's Medical Center",
+      "Port of Stockton",
+      "San Joaquin County government",
+    ],
+  },
+  {
+    slug: "sacramento-county",
+    name: "Sacramento",
+    region: "Sacramento Valley",
+    seat: "Sacramento",
+    cities: ["Sacramento", "Elk Grove", "Citrus Heights", "Folsom", "Rancho Cordova", "Carmichael"],
+    economy:
+      "As the state capital, Sacramento County's largest employer is the State of California. Large hospital systems, technology companies in Folsom and Rancho Cordova, and construction also employ many workers.",
+    industries: ["government", "healthcare", "technology", "construction", "education", "retail"],
+    employers: [
+      "State of California",
+      "UC Davis Health",
+      "Sutter Health",
+      "Kaiser Permanente",
+      "Dignity Health",
+      "Intel (Folsom)",
+    ],
+  },
+  {
+    slug: "yolo-county",
+    name: "Yolo",
+    region: "Sacramento Valley",
+    seat: "Woodland",
+    cities: ["Davis", "Woodland", "West Sacramento", "Winters"],
+    economy:
+      "Yolo County is home to UC Davis and rich farmland growing tomatoes, rice and wine grapes. Food processing in Woodland and warehousing in West Sacramento add many hourly jobs.",
+    industries: ["education", "agriculture", "foodProcessing", "logistics", "government"],
+    employers: [
+      "University of California, Davis",
+      "Raley's",
+      "Pacific Coast Producers",
+      "Yolo County government",
+    ],
+  },
+  {
+    slug: "sutter-county",
+    name: "Sutter",
+    region: "Sacramento Valley",
+    seat: "Yuba City",
+    cities: ["Yuba City", "Live Oak", "Sutter"],
+    economy:
+      "Sutter County grows peaches, prunes, walnuts and rice, and is home to large dried-fruit and nut processors.",
+    industries: ["agriculture", "foodProcessing", "healthcare", "retail"],
+    employers: ["Sunsweet Growers", "Sutter County government", "Orchards, packers and nut processors"],
+  },
+  {
+    slug: "yuba-county",
+    name: "Yuba",
+    region: "Sacramento Valley",
+    seat: "Marysville",
+    cities: ["Marysville", "Olivehurst", "Linda", "Wheatland"],
+    economy:
+      "Yuba County's largest employer is Beale Air Force Base, with healthcare, farming and construction providing many other jobs.",
+    industries: ["military", "healthcare", "agriculture", "construction"],
+    employers: ["Beale Air Force Base", "Adventist Health Rideout", "Yuba County government"],
+  },
+  {
+    slug: "colusa-county",
+    name: "Colusa",
+    region: "Sacramento Valley",
+    seat: "Colusa",
+    cities: ["Colusa", "Williams", "Arbuckle"],
+    economy:
+      "Colusa County is one of California's top rice-growing counties, with almond orchards and large tomato-processing operations near Williams.",
+    industries: ["agriculture", "foodProcessing"],
+    employers: ["Rice growers and mills", "Tomato processors near Williams", "Colusa County government"],
+  },
+  {
+    slug: "glenn-county",
+    name: "Glenn",
+    region: "Sacramento Valley",
+    seat: "Willows",
+    cities: ["Orland", "Willows", "Hamilton City"],
+    economy: "Glenn County is a farming county with rice fields, almond orchards and dairies.",
+    industries: ["agriculture", "foodProcessing", "government"],
+    employers: ["Rice and almond growers", "Dairies", "Glenn County government"],
+  },
+  {
+    slug: "butte-county",
+    name: "Butte",
+    region: "Sacramento Valley",
+    seat: "Oroville",
+    cities: ["Chico", "Oroville", "Paradise", "Gridley"],
+    economy:
+      "Butte County is anchored by Chico State, a regional hospital system and well-known breweries, with almond, rice and walnut farms throughout the valley.",
+    industries: ["education", "healthcare", "agriculture", "manufacturing", "construction"],
+    employers: [
+      "California State University, Chico",
+      "Enloe Health",
+      "Sierra Nevada Brewing Co.",
+      "Butte County government",
+    ],
+  },
+  {
+    slug: "tehama-county",
+    name: "Tehama",
+    region: "Sacramento Valley",
+    seat: "Red Bluff",
+    cities: ["Red Bluff", "Corning"],
+    economy:
+      "Tehama County's jobs come from a large distribution center, timber mills, olive and walnut orchards, and cattle ranching.",
+    industries: ["logistics", "timber", "agriculture", "foodProcessing"],
+    employers: [
+      "Walmart distribution center (Red Bluff)",
+      "Sierra Pacific Industries",
+      "Bell-Carter Olive Company",
+      "St. Elizabeth Community Hospital",
+    ],
+  },
+  {
+    slug: "shasta-county",
+    name: "Shasta",
+    region: "Far North",
+    seat: "Redding",
+    cities: ["Redding", "Anderson", "Shasta Lake"],
+    economy:
+      "Redding is the healthcare and shopping hub of the North State. Timber, Lake Shasta tourism and government round out the economy.",
+    industries: ["healthcare", "timber", "hospitality", "retail", "government"],
+    employers: [
+      "Mercy Medical Center Redding",
+      "Shasta Regional Medical Center",
+      "Sierra Pacific Industries",
+      "Shasta County government",
+    ],
+  },
+];

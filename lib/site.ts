@@ -29,24 +29,18 @@ export const site = {
 export const show = {
   googleRating: false, // "100+ Google reviews" badge in the hero + floating rating card
   stats: false, // 15+ years / 100+ reviews / 1,000+ workers
-  caseResults: false, // sample case results
   testimonials: false, // sample client reviews
   awards: false, // blank award badge slider
-  blog: false, // sample blog cards (no real articles yet)
   socials: false, // Facebook / LinkedIn / Instagram icons (no accounts linked yet)
-  unfinishedPages: false, // links to Resources, Areas Served, Case Results, Reviews ("coming soon" pages)
+  unfinishedPages: false, // links to the Reviews and Resources/FAQ "coming soon" pages
 };
 
 export const nav = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Practice Areas", href: "/practice-areas" },
-  ...(show.unfinishedPages
-    ? [
-        { label: "Resources", href: "/resources" },
-        { label: "Areas Served", href: "/areas-served" },
-      ]
-    : []),
+  { label: "Areas We Serve", href: "/areas-served" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 

@@ -62,3 +62,19 @@ export function faqSchema(faqs: ServiceFaq[]) {
     })),
   };
 }
+
+// A blog post, for Google's article results. Published by the firm (no author names, client request).
+export function articleSchema(input: { path: string; title: string; description: string; image: string; published: string; modified: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: input.title,
+    description: input.description,
+    image: input.image,
+    datePublished: input.published,
+    dateModified: input.modified,
+    mainEntityOfPage: absoluteUrl(input.path),
+    author: { "@type": "Organization", name: site.name, url: site.url },
+    publisher: { "@type": "Organization", name: site.name, logo: { "@type": "ImageObject", url: absoluteUrl("/email-logo.png") } },
+  };
+}

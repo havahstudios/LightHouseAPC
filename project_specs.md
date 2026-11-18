@@ -152,7 +152,7 @@ Other inner pages (About, individual practice areas, Case Results, Blog, Contact
 - **About page** (`/about`, requested 2026-11-02): general firm page with no attorney names (client request). Covers who the firm is, how it works (values), the two practice groups with links, and the Beverly Hills office + areas served. Ends with a contact call to action.
 - **Google Search Console**: verify the domain with a DNS TXT record in GoDaddy and submit `/sitemap.xml`. Google can't read password-protected pages, so indexing starts only once the password gate is removed.
 
-## 4f. Client feedback round 1 (received 2026-11-17) — AWAITING APPROVAL
+## 4f. Client feedback round 1 (received 2026-11-17, approved with admin option A, built 2026-11-17)
 
 **Quick changes**
 1. **Logo:** a wide, letter-spaced "LIGHTHOUSE LAW, APC" with a smaller "Civil Litigation Attorneys" underneath (replaces "Trial Lawyers / APC · Los Angeles"). Applied to the header, footer, password page, email logo and the downloadable logo files.

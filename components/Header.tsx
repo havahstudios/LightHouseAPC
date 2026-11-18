@@ -48,7 +48,7 @@ export default function Header() {
     <>
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled ? "py-3" : "py-5"} ${
-          scrolled || practiceOpen
+          scrolled
             ? "bg-navy/95 shadow-[0_10px_40px_-20px_rgba(0,0,0,0.6)] backdrop-blur-md"
             : "bg-transparent"
         }`}
@@ -77,7 +77,7 @@ export default function Header() {
                   return (
                     <li
                       key={item.href}
-                      className="flex items-center gap-1"
+                      className="relative flex items-center gap-1"
                       onMouseEnter={isPractice ? openPractice : undefined}
                       onMouseLeave={isPractice ? closePracticeSoon : undefined}
                     >
@@ -104,6 +104,9 @@ export default function Header() {
                             strokeWidth={2}
                           />
                         </button>
+                      )}
+                      {isPractice && practiceOpen && (
+                        <PracticeMegaMenu id="practice-menu" onNavigate={closePractice} />
                       )}
                     </li>
                   );
@@ -132,16 +135,6 @@ export default function Header() {
           </div>
         </div>
 
-        {practiceOpen && (
-          <div className="hidden lg:block">
-            <PracticeMegaMenu
-              id="practice-menu"
-              onNavigate={closePractice}
-              onMouseEnter={openPractice}
-              onMouseLeave={closePracticeSoon}
-            />
-          </div>
-        )}
       </header>
 
       <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} />

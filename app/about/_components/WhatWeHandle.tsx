@@ -5,12 +5,12 @@ import { practiceGroups } from "@/lib/content/practiceAreas";
 import { darkScrim, photos } from "@/lib/site";
 
 // The firm's two practice groups, each linking to its overview page, over a darkened photo.
-export default function WhatWeHandle() {
+export default function WhatWeHandle({ heading }: { heading: string }) {
   return (
     <section className="relative overflow-hidden bg-ink py-20 md:py-28">
       <BackgroundImage src={photos.palms} overlay={darkScrim} />
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
-        <h2 className="text-3xl font-light text-white md:text-[2.5rem]">What We Handle</h2>
+        <h2 className="text-3xl font-light text-white md:text-[2.5rem]">{heading}</h2>
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {practiceGroups.map((group) => (
             <Link
