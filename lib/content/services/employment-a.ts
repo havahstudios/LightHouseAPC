@@ -4,11 +4,11 @@ import type { ServiceContent } from "./types";
 
 export const employmentA: Record<string, ServiceContent> = {
   "wrongful-termination": {
-    h1: "Los Angeles Wrongful Termination Lawyer",
+    h1: "California Wrongful Termination Lawyer",
     metaDescription:
-      "Fired for an illegal reason? Our Los Angeles wrongful termination lawyers fight for lost wages and damages. Free, confidential consultation.",
+      "Fired for an illegal reason? Our California wrongful termination lawyers fight for lost wages and damages. Free, confidential consultation.",
     intro: [
-      "Losing your job is hard. Losing it for an illegal reason is worse. As a Los Angeles wrongful termination lawyer, Lighthouse Law APC helps employees who were fired because of discrimination, retaliation, taking protected leave, or refusing to break the law hold their former employers accountable.",
+      "Losing your job is hard. Losing it for an illegal reason is worse. As a California wrongful termination lawyer, Lighthouse Law APC helps employees who were fired because of discrimination, retaliation, taking protected leave, or refusing to break the law hold their former employers accountable.",
       "California is an “at-will” employment state, which means an employer can usually let you go for any reason or no reason at all — but never for an unlawful one. When the real reason behind a firing is illegal, you may be entitled to lost pay, lost benefits, emotional distress damages, and in some cases punitive damages.",
     ],
     sections: [
@@ -79,11 +79,11 @@ export const employmentA: Record<string, ServiceContent> = {
   },
 
   whistleblower: {
-    h1: "Los Angeles Whistleblower Lawyer",
+    h1: "California Whistleblower Lawyer",
     metaDescription:
-      "Punished for reporting illegal activity at work? A Los Angeles whistleblower lawyer can protect your job and your rights. Free consultation.",
+      "Punished for reporting illegal activity at work? A California whistleblower lawyer can protect your job and your rights. Free consultation.",
     intro: [
-      "Speaking up takes courage. If you reported fraud, safety violations or other illegal conduct and your employer punished you for it, a Los Angeles whistleblower lawyer at Lighthouse Law APC can help you fight back.",
+      "Speaking up takes courage. If you reported fraud, safety violations or other illegal conduct and your employer punished you for it, a California whistleblower lawyer at Lighthouse Law APC can help you fight back.",
       "California has some of the strongest whistleblower protections in the country. Employers cannot fire, demote, threaten, cut the hours of or otherwise retaliate against workers who report — or refuse to take part in — activity they reasonably believe is illegal.",
     ],
     sections: [
@@ -166,11 +166,11 @@ export const employmentA: Record<string, ServiceContent> = {
   },
 
   "workplace-harassment": {
-    h1: "Los Angeles Workplace Harassment Lawyer",
+    h1: "California Workplace Harassment Lawyer",
     metaDescription:
-      "Facing harassment at work? Our Los Angeles workplace harassment lawyers help employees stop the abuse and pursue compensation. Free consultation.",
+      "Facing harassment at work? Our California workplace harassment lawyers help employees stop the abuse and pursue compensation. Free consultation.",
     intro: [
-      "No one should dread going to work because of how they're treated. A Los Angeles workplace harassment lawyer at Lighthouse Law APC helps employees who are targeted by supervisors, coworkers or even customers because of who they are.",
+      "No one should dread going to work because of how they're treated. A California workplace harassment lawyer at Lighthouse Law APC helps employees who are targeted by supervisors, coworkers or even customers because of who they are.",
       "California's Fair Employment and Housing Act protects workers at businesses of every size from harassment based on protected characteristics. When employers fail to prevent or stop it, they can be held responsible.",
     ],
     sections: [
@@ -252,11 +252,11 @@ export const employmentA: Record<string, ServiceContent> = {
   },
 
   "wage-and-hour": {
-    h1: "Los Angeles Wage and Hour Lawyer",
+    h1: "California Wage and Hour Lawyer",
     metaDescription:
-      "Unpaid overtime, missed breaks or off-the-clock work? A Los Angeles wage and hour lawyer can help you recover what you're owed. Free consultation.",
+      "Unpaid overtime, missed breaks or off-the-clock work? A California wage and hour lawyer can help you recover what you're owed. Free consultation.",
     intro: [
-      "You earned every hour you worked. A Los Angeles wage and hour lawyer at Lighthouse Law APC helps workers recover unpaid overtime, missed meal and rest break pay, minimum wage shortfalls and the penalties California employers owe when they break the rules.",
+      "You earned every hour you worked. A California wage and hour lawyer at Lighthouse Law APC helps workers recover unpaid overtime, missed meal and rest break pay, minimum wage shortfalls and the penalties California employers owe when they break the rules.",
       "California's wage laws are among the most protective in the nation — and among the most commonly violated. Many workers are owed money without realizing it.",
     ],
     sections: [
@@ -337,11 +337,11 @@ export const employmentA: Record<string, ServiceContent> = {
   },
 
   "employment-discrimination": {
-    h1: "Los Angeles Employment Discrimination Lawyer",
+    h1: "California Employment Discrimination Lawyer",
     metaDescription:
-      "Treated unfairly at work because of who you are? A Los Angeles employment discrimination lawyer can help. Free, confidential consultation.",
+      "Treated unfairly at work because of who you are? A California employment discrimination lawyer can help. Free, confidential consultation.",
     intro: [
-      "Your job should depend on your work — not your race, gender, age, religion, disability or background. A Los Angeles employment discrimination lawyer at Lighthouse Law APC represents workers who were denied jobs, promotions, fair pay or fair treatment because of a protected characteristic.",
+      "Your job should depend on your work — not your race, gender, age, religion, disability or background. A California employment discrimination lawyer at Lighthouse Law APC represents workers who were denied jobs, promotions, fair pay or fair treatment because of a protected characteristic.",
       "California's Fair Employment and Housing Act (FEHA) applies to employers with five or more employees and protects more categories than federal law. Federal laws like Title VII, the ADA and the ADEA add further protections.",
     ],
     sections: [
@@ -425,11 +425,11 @@ export const employmentA: Record<string, ServiceContent> = {
   },
 
   retaliation: {
-    h1: "Los Angeles Retaliation Lawyer",
+    h1: "California Retaliation Lawyer",
     metaDescription:
-      "Punished for complaining, requesting leave or speaking up? A Los Angeles retaliation lawyer can help you fight back. Free consultation.",
+      "Punished for complaining, requesting leave or speaking up? A California retaliation lawyer can help you fight back. Free consultation.",
     intro: [
-      "The law protects you when you stand up for your rights at work. A Los Angeles retaliation lawyer at Lighthouse Law APC represents employees who were fired, demoted, cut from the schedule or otherwise punished for doing something the law protects.",
+      "The law protects you when you stand up for your rights at work. A California retaliation lawyer at Lighthouse Law APC represents employees who were fired, demoted, cut from the schedule or otherwise punished for doing something the law protects.",
       "Retaliation is one of the most common claims employees bring — and often one of the strongest, because the timeline itself can tell the story.",
     ],
     sections: [
@@ -511,11 +511,11 @@ export const employmentA: Record<string, ServiceContent> = {
   },
 
   "age-discrimination": {
-    h1: "Los Angeles Age Discrimination Lawyer",
+    h1: "California Age Discrimination Lawyer",
     metaDescription:
-      "Pushed out, passed over or replaced because of your age? A Los Angeles age discrimination lawyer can protect workers 40+. Free consultation.",
+      "Pushed out, passed over or replaced because of your age? A California age discrimination lawyer can protect workers 40+. Free consultation.",
     intro: [
-      "Experience should be valued, not penalized. A Los Angeles age discrimination lawyer at Lighthouse Law APC represents workers 40 and older who were laid off, passed over or pushed out because of their age.",
+      "Experience should be valued, not penalized. A California age discrimination lawyer at Lighthouse Law APC represents workers 40 and older who were laid off, passed over or pushed out because of their age.",
       "Both California's Fair Employment and Housing Act and the federal Age Discrimination in Employment Act (ADEA) make it illegal to treat workers differently because they are 40 or older.",
     ],
     sections: [
@@ -596,11 +596,11 @@ export const employmentA: Record<string, ServiceContent> = {
   },
 
   "civil-rights": {
-    h1: "Civil Rights Attorney in Los Angeles",
+    h1: "Civil Rights Attorney in California",
     metaDescription:
-      "Your civil rights don't stop at work. A Los Angeles civil rights attorney can help with workplace discrimination and equal treatment claims.",
+      "Your civil rights don't stop at work. A California civil rights attorney can help with workplace discrimination and equal treatment claims.",
     intro: [
-      "Equal treatment is a civil right. As a civil rights attorney in Los Angeles, Lighthouse Law APC represents workers whose rights to fair, equal treatment on the job were violated because of their race, religion, national origin, sex, disability or other protected characteristic.",
+      "Equal treatment is a civil right. As a civil rights attorney in California, Lighthouse Law APC represents workers whose rights to fair, equal treatment on the job were violated because of their race, religion, national origin, sex, disability or other protected characteristic.",
       "Federal civil rights laws like Title VII of the Civil Rights Act of 1964 and Section 1981, together with California's Fair Employment and Housing Act, give employees powerful tools to challenge discrimination.",
     ],
     sections: [
@@ -680,11 +680,11 @@ export const employmentA: Record<string, ServiceContent> = {
   },
 
   "disability-discrimination": {
-    h1: "Los Angeles Disability Discrimination Lawyer",
+    h1: "California Disability Discrimination Lawyer",
     metaDescription:
-      "Denied an accommodation or fired because of a disability? A Los Angeles disability discrimination lawyer can help. Free consultation.",
+      "Denied an accommodation or fired because of a disability? A California disability discrimination lawyer can help. Free consultation.",
     intro: [
-      "A health condition should never cost you your job. A Los Angeles disability discrimination lawyer at Lighthouse Law APC helps employees with physical or mental health conditions who were denied accommodations, mistreated or fired.",
+      "A health condition should never cost you your job. A California disability discrimination lawyer at Lighthouse Law APC helps employees with physical or mental health conditions who were denied accommodations, mistreated or fired.",
       "California's Fair Employment and Housing Act defines disability broadly and requires employers to work with employees to find reasonable accommodations. The federal Americans with Disabilities Act (ADA) adds further protections.",
     ],
     sections: [
@@ -765,11 +765,11 @@ export const employmentA: Record<string, ServiceContent> = {
   },
 
   "equal-pay": {
-    h1: "Equal Pay Attorney in Los Angeles",
+    h1: "Equal Pay Attorney in California",
     metaDescription:
-      "Paid less than coworkers for similar work? A Los Angeles equal pay attorney can help you challenge unfair pay gaps. Free consultation.",
+      "Paid less than coworkers for similar work? A California equal pay attorney can help you challenge unfair pay gaps. Free consultation.",
     intro: [
-      "Equal work deserves equal pay. As an equal pay attorney in Los Angeles, Lighthouse Law APC helps employees who are paid less than coworkers of a different gender, race or ethnicity for substantially similar work.",
+      "Equal work deserves equal pay. As an equal pay attorney in California, Lighthouse Law APC helps employees who are paid less than coworkers of a different gender, race or ethnicity for substantially similar work.",
       "The California Equal Pay Act is one of the strongest pay equity laws in the country. Federal law, including the Equal Pay Act of 1963, adds protection against sex-based wage discrimination.",
     ],
     sections: [
@@ -847,11 +847,11 @@ export const employmentA: Record<string, ServiceContent> = {
   },
 
   "gender-discrimination": {
-    h1: "Los Angeles Gender Discrimination Lawyer",
+    h1: "California Gender Discrimination Lawyer",
     metaDescription:
-      "Treated unfairly at work because of your gender? A Los Angeles gender discrimination lawyer can help you fight back. Free consultation.",
+      "Treated unfairly at work because of your gender? A California gender discrimination lawyer can help you fight back. Free consultation.",
     intro: [
-      "Your gender should have nothing to do with your paycheck, your promotions or your job security. A Los Angeles gender discrimination lawyer at Lighthouse Law APC represents employees treated unfairly because of their sex, gender, gender identity or gender expression.",
+      "Your gender should have nothing to do with your paycheck, your promotions or your job security. A California gender discrimination lawyer at Lighthouse Law APC represents employees treated unfairly because of their sex, gender, gender identity or gender expression.",
       "California's Fair Employment and Housing Act and federal Title VII both prohibit gender discrimination at work, and California's protections are among the broadest in the country.",
     ],
     sections: [

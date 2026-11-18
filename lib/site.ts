@@ -5,17 +5,18 @@ export const site = {
   name: "Lighthouse Law APC",
   url: "https://lighthouselawapc.com", // official address used for Google (canonical links, sitemap)
   shortName: "Lighthouse Law",
-  tagline: "Trial Lawyers",
+  logoName: "Lighthouse Law, APC", // how the name appears in the logo (client request)
+  tagline: "Civil Litigation Attorneys",
   phone: "(310) 487-0024",
   phoneHref: "tel:+13104870024",
   address: {
     city: "Beverly Hills, CA",
-    line1: "8889 West Olympic Boulevard, Suite 226",
+    line1: "8889 West Olympic Boulevard, Suite 1026",
     line2: "Beverly Hills, CA 90211",
   },
-  mapQuery: "8889 West Olympic Boulevard Suite 226, Beverly Hills, CA 90211",
+  mapQuery: "8889 West Olympic Boulevard Suite 1026, Beverly Hills, CA 90211",
   directionsUrl:
-    "https://www.google.com/maps/dir/?api=1&destination=8889+West+Olympic+Boulevard+Suite+226,+Beverly+Hills,+CA+90211",
+    "https://www.google.com/maps/dir/?api=1&destination=8889+West+Olympic+Boulevard+Suite+1026,+Beverly+Hills,+CA+90211",
   // Placeholder rating — replace with the firm's real Google numbers before launch.
   google: { rating: "5.0", reviewCount: "100+" },
   // Drop a video file in /public/videos and put its path here (e.g. "/videos/hero.mp4").

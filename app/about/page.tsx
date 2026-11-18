@@ -11,7 +11,7 @@ import WhatWeHandle from "./_components/WhatWeHandle";
 // General firm page. No attorney names or bios yet (client request).
 
 const description =
-  "Lighthouse Law APC is a Beverly Hills trial firm representing Los Angeles workers and accident victims in employment and personal injury cases.";
+  "Lighthouse Law APC is a Beverly Hills trial firm representing California workers and accident victims in employment and personal injury cases.";
 
 const crumbs = [
   { label: "Home", href: "/" },
@@ -19,7 +19,7 @@ const crumbs = [
 ];
 
 export const metadata: Metadata = {
-  title: pageTitle("About Our Los Angeles Law Firm"),
+  title: pageTitle("About Our California Law Firm"),
   description,
   alternates: { canonical: "/about" },
 };
@@ -33,7 +33,7 @@ export default function AboutPage() {
       <PageBanner
         crumbs={crumbs}
         eyebrow="About Us"
-        title="Trial Lawyers for Los Angeles Workers and Injury Victims"
+        title="Trial Lawyers for California Workers and Injury Victims"
         lead={`${site.name} stands up for people against employers, corporations and insurance companies, and guides them safely through one of the hardest times of their lives.`}
         image={photos.skyline}
       />

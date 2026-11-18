@@ -4,11 +4,11 @@ import type { ServiceContent } from "./types";
 
 export const injuryB: Record<string, ServiceContent> = {
   "bus-accidents": {
-    h1: "Bus Accident Lawyer in Los Angeles",
+    h1: "Bus Accident Lawyer in California",
     metaDescription:
-      "Injured on or by a bus in LA? A Los Angeles bus accident lawyer can handle strict government deadlines and pursue compensation.",
+      "Injured on or by a bus in LA? A California bus accident lawyer can handle strict government deadlines and pursue compensation.",
     intro: [
-      "Buses carry millions of riders across Los Angeles every year. As a bus accident lawyer in Los Angeles, Lighthouse Law APC helps passengers, pedestrians, cyclists and drivers injured in accidents involving Metro buses, school buses, tour buses, shuttles and charter coaches.",
+      "Buses carry millions of riders across California every year. As a bus accident lawyer in California, Lighthouse Law APC helps passengers, pedestrians, cyclists and drivers injured in accidents involving Metro buses, school buses, tour buses, shuttles and charter coaches.",
       "Bus companies and transit agencies are held to a high standard of care. When they fall short, injured people can seek compensation — but these claims often come with short deadlines.",
     ],
     sections: [
@@ -88,11 +88,11 @@ export const injuryB: Record<string, ServiceContent> = {
   },
 
   "dog-bites": {
-    h1: "Dog Bite Lawyer in Los Angeles",
+    h1: "Dog Bite Lawyer in California",
     metaDescription:
-      "Bitten by a dog? A Los Angeles dog bite lawyer can help you recover under California's strict liability law. Free consultation.",
+      "Bitten by a dog? A California dog bite lawyer can help you recover under California's strict liability law. Free consultation.",
     intro: [
-      "A dog bite can cause deep wounds, infections, scarring and lasting fear. As a dog bite lawyer in Los Angeles, Lighthouse Law APC helps children and adults recover compensation after an attack.",
+      "A dog bite can cause deep wounds, infections, scarring and lasting fear. As a dog bite lawyer in California, Lighthouse Law APC helps children and adults recover compensation after an attack.",
       "California has one of the strongest dog bite laws in the country. In many cases, the owner is responsible even if the dog never bit anyone before.",
     ],
     sections: [
@@ -171,11 +171,11 @@ export const injuryB: Record<string, ServiceContent> = {
   },
 
   negligence: {
-    h1: "Negligence Lawyer in Los Angeles",
+    h1: "Negligence Lawyer in California",
     metaDescription:
-      "Hurt because someone was careless? A Los Angeles negligence lawyer can help you hold them accountable and recover damages. Free consultation.",
+      "Hurt because someone was careless? A California negligence lawyer can help you hold them accountable and recover damages. Free consultation.",
     intro: [
-      "Not every injury fits neatly into a category — but if someone's carelessness hurt you, they can still be held responsible. As a negligence lawyer in Los Angeles, Lighthouse Law APC handles personal injury claims of every kind.",
+      "Not every injury fits neatly into a category — but if someone's carelessness hurt you, they can still be held responsible. As a negligence lawyer in California, Lighthouse Law APC handles personal injury claims of every kind.",
       "Negligence is the foundation of most personal injury law. Understanding how it works can help you understand whether you have a case.",
     ],
     sections: [
@@ -253,11 +253,11 @@ export const injuryB: Record<string, ServiceContent> = {
   },
 
   "animal-attacks": {
-    h1: "Animal Attack Lawyer in Los Angeles",
+    h1: "Animal Attack Lawyer in California",
     metaDescription:
-      "Injured by a dog, horse or other animal? A Los Angeles animal attack lawyer can help you recover compensation. Free consultation.",
+      "Injured by a dog, horse or other animal? A California animal attack lawyer can help you recover compensation. Free consultation.",
     intro: [
-      "Animal attacks can be terrifying and leave serious physical and emotional injuries. As an animal attack lawyer in Los Angeles, Lighthouse Law APC helps people injured by dogs, horses, exotic pets and other animals.",
+      "Animal attacks can be terrifying and leave serious physical and emotional injuries. As an animal attack lawyer in California, Lighthouse Law APC helps people injured by dogs, horses, exotic pets and other animals.",
       "The rules for animal injuries in California depend on the type of animal and the circumstances of the attack.",
     ],
     sections: [
@@ -334,11 +334,11 @@ export const injuryB: Record<string, ServiceContent> = {
   },
 
   "premises-liability": {
-    h1: "Los Angeles Premises Liability Lawyer",
+    h1: "California Premises Liability Lawyer",
     metaDescription:
-      "Injured on unsafe property? A Los Angeles premises liability lawyer can hold owners accountable for dangerous conditions. Free consultation.",
+      "Injured on unsafe property? A California premises liability lawyer can hold owners accountable for dangerous conditions. Free consultation.",
     intro: [
-      "Property owners have a duty to keep their premises reasonably safe. A Los Angeles premises liability lawyer at Lighthouse Law APC represents people injured because of dangerous conditions in stores, apartments, offices, hotels, parking structures and other properties.",
+      "Property owners have a duty to keep their premises reasonably safe. A California premises liability lawyer at Lighthouse Law APC represents people injured because of dangerous conditions in stores, apartments, offices, hotels, parking structures and other properties.",
       "California Civil Code section 1714 holds people responsible for injuries caused by their lack of ordinary care in managing their property.",
     ],
     sections: [
@@ -419,11 +419,11 @@ export const injuryB: Record<string, ServiceContent> = {
   },
 
   "spinal-cord-injury": {
-    h1: "Spinal Cord Injury Lawyer in Los Angeles",
+    h1: "Spinal Cord Injury Lawyer in California",
     metaDescription:
-      "Suffered a spinal cord injury? A Los Angeles spinal cord injury lawyer can pursue compensation for lifelong care. Free consultation.",
+      "Suffered a spinal cord injury? A California spinal cord injury lawyer can pursue compensation for lifelong care. Free consultation.",
     intro: [
-      "A spinal cord injury can change every part of daily life. As a spinal cord injury lawyer in Los Angeles, Lighthouse Law APC helps survivors and their families pursue compensation that covers the lifelong costs of care, lost income and the loss of independence.",
+      "A spinal cord injury can change every part of daily life. As a spinal cord injury lawyer in California, Lighthouse Law APC helps survivors and their families pursue compensation that covers the lifelong costs of care, lost income and the loss of independence.",
       "These are among the most serious injury cases, and they demand careful preparation and experienced advocacy.",
     ],
     sections: [
@@ -501,11 +501,11 @@ export const injuryB: Record<string, ServiceContent> = {
   },
 
   "traffic-accidents": {
-    h1: "Traffic Accident Attorney in Los Angeles",
+    h1: "Traffic Accident Attorney in California",
     metaDescription:
-      "Injured in a traffic accident on LA roads? A Los Angeles traffic accident attorney can prove fault and fight for fair compensation.",
+      "Injured in a traffic accident on LA roads? A California traffic accident attorney can prove fault and fight for fair compensation.",
     intro: [
-      "Traffic in Los Angeles is a fact of life — and so, unfortunately, are traffic accidents. As a traffic accident attorney in Los Angeles, Lighthouse Law APC represents drivers, passengers and others injured in collisions on freeways, highways and city streets.",
+      "Traffic in California is a fact of life — and so, unfortunately, are traffic accidents. As a traffic accident attorney in California, Lighthouse Law APC represents drivers, passengers and others injured in collisions on freeways, highways and city streets.",
       "Every collision is different. Our job is to figure out exactly what happened and who should pay for the harm it caused.",
     ],
     sections: [
@@ -536,7 +536,7 @@ export const injuryB: Record<string, ServiceContent> = {
       {
         heading: "Freeway crashes and multi-vehicle pileups",
         paragraphs: [
-          "Los Angeles freeways like the 405, 101, 110 and 10 are some of the busiest in the country. Sudden slowdowns, aggressive lane changes and distracted driving can trigger chain-reaction crashes involving several vehicles, making it harder to determine who's responsible for each impact.",
+          "California freeways like the 405, 101, 110 and 10 are some of the busiest in the country. Sudden slowdowns, aggressive lane changes and distracted driving can trigger chain-reaction crashes involving several vehicles, making it harder to determine who's responsible for each impact.",
           "In multi-vehicle crashes, insurers often point fingers at each other. Evidence like vehicle damage patterns, event data recorder information, witness accounts and video can help sort out the sequence of impacts. California law allows fault to be divided among multiple drivers based on their share of responsibility.",
         ],
       },
@@ -584,11 +584,11 @@ export const injuryB: Record<string, ServiceContent> = {
   },
 
   "train-accidents": {
-    h1: "Train Accident Lawyer in Los Angeles",
+    h1: "Train Accident Lawyer in California",
     metaDescription:
-      "Hurt in a train, Metro rail or crossing accident? A Los Angeles train accident lawyer can navigate strict deadlines. Free consultation.",
+      "Hurt in a train, Metro rail or crossing accident? A California train accident lawyer can navigate strict deadlines. Free consultation.",
     intro: [
-      "Rail travel is generally safe, but when train accidents happen, injuries are often severe. As a train accident lawyer in Los Angeles, Lighthouse Law APC helps passengers, pedestrians and drivers injured in accidents involving Metro Rail, Metrolink, Amtrak and freight trains.",
+      "Rail travel is generally safe, but when train accidents happen, injuries are often severe. As a train accident lawyer in California, Lighthouse Law APC helps passengers, pedestrians and drivers injured in accidents involving Metro Rail, Metrolink, Amtrak and freight trains.",
       "Train accident claims often involve public agencies and federal regulations, which makes acting quickly especially important.",
     ],
     sections: [
@@ -612,13 +612,13 @@ export const injuryB: Record<string, ServiceContent> = {
       {
         heading: "Strict deadlines for public rail claims",
         paragraphs: [
-          "Many passenger rail systems in Los Angeles are run by public agencies. Claims against government entities generally require a written government claim within six months of the accident. Claims against private railroads generally must be filed within two years. Federal rules may also apply, so early legal help matters.",
+          "Many passenger rail systems in California are run by public agencies. Claims against government entities generally require a written government claim within six months of the accident. Claims against private railroads generally must be filed within two years. Federal rules may also apply, so early legal help matters.",
         ],
       },
       {
         heading: "Light rail and street-level crossings",
         paragraphs: [
-          "Parts of Los Angeles' Metro Rail system run at street level, sharing intersections with cars, cyclists and pedestrians. Collisions can occur when signals malfunction, gates fail to lower, sightlines are blocked, or drivers and pedestrians are confused by complex intersections.",
+          "Light rail lines across California, such as the Los Angeles Metro and San Diego Trolley, run at street level, sharing intersections with cars, cyclists and pedestrians. Collisions can occur when signals malfunction, gates fail to lower, sightlines are blocked, or drivers and pedestrians are confused by complex intersections.",
           "Investigating these crashes often involves reviewing signal timing records, maintenance logs, train operator logs and onboard video. Because Metro is a public agency, the six-month government claim deadline generally applies, so it's important to start the process quickly.",
         ],
       },
@@ -666,12 +666,12 @@ export const injuryB: Record<string, ServiceContent> = {
   },
 
   "truck-accidents": {
-    h1: "Truck Accident Lawyer in Los Angeles",
+    h1: "Truck Accident Lawyer in California",
     metaDescription:
-      "Hurt in a crash with a big rig or delivery truck? A Los Angeles truck accident lawyer can investigate and fight for full compensation.",
+      "Hurt in a crash with a big rig or delivery truck? A California truck accident lawyer can investigate and fight for full compensation.",
     intro: [
-      "Commercial trucks can weigh 20 times more than a passenger car, and crashes with them often cause devastating injuries. As a truck accident lawyer in Los Angeles, Lighthouse Law APC represents people injured in collisions with big rigs, delivery trucks, garbage trucks and other commercial vehicles.",
-      "With the Ports of Los Angeles and Long Beach and freeways like the 710, 5 and 60, Los Angeles sees enormous truck traffic.",
+      "Commercial trucks can weigh 20 times more than a passenger car, and crashes with them often cause devastating injuries. As a truck accident lawyer in California, Lighthouse Law APC represents people injured in collisions with big rigs, delivery trucks, garbage trucks and other commercial vehicles.",
+      "With the Ports of California and Long Beach and freeways like the 710, 5 and 60, California sees enormous truck traffic.",
     ],
     sections: [
       {
@@ -750,11 +750,11 @@ export const injuryB: Record<string, ServiceContent> = {
   },
 
   "construction-accidents": {
-    h1: "Los Angeles Construction Accident Lawyer",
+    h1: "California Construction Accident Lawyer",
     metaDescription:
-      "Injured on a construction site? A Los Angeles construction accident lawyer can pursue claims beyond workers' comp. Free consultation.",
+      "Injured on a construction site? A California construction accident lawyer can pursue claims beyond workers' comp. Free consultation.",
     intro: [
-      "Construction is one of the most dangerous industries in California. A Los Angeles construction accident lawyer at Lighthouse Law APC helps injured workers and bystanders recover compensation after accidents on job sites.",
+      "Construction is one of the most dangerous industries in California. A California construction accident lawyer at Lighthouse Law APC helps injured workers and bystanders recover compensation after accidents on job sites.",
       "Construction sites often involve many companies working side by side. When someone other than your employer contributed to your injury, you may have a claim beyond workers' compensation.",
     ],
     sections: [
@@ -834,11 +834,11 @@ export const injuryB: Record<string, ServiceContent> = {
   },
 
   "wrongful-death": {
-    h1: "Los Angeles Wrongful Death Lawyer",
+    h1: "California Wrongful Death Lawyer",
     metaDescription:
-      "Lost a loved one due to someone's negligence? A Los Angeles wrongful death lawyer can help your family pursue justice. Free consultation.",
+      "Lost a loved one due to someone's negligence? A California wrongful death lawyer can help your family pursue justice. Free consultation.",
     intro: [
-      "Nothing can undo the loss of a loved one. But when a death was caused by someone else's negligence or wrongdoing, a Los Angeles wrongful death lawyer at Lighthouse Law APC can help your family seek accountability and the financial security you need for the future.",
+      "Nothing can undo the loss of a loved one. But when a death was caused by someone else's negligence or wrongdoing, a California wrongful death lawyer at Lighthouse Law APC can help your family seek accountability and the financial security you need for the future.",
       "We handle these cases with compassion, keeping you informed while we take on the legal work.",
     ],
     sections: [

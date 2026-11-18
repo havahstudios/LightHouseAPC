@@ -152,6 +152,44 @@ Other inner pages (About, individual practice areas, Case Results, Blog, Contact
 - **About page** (`/about`, requested 2026-11-02): general firm page with no attorney names (client request). Covers who the firm is, how it works (values), the two practice groups with links, and the Beverly Hills office + areas served. Ends with a contact call to action.
 - **Google Search Console**: verify the domain with a DNS TXT record in GoDaddy and submit `/sitemap.xml`. Google can't read password-protected pages, so indexing starts only once the password gate is removed.
 
+## 4f. Client feedback round 1 (received 2026-11-17) — AWAITING APPROVAL
+
+**Quick changes**
+1. **Logo:** a wide, letter-spaced "LIGHTHOUSE LAW, APC" with a smaller "Civil Litigation Attorneys" underneath (replaces "Trial Lawyers / APC · Los Angeles"). Applied to the header, footer, password page, email logo and the downloadable logo files.
+2. **Homepage headline:** "California's Trusted Employment and Personal Injury Attorneys".
+3. **"California" instead of "Los Angeles"** wherever it makes sense: headlines, page titles, About, Contact, footer. The office stays listed as Beverly Hills. *SEO note:* the 44 practice pages currently target "Los Angeles ___ lawyer" searches. Switching them to "California ___ lawyer" is broader (more searches, but more competition). The new county pages (item 5) would then carry the local searches like "Fresno County employment lawyer".
+4. **New suite number:** 8889 West Olympic Boulevard, **Suite 1026**, Beverly Hills, CA 90211 (site, map, directions, Google data, emails).
+
+**Navigation:** Home · About · Practice Areas ▾ · Areas We Serve · Blog · Contact
+
+5. **Areas We Serve** (`/areas-served`, no dropdown)
+   - **Landing page:** all 58 California counties, grouped by region (Southern California, Central Valley, Bay Area, etc.), with a search box. Each county card lists its main industries and well-known employers.
+   - **County pages** (`/areas-served/<county>`): major industries, large employers, the workplace issues common in those industries (e.g. farm work: heat illness, wage-and-hour and overtime), the nearest courthouse, and a consultation form. Each page is written to rank for "<County> employment lawyer" searches.
+   - **Employer names** come from public sources and are worded neutrally ("major employers in the area include…") so nothing suggests a claim against a company. The attorney approves them before launch.
+6. **Practice Areas dropdown:** a classic dropdown hanging under the button that shows **Employment Law** and **Personal Injury**. Hovering one opens a side panel with all of its practice areas. On phones: tap a group to expand its list. (This replaces the current full-width panel.)
+7. **Blog** (`/blog` + `/blog/<post>`): a post list with cover photo, title, date and short summary; post pages with headings, a related practice-area link and a consultation call to action. Each post gets its own SEO title, description and Article data for Google.
+8. **Recent Results** (homepage section + `/case-results` + `/case-results/<result>`): cards show the dollar amount, case type and a one-line summary. Clicking opens the full story: what happened, what we did, and the outcome. Required California ethics wording on every result: "Prior results do not guarantee a similar outcome". No client names unless the client consents in writing.
+
+**Client editing (blog, results, About page)**
+9. **Private admin area** (`/admin`), so the attorney can make edits whenever they want without a developer:
+   - Log in with email and password (Supabase Auth); only approved admin emails can get in.
+   - **Blog:** write, edit, publish/unpublish, delete, and upload a cover photo.
+   - **Recent Results:** add, edit, publish/unpublish and reorder results (amount, case type, summary, full story).
+   - **About page:** edit the text of each section.
+   - A simple text editor with headings, bold, lists and links. No code needed.
+
+## 5b. New data (if 4f item 9 is approved)
+| table | key columns | who can read | who can write |
+|---|---|---|---|
+| `blog_posts` | slug, title, summary, body, cover_image, practice_slug, published, published_at | public: published only | admins |
+| `case_results` | slug, amount, case_type, summary, body, sort_order, published | public: published only | admins |
+| `page_sections` | page ("about"), key, heading, body | public | admins |
+| `admins` | user_id, email | admins | none (added by hand in Supabase) |
+- RLS on every table. Public pages read only published rows. Writes require a logged-in user listed in `admins`.
+- Storage bucket `blog-images`: public read (the photos appear on public blog pages), uploads by admins only. No videos here.
+- Pages update within about a minute of a save (cache refresh), with no redeploy needed.
+- County content (item 5) lives in a TypeScript file in `/lib/content/`; there is no editing in the admin for now.
+
 ## 5. Data models & storage
 Supabase table `consultation_requests`:
 | column | type |

@@ -4,11 +4,11 @@ import type { ServiceContent } from "./types";
 
 export const employmentB: Record<string, ServiceContent> = {
   "hostile-work-environment": {
-    h1: "Hostile Work Environment Lawyer in Los Angeles",
+    h1: "Hostile Work Environment Lawyer in California",
     metaDescription:
-      "Dreading work because of harassment? A Los Angeles hostile work environment lawyer can help you hold your employer accountable. Free consultation.",
+      "Dreading work because of harassment? A California hostile work environment lawyer can help you hold your employer accountable. Free consultation.",
     intro: [
-      "A hostile work environment can make every day on the job feel unbearable. As a hostile work environment lawyer in Los Angeles, Lighthouse Law APC helps employees facing harassment that has poisoned their workplace.",
+      "A hostile work environment can make every day on the job feel unbearable. As a hostile work environment lawyer in California, Lighthouse Law APC helps employees facing harassment that has poisoned their workplace.",
       "Under California law, employers must take reasonable steps to prevent and stop harassment. When they don't, employees can seek compensation for the harm they've suffered.",
     ],
     sections: [
@@ -89,11 +89,11 @@ export const employmentB: Record<string, ServiceContent> = {
   },
 
   "labor-law-violations": {
-    h1: "Labor Law Attorney in Los Angeles",
+    h1: "Labor Law Attorney in California",
     metaDescription:
-      "Is your employer breaking California labor laws? A Los Angeles labor law attorney can help you recover unpaid wages and penalties. Free consultation.",
+      "Is your employer breaking California labor laws? A California labor law attorney can help you recover unpaid wages and penalties. Free consultation.",
     intro: [
-      "California's labor laws exist to make sure every worker is paid fairly and treated legally. As a labor law attorney in Los Angeles, Lighthouse Law APC represents employees whose employers cut corners on pay, breaks, classification and other basic rights.",
+      "California's labor laws exist to make sure every worker is paid fairly and treated legally. As a labor law attorney in California, Lighthouse Law APC represents employees whose employers cut corners on pay, breaks, classification and other basic rights.",
       "Labor law violations are often widespread within a company. Whether you're one employee or one of many, you may be entitled to back pay, penalties and attorney's fees.",
     ],
     sections: [
@@ -176,11 +176,11 @@ export const employmentB: Record<string, ServiceContent> = {
   },
 
   fmla: {
-    h1: "FMLA Attorney in Los Angeles",
+    h1: "FMLA Attorney in California",
     metaDescription:
-      "Denied medical or family leave, or punished for taking it? A Los Angeles FMLA and CFRA attorney can protect your job. Free consultation.",
+      "Denied medical or family leave, or punished for taking it? A California FMLA and CFRA attorney can protect your job. Free consultation.",
     intro: [
-      "You shouldn't have to choose between your health, your family and your job. As an FMLA attorney in Los Angeles, Lighthouse Law APC helps employees who were denied protected leave, pressured not to take it, or punished when they returned.",
+      "You shouldn't have to choose between your health, your family and your job. As an FMLA attorney in California, Lighthouse Law APC helps employees who were denied protected leave, pressured not to take it, or punished when they returned.",
       "Two laws work together for California workers: the federal Family and Medical Leave Act (FMLA) and the California Family Rights Act (CFRA). In many cases, CFRA offers broader protection.",
     ],
     sections: [
@@ -264,11 +264,11 @@ export const employmentB: Record<string, ServiceContent> = {
   },
 
   "class-action": {
-    h1: "Employment Class Action Lawyer in Los Angeles",
+    h1: "Employment Class Action Lawyer in California",
     metaDescription:
-      "Did your employer shortchange many workers? A Los Angeles employment class action lawyer can help groups recover wages and penalties.",
+      "Did your employer shortchange many workers? A California employment class action lawyer can help groups recover wages and penalties.",
     intro: [
-      "When an employer's policy hurts many workers the same way, standing together can be powerful. As an employment class action lawyer in Los Angeles, Lighthouse Law APC evaluates group claims for wage theft, misclassification and other companywide violations.",
+      "When an employer's policy hurts many workers the same way, standing together can be powerful. As an employment class action lawyer in California, Lighthouse Law APC evaluates group claims for wage theft, misclassification and other companywide violations.",
       "Class actions and representative actions let workers seek recovery for everyone affected, even when each person's individual losses might seem small.",
     ],
     sections: [
@@ -349,11 +349,11 @@ export const employmentB: Record<string, ServiceContent> = {
   },
 
   "pregnancy-discrimination": {
-    h1: "Los Angeles Pregnancy Discrimination Lawyer",
+    h1: "California Pregnancy Discrimination Lawyer",
     metaDescription:
-      "Treated unfairly at work for being pregnant? A Los Angeles pregnancy discrimination lawyer can protect your job and your leave. Free consultation.",
+      "Treated unfairly at work for being pregnant? A California pregnancy discrimination lawyer can protect your job and your leave. Free consultation.",
     intro: [
-      "Starting or growing a family should be a joyful time — not a threat to your career. A Los Angeles pregnancy discrimination lawyer at Lighthouse Law APC helps expecting and new parents who were demoted, denied leave or fired because of pregnancy.",
+      "Starting or growing a family should be a joyful time — not a threat to your career. A California pregnancy discrimination lawyer at Lighthouse Law APC helps expecting and new parents who were demoted, denied leave or fired because of pregnancy.",
       "California offers some of the strongest pregnancy protections in the country, including Pregnancy Disability Leave, reasonable accommodations and job-protected bonding leave.",
     ],
     sections: [
@@ -437,11 +437,11 @@ export const employmentB: Record<string, ServiceContent> = {
   },
 
   "racial-discrimination": {
-    h1: "Racial Discrimination Attorney in Los Angeles",
+    h1: "Racial Discrimination Attorney in California",
     metaDescription:
-      "Treated differently at work because of your race? A Los Angeles racial discrimination attorney can help you fight back. Free consultation.",
+      "Treated differently at work because of your race? A California racial discrimination attorney can help you fight back. Free consultation.",
     intro: [
-      "Racism has no place at work. As a racial discrimination attorney in Los Angeles, Lighthouse Law APC represents employees who were harassed, passed over, underpaid or fired because of their race, color, ancestry or ethnicity.",
+      "Racism has no place at work. As a racial discrimination attorney in California, Lighthouse Law APC represents employees who were harassed, passed over, underpaid or fired because of their race, color, ancestry or ethnicity.",
       "California's Fair Employment and Housing Act, Title VII and Section 1981 all prohibit racial discrimination in employment, and California's CROWN Act protects natural hairstyles associated with race.",
     ],
     sections: [
@@ -522,11 +522,11 @@ export const employmentB: Record<string, ServiceContent> = {
   },
 
   "religious-discrimination": {
-    h1: "Los Angeles Religious Discrimination Lawyer",
+    h1: "California Religious Discrimination Lawyer",
     metaDescription:
-      "Treated unfairly at work because of your faith? A Los Angeles religious discrimination lawyer can protect your rights. Free consultation.",
+      "Treated unfairly at work because of your faith? A California religious discrimination lawyer can protect your rights. Free consultation.",
     intro: [
-      "You shouldn't have to hide your faith to keep your job. A Los Angeles religious discrimination lawyer at Lighthouse Law APC represents employees who were mistreated, harassed or denied accommodations because of their religious beliefs or practices.",
+      "You shouldn't have to hide your faith to keep your job. A California religious discrimination lawyer at Lighthouse Law APC represents employees who were mistreated, harassed or denied accommodations because of their religious beliefs or practices.",
       "California law protects all religious beliefs and practices — as well as the absence of religious belief — and requires employers to reasonably accommodate religious dress, grooming and observance.",
     ],
     sections: [
@@ -604,11 +604,11 @@ export const employmentB: Record<string, ServiceContent> = {
   },
 
   "severance-agreements": {
-    h1: "Severance Lawyer in Los Angeles",
+    h1: "Severance Lawyer in California",
     metaDescription:
-      "Offered a severance package? A Los Angeles severance lawyer can review your agreement and negotiate better terms before you sign.",
+      "Offered a severance package? A California severance lawyer can review your agreement and negotiate better terms before you sign.",
     intro: [
-      "A severance agreement can be one of the most important documents you ever sign. As a severance lawyer in Los Angeles, Lighthouse Law APC reviews severance offers, explains what you'd be giving up, and negotiates for better terms when there's leverage to do so.",
+      "A severance agreement can be one of the most important documents you ever sign. As a severance lawyer in California, Lighthouse Law APC reviews severance offers, explains what you'd be giving up, and negotiates for better terms when there's leverage to do so.",
       "Most severance agreements ask you to release legal claims in exchange for payment. If you may have claims for discrimination, retaliation or unpaid wages, that release could be worth much more than the offer.",
     ],
     sections: [
@@ -688,11 +688,11 @@ export const employmentB: Record<string, ServiceContent> = {
   },
 
   "sexual-harassment": {
-    h1: "Los Angeles Sexual Harassment Lawyer",
+    h1: "California Sexual Harassment Lawyer",
     metaDescription:
-      "Sexually harassed at work? A Los Angeles sexual harassment lawyer can help you protect your career and pursue justice. Free, confidential consultation.",
+      "Sexually harassed at work? A California sexual harassment lawyer can help you protect your career and pursue justice. Free, confidential consultation.",
     intro: [
-      "Sexual harassment can leave you feeling isolated, anxious and afraid for your job. A Los Angeles sexual harassment lawyer at Lighthouse Law APC listens without judgment, explains your rights and fights to hold harassers and employers accountable.",
+      "Sexual harassment can leave you feeling isolated, anxious and afraid for your job. A California sexual harassment lawyer at Lighthouse Law APC listens without judgment, explains your rights and fights to hold harassers and employers accountable.",
       "California's Fair Employment and Housing Act protects employees, applicants, interns, volunteers and contractors from sexual harassment at workplaces of every size.",
     ],
     sections: [
@@ -770,11 +770,11 @@ export const employmentB: Record<string, ServiceContent> = {
   },
 
   "wrongful-discharge": {
-    h1: "Wrongful Discharge Lawyer in Los Angeles",
+    h1: "Wrongful Discharge Lawyer in California",
     metaDescription:
-      "Fired for refusing to break the law or exercising a legal right? A Los Angeles wrongful discharge lawyer can help. Free consultation.",
+      "Fired for refusing to break the law or exercising a legal right? A California wrongful discharge lawyer can help. Free consultation.",
     intro: [
-      "Some firings are so contrary to public policy that California law treats them as a wrong in themselves. As a wrongful discharge lawyer in Los Angeles, Lighthouse Law APC represents employees who were let go for doing the right thing.",
+      "Some firings are so contrary to public policy that California law treats them as a wrong in themselves. As a wrongful discharge lawyer in California, Lighthouse Law APC represents employees who were let go for doing the right thing.",
       "A claim for wrongful discharge in violation of public policy — sometimes called a Tameny claim — allows employees to recover damages when they're fired for reasons that violate fundamental public policies found in statutes or the constitution.",
     ],
     sections: [
@@ -853,11 +853,11 @@ export const employmentB: Record<string, ServiceContent> = {
   },
 
   "marital-status-discrimination": {
-    h1: "Los Angeles Marital Status Discrimination Lawyer",
+    h1: "California Marital Status Discrimination Lawyer",
     metaDescription:
-      "Treated differently at work for being single, married or divorced? A Los Angeles marital status discrimination lawyer can help.",
+      "Treated differently at work for being single, married or divorced? A California marital status discrimination lawyer can help.",
     intro: [
-      "Whether you're single, married, divorced or widowed has nothing to do with how well you do your job. A Los Angeles marital status discrimination lawyer at Lighthouse Law APC helps employees treated unfairly because of their relationship status.",
+      "Whether you're single, married, divorced or widowed has nothing to do with how well you do your job. A California marital status discrimination lawyer at Lighthouse Law APC helps employees treated unfairly because of their relationship status.",
       "Marital status is a protected category under California's Fair Employment and Housing Act — a protection that federal law doesn't explicitly provide.",
     ],
     sections: [

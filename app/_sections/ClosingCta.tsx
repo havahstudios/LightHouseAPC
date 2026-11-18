@@ -12,7 +12,7 @@ export default function ClosingCta() {
       <div className="flex items-center px-5 py-20 sm:px-8 md:py-28 lg:px-16 xl:pr-[max(4rem,calc((100vw-72rem)/2))]">
         <div>
           <h2 className="text-3xl leading-tight font-light md:text-[2.75rem]">
-            Speak With an Experienced Los Angeles Employment Lawyer at {site.name} Today
+            Speak With an Experienced California Employment Lawyer at {site.name} Today
           </h2>
           <p className="mt-8 text-[0.95rem] leading-8">
             Losing your job or dealing with mistreatment at work can turn your life upside down. Acting
@@ -21,7 +21,7 @@ export default function ClosingCta() {
           </p>
           <p className="mt-6 text-[0.95rem] leading-8">
             You deserve a workplace that follows the law. Contact us today for a free, confidential
-            consultation with a Los Angeles employment attorney.
+            consultation with a California employment attorney.
           </p>
           <ButtonLink href="/contact" className="mt-10">
             Get a Free Consultation

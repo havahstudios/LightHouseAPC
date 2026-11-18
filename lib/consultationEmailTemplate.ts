@@ -101,7 +101,7 @@ export function buildConsultationEmail(input: ConsultationInput) {
           <!-- Logo -->
           <tr>
             <td class="px" style="padding:32px 40px 26px;border-bottom:1px solid ${LINE}">
-              <img src="${LOGO_URL}" width="200" alt="Lighthouse Law APC — Trial Lawyers" style="display:block;width:200px;max-width:100%;height:auto;border:0">
+              <img src="${LOGO_URL}" width="200" alt="Lighthouse Law, APC — Civil Litigation Attorneys" style="display:block;width:200px;max-width:100%;height:auto;border:0">
             </td>
           </tr>
 
@@ -146,7 +146,7 @@ export function buildConsultationEmail(input: ConsultationInput) {
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px">
           <tr>
             <td align="center" style="padding:20px 24px 0;font-family:${SANS};font-size:12px;line-height:1.6;color:${STONE}">
-              Lighthouse Law APC &middot; Trial Lawyers &middot; Los Angeles<br>
+              Lighthouse Law, APC &middot; Civil Litigation Attorneys<br>
               Sent from the consultation form on your website. Replying goes straight to ${escapeHtml(input.name)}.
             </td>
           </tr>

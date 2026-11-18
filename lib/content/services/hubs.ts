@@ -5,11 +5,11 @@ import type { ServiceContent } from "./types";
 
 export const hubs: Record<string, ServiceContent> = {
   "employment-law": {
-    h1: "Los Angeles Employment Lawyer",
+    h1: "California Employment Lawyer",
     metaDescription:
-      "Wronged by your employer? Our Los Angeles employment lawyers handle wrongful termination, discrimination, harassment and wage claims. Free consultation.",
+      "Wronged by your employer? Our California employment lawyers handle wrongful termination, discrimination, harassment and wage claims. Free consultation.",
     intro: [
-      "When your job is on the line, you need someone firmly in your corner. As a Los Angeles employment lawyer, Lighthouse Law APC represents employees — never employers — in claims for wrongful termination, discrimination, harassment, retaliation, unpaid wages and more.",
+      "When your job is on the line, you need someone firmly in your corner. As a California employment lawyer, Lighthouse Law APC represents employees — never employers — in claims for wrongful termination, discrimination, harassment, retaliation, unpaid wages and more.",
       "California gives workers some of the strongest legal protections in the country. We know how to use them, and as trial lawyers, we're prepared to take your case to court when an employer won't do the right thing.",
     ],
     sections: [
@@ -62,11 +62,11 @@ export const hubs: Record<string, ServiceContent> = {
   },
 
   "personal-injury": {
-    h1: "Los Angeles Personal Injury Attorney",
+    h1: "California Personal Injury Attorney",
     metaDescription:
-      "Injured through someone else's carelessness? Our Los Angeles personal injury attorneys fight insurers for full compensation. Free consultation.",
+      "Injured through someone else's carelessness? Our California personal injury attorneys fight insurers for full compensation. Free consultation.",
     intro: [
-      "An injury can upend your health, your income and your family's stability. As a Los Angeles personal injury attorney, Lighthouse Law APC fights for people hurt in car, truck and motorcycle crashes, falls, dog bites, workplace accidents and other incidents caused by someone else's carelessness.",
+      "An injury can upend your health, your income and your family's stability. As a California personal injury attorney, Lighthouse Law APC fights for people hurt in car, truck and motorcycle crashes, falls, dog bites, workplace accidents and other incidents caused by someone else's carelessness.",
       "We deal with the insurance companies so you can focus on healing — and as trial lawyers, we prepare every case as if it's going to court.",
     ],
     sections: [

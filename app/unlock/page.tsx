@@ -15,7 +15,7 @@ export default async function UnlockPage({ searchParams }: PageProps<"/unlock">)
 
   return (
     <section className="relative flex min-h-svh items-center justify-center overflow-hidden bg-ink px-5 py-16">
-      {/* Drifting Los Angeles skyline, heavily darkened */}
+      {/* Drifting California skyline, heavily darkened */}
       <div className="absolute inset-0" aria-hidden="true">
         <Image src={photos.hero} alt="" fill priority sizes="100vw" className="animate-slow-drift object-cover opacity-50" />
         <div className="absolute inset-0 bg-ink/75" />
@@ -48,9 +48,8 @@ export default async function UnlockPage({ searchParams }: PageProps<"/unlock">)
           </svg>
         </div>
 
-        <p className="mt-8 font-serif text-2xl font-light text-white">{site.shortName}</p>
-        <p className="mt-2 text-[0.62rem] font-semibold tracking-[0.32em] text-white/70 uppercase">Trial Lawyers</p>
-        <p className="mt-1 text-[0.62rem] font-medium tracking-[0.32em] text-beacon uppercase">APC · Los Angeles</p>
+        <p className="mt-8 font-serif text-xl tracking-[0.16em] text-white uppercase sm:text-2xl">{site.logoName}</p>
+        <p className="mt-2.5 text-[0.62rem] font-semibold tracking-[0.34em] text-beacon uppercase">{site.tagline}</p>
 
         <span className="mx-auto mt-10 block h-px w-12 bg-beacon/60" />
         <h1 className="mt-10 text-4xl font-light text-white md:text-5xl">Private Preview</h1>

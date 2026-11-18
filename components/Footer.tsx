@@ -122,7 +122,7 @@ export default function Footer() {
               About Our Firm
             </h3>
             <p className="mt-6 text-sm leading-7">
-              {site.name} represents employees throughout Los Angeles and California who have been
+              {site.name} represents employees throughout California who have been
               wronged at work. We know how stressful it is to lose a job or feel unsafe on the job, so we
               offer clear guidance, fast communication and determined advocacy from the first call to the
               final result. As trial lawyers, we are prepared to take your case all the way to a verdict.
@@ -133,7 +133,7 @@ export default function Footer() {
               Areas We Serve
             </h3>
             <p className="mt-6 text-sm leading-7">
-              {site.name} serves Los Angeles and nearby communities, including{" "}
+              {site.name} serves California and nearby communities, including{" "}
               {areasServed.slice(0, -1).join(", ")}, and {areasServed.at(-1)}.
             </p>
           </div>

@@ -21,9 +21,9 @@ const plex = IBM_Plex_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: "Los Angeles Employment & Injury Lawyers | Lighthouse Law APC",
+  title: "California Employment & Injury Lawyers | Lighthouse Law APC",
   description:
-    "Lighthouse Law fights for Los Angeles workers and accident victims: wrongful termination, harassment, wage claims and personal injury. Free consultation.",
+    "Lighthouse Law fights for California workers and accident victims: wrongful termination, harassment, wage claims and personal injury. Free consultation.",
   openGraph: { siteName: site.name, type: "website", locale: "en_US" },
 };
 

@@ -13,7 +13,7 @@ export default function Intro() {
             <path d="m19 32 8 8 15-17" fill="none" className="stroke-beacon" strokeWidth="2" strokeLinecap="round" />
           </svg>
           <h2 className="max-w-xl text-4xl leading-tight font-light md:text-[2.75rem]">
-            Los Angeles Employment &amp; Trial Lawyers
+            California Employment &amp; Trial Lawyers
           </h2>
         </div>
 
@@ -25,7 +25,7 @@ export default function Intro() {
                 {site.name} at {site.phone}
               </a>{" "}
               for a free, confidential consultation. Employment claims have strict deadlines, and evidence
-              like emails and pay records can disappear quickly. The sooner you speak with a Los Angeles
+              like emails and pay records can disappear quickly. The sooner you speak with a California
               employment lawyer, the more we can do to protect your case.
             </p>
           </div>

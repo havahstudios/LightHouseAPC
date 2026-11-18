@@ -4,12 +4,12 @@ import type { ServiceContent } from "./types";
 
 export const injuryA: Record<string, ServiceContent> = {
   "car-accidents": {
-    h1: "Car Accident Lawyer in Los Angeles",
+    h1: "Car Accident Lawyer in California",
     metaDescription:
-      "Hurt in a crash? Our car accident lawyers in Los Angeles handle the insurance company and fight for full compensation. Free consultation.",
+      "Hurt in a crash? Our car accident lawyers in California handle the insurance company and fight for full compensation. Free consultation.",
     intro: [
-      "A car crash can change your life in seconds. As a car accident lawyer in Los Angeles, Lighthouse Law APC helps injured drivers and passengers recover compensation for medical bills, lost income, vehicle damage and pain and suffering — while we deal with the insurance companies.",
-      "Los Angeles has some of the busiest roads in the country, from the 405 and the 10 to crowded surface streets. When another driver's carelessness causes a collision, California law allows you to hold them responsible.",
+      "A car crash can change your life in seconds. As a car accident lawyer in California, Lighthouse Law APC helps injured drivers and passengers recover compensation for medical bills, lost income, vehicle damage and pain and suffering — while we deal with the insurance companies.",
+      "California has some of the busiest roads in the country, from the 405 and the 10 to crowded surface streets. When another driver's carelessness causes a collision, California law allows you to hold them responsible.",
     ],
     sections: [
       {
@@ -19,7 +19,7 @@ export const injuryA: Record<string, ServiceContent> = {
         ],
       },
       {
-        heading: "What to do after a car accident in Los Angeles",
+        heading: "What to do after a car accident in California",
         paragraphs: ["The steps you take after a crash can protect both your health and your claim:"],
         bullets: [
           "Call 911 and get medical attention, even if you feel okay",
@@ -45,9 +45,9 @@ export const injuryA: Record<string, ServiceContent> = {
         ],
       },
       {
-        heading: "Common causes of car accidents in Los Angeles",
+        heading: "Common causes of car accidents in California",
         paragraphs: [
-          "Most car crashes are preventable. Identifying the cause is an important part of proving who's responsible, and in Los Angeles, a handful of dangerous behaviors account for many serious collisions.",
+          "Most car crashes are preventable. Identifying the cause is an important part of proving who's responsible, and in California, a handful of dangerous behaviors account for many serious collisions.",
         ],
         bullets: [
           "Distracted driving, including texting and using apps",
@@ -88,11 +88,11 @@ export const injuryA: Record<string, ServiceContent> = {
   },
 
   "motorcycle-accidents": {
-    h1: "Motorcycle Accident Lawyer in Los Angeles",
+    h1: "Motorcycle Accident Lawyer in California",
     metaDescription:
-      "Injured on your bike? A Los Angeles motorcycle accident lawyer can fight rider bias and pursue full compensation. Free consultation.",
+      "Injured on your bike? A California motorcycle accident lawyer can fight rider bias and pursue full compensation. Free consultation.",
     intro: [
-      "Riders face real dangers on Los Angeles roads — and unfair assumptions after a crash. As a motorcycle accident lawyer in Los Angeles, Lighthouse Law APC fights for injured motorcyclists and pushes back against insurers who try to blame the rider.",
+      "Riders face real dangers on California roads — and unfair assumptions after a crash. As a motorcycle accident lawyer in California, Lighthouse Law APC fights for injured motorcyclists and pushes back against insurers who try to blame the rider.",
       "Motorcyclists have little protection in a collision, so injuries are often severe. You deserve an advocate who understands riding and California's motorcycle laws.",
     ],
     sections: [
@@ -122,7 +122,7 @@ export const injuryA: Record<string, ServiceContent> = {
         ],
       },
       {
-        heading: "Common motorcycle crash scenarios in Los Angeles",
+        heading: "Common motorcycle crash scenarios in California",
         paragraphs: [
           "Left-turn collisions are among the most dangerous crashes for riders: a driver turning left at an intersection misjudges a motorcycle's speed or simply fails to see it. Lane-change crashes, rear-end collisions in stop-and-go freeway traffic, and dooring on busy streets are also common.",
           "Road hazards can play a role too. Potholes, uneven pavement, gravel and poorly marked construction zones pose a much greater danger to motorcycles than to cars. When a dangerous road condition contributed to a crash, a public agency may share responsibility — and the six-month government claim deadline may apply.",
@@ -172,12 +172,12 @@ export const injuryA: Record<string, ServiceContent> = {
   },
 
   "pedestrian-accidents": {
-    h1: "Los Angeles Pedestrian Accident Lawyer",
+    h1: "California Pedestrian Accident Lawyer",
     metaDescription:
-      "Hit by a car while walking? A Los Angeles pedestrian accident lawyer can hold the driver accountable. Free, no-obligation consultation.",
+      "Hit by a car while walking? A California pedestrian accident lawyer can hold the driver accountable. Free, no-obligation consultation.",
     intro: [
-      "Walking should never put your life at risk. A Los Angeles pedestrian accident lawyer at Lighthouse Law APC helps people hit by cars, trucks and buses recover compensation for serious injuries and the costs of recovery.",
-      "Los Angeles sees thousands of pedestrian injuries every year. Because pedestrians have no protection, even low-speed collisions can cause devastating harm.",
+      "Walking should never put your life at risk. A California pedestrian accident lawyer at Lighthouse Law APC helps people hit by cars, trucks and buses recover compensation for serious injuries and the costs of recovery.",
+      "California sees thousands of pedestrian injuries every year. Because pedestrians have no protection, even low-speed collisions can cause devastating harm.",
     ],
     sections: [
       {
@@ -256,11 +256,11 @@ export const injuryA: Record<string, ServiceContent> = {
   },
 
   "slip-and-fall": {
-    h1: "Los Angeles Slip and Fall Lawyer",
+    h1: "California Slip and Fall Lawyer",
     metaDescription:
-      "Injured in a fall on someone's property? A Los Angeles slip and fall lawyer can prove liability and pursue compensation. Free consultation.",
+      "Injured in a fall on someone's property? A California slip and fall lawyer can prove liability and pursue compensation. Free consultation.",
     intro: [
-      "A fall can cause injuries far more serious than people expect. A Los Angeles slip and fall lawyer at Lighthouse Law APC helps people injured on unsafe property — in stores, restaurants, apartment buildings, parking lots and more.",
+      "A fall can cause injuries far more serious than people expect. A California slip and fall lawyer at Lighthouse Law APC helps people injured on unsafe property — in stores, restaurants, apartment buildings, parking lots and more.",
       "Property owners and businesses in California must keep their premises reasonably safe. When they don't, they can be responsible for the injuries that follow.",
     ],
     sections: [
@@ -299,7 +299,7 @@ export const injuryA: Record<string, ServiceContent> = {
       {
         heading: "Slip and falls on sidewalks and public property",
         paragraphs: [
-          "Many falls in Los Angeles happen on cracked or uplifted sidewalks, often caused by tree roots, as well as in parks, public buildings and transit stations. Claims involving public property follow special rules.",
+          "Many falls in California happen on cracked or uplifted sidewalks, often caused by tree roots, as well as in parks, public buildings and transit stations. Claims involving public property follow special rules.",
         ],
         bullets: [
           "A written government claim is generally required within six months",
@@ -340,11 +340,11 @@ export const injuryA: Record<string, ServiceContent> = {
   },
 
   "bicycle-accidents": {
-    h1: "Los Angeles Bicycle Accident Lawyer",
+    h1: "California Bicycle Accident Lawyer",
     metaDescription:
-      "Hit while riding? A Los Angeles bicycle accident lawyer can hold careless drivers accountable and pursue full compensation. Free consultation.",
+      "Hit while riding? A California bicycle accident lawyer can hold careless drivers accountable and pursue full compensation. Free consultation.",
     intro: [
-      "Cyclists have the same right to the road as drivers. A Los Angeles bicycle accident lawyer at Lighthouse Law APC helps cyclists who were injured by careless drivers, dangerous road conditions or defective equipment.",
+      "Cyclists have the same right to the road as drivers. A California bicycle accident lawyer at Lighthouse Law APC helps cyclists who were injured by careless drivers, dangerous road conditions or defective equipment.",
       "From commuters to weekend riders, cyclists in LA face heavy traffic and distracted drivers. When a crash happens, the injuries are often serious.",
     ],
     sections: [
@@ -424,11 +424,11 @@ export const injuryA: Record<string, ServiceContent> = {
   },
 
   "work-injury": {
-    h1: "Work Injury Lawyer in Los Angeles",
+    h1: "Work Injury Lawyer in California",
     metaDescription:
-      "Hurt on the job? A Los Angeles work injury lawyer can explore claims beyond workers' comp when a third party is at fault. Free consultation.",
+      "Hurt on the job? A California work injury lawyer can explore claims beyond workers' comp when a third party is at fault. Free consultation.",
     intro: [
-      "Getting hurt at work can put your health and your paycheck at risk. As a work injury lawyer in Los Angeles, Lighthouse Law APC helps injured workers understand their options — including claims beyond workers' compensation when someone other than the employer is responsible.",
+      "Getting hurt at work can put your health and your paycheck at risk. As a work injury lawyer in California, Lighthouse Law APC helps injured workers understand their options — including claims beyond workers' compensation when someone other than the employer is responsible.",
       "Workers' compensation provides important benefits, but it doesn't cover pain and suffering and often falls short of the full cost of a serious injury.",
     ],
     sections: [
@@ -507,11 +507,11 @@ export const injuryA: Record<string, ServiceContent> = {
   },
 
   "aviation-accidents": {
-    h1: "Aviation Accident Lawyer in Los Angeles",
+    h1: "Aviation Accident Lawyer in California",
     metaDescription:
-      "Injured or lost a loved one in a plane or helicopter accident? A Los Angeles aviation accident lawyer can help you get answers. Free consultation.",
+      "Injured or lost a loved one in a plane or helicopter accident? A California aviation accident lawyer can help you get answers. Free consultation.",
     intro: [
-      "Aviation accidents are rare, but when they happen the consequences are often catastrophic. As an aviation accident lawyer in Los Angeles, Lighthouse Law APC helps injured passengers and grieving families seek answers and accountability.",
+      "Aviation accidents are rare, but when they happen the consequences are often catastrophic. As an aviation accident lawyer in California, Lighthouse Law APC helps injured passengers and grieving families seek answers and accountability.",
       "Southern California's skies are busy — with commercial flights at LAX, private aircraft at Van Nuys and Santa Monica, and helicopters for tours, news and medical transport.",
     ],
     sections: [
@@ -590,12 +590,12 @@ export const injuryA: Record<string, ServiceContent> = {
   },
 
   "uber-lyft-accidents": {
-    h1: "Uber Accident Lawyer in Los Angeles",
+    h1: "Uber Accident Lawyer in California",
     metaDescription:
-      "Injured in an Uber or Lyft crash? A Los Angeles rideshare accident lawyer can sort out the insurance and pursue full compensation.",
+      "Injured in an Uber or Lyft crash? A California rideshare accident lawyer can sort out the insurance and pursue full compensation.",
     intro: [
-      "Rideshare crashes raise questions ordinary car accidents don't. As an Uber accident lawyer in Los Angeles, Lighthouse Law APC helps injured passengers, drivers, pedestrians and other motorists navigate Uber and Lyft's insurance policies and recover what they're owed.",
-      "Los Angeles is one of the biggest rideshare markets in the country. Whether you were in the back seat or hit by a rideshare driver, you deserve clear answers.",
+      "Rideshare crashes raise questions ordinary car accidents don't. As an Uber accident lawyer in California, Lighthouse Law APC helps injured passengers, drivers, pedestrians and other motorists navigate Uber and Lyft's insurance policies and recover what they're owed.",
+      "California is one of the biggest rideshare markets in the country. Whether you were in the back seat or hit by a rideshare driver, you deserve clear answers.",
     ],
     sections: [
       {
@@ -672,11 +672,11 @@ export const injuryA: Record<string, ServiceContent> = {
   },
 
   "scooter-accidents": {
-    h1: "Los Angeles Scooter Accident Lawyer",
+    h1: "California Scooter Accident Lawyer",
     metaDescription:
-      "Hurt on an electric scooter? A Los Angeles scooter accident lawyer can identify who's responsible and pursue compensation. Free consultation.",
+      "Hurt on an electric scooter? A California scooter accident lawyer can identify who's responsible and pursue compensation. Free consultation.",
     intro: [
-      "Electric scooters are everywhere in Los Angeles — and so are scooter injuries. A Los Angeles scooter accident lawyer at Lighthouse Law APC helps riders and pedestrians injured in e-scooter crashes find out who's responsible.",
+      "Electric scooters are everywhere in California — and so are scooter injuries. A California scooter accident lawyer at Lighthouse Law APC helps riders and pedestrians injured in e-scooter crashes find out who's responsible.",
       "Scooter accidents can involve careless drivers, dangerous streets, defective scooters or rental company failures. Identifying the right party is the first step toward recovery.",
     ],
     sections: [
@@ -753,11 +753,11 @@ export const injuryA: Record<string, ServiceContent> = {
   },
 
   "brain-injury": {
-    h1: "Brain Injury Attorney in Los Angeles",
+    h1: "Brain Injury Attorney in California",
     metaDescription:
-      "Suffered a traumatic brain injury? A Los Angeles brain injury attorney can pursue compensation for lifelong needs. Free consultation.",
+      "Suffered a traumatic brain injury? A California brain injury attorney can pursue compensation for lifelong needs. Free consultation.",
     intro: [
-      "A brain injury can affect who you are — your memory, your mood, your ability to work and your relationships. As a brain injury attorney in Los Angeles, Lighthouse Law APC helps people with traumatic brain injuries (TBIs) and their families pursue compensation that reflects the full impact on their lives.",
+      "A brain injury can affect who you are — your memory, your mood, your ability to work and your relationships. As a brain injury attorney in California, Lighthouse Law APC helps people with traumatic brain injuries (TBIs) and their families pursue compensation that reflects the full impact on their lives.",
       "Brain injuries are often called “invisible injuries” because the symptoms aren't always obvious. Insurance companies may try to downplay them. We make sure they're taken seriously.",
     ],
     sections: [
@@ -837,11 +837,11 @@ export const injuryA: Record<string, ServiceContent> = {
   },
 
   "burn-injury": {
-    h1: "Los Angeles Burn Injury Lawyer",
+    h1: "California Burn Injury Lawyer",
     metaDescription:
-      "Severely burned through someone else's negligence? A Los Angeles burn injury lawyer can pursue compensation for treatment and scarring.",
+      "Severely burned through someone else's negligence? A California burn injury lawyer can pursue compensation for treatment and scarring.",
     intro: [
-      "Burn injuries are among the most painful injuries a person can suffer, and recovery can take years. A Los Angeles burn injury lawyer at Lighthouse Law APC helps burn survivors pursue compensation for treatment, lost income, scarring and emotional trauma.",
+      "Burn injuries are among the most painful injuries a person can suffer, and recovery can take years. A California burn injury lawyer at Lighthouse Law APC helps burn survivors pursue compensation for treatment, lost income, scarring and emotional trauma.",
       "Burns can be caused by fires, explosions, chemicals, electricity and scalding liquids. When negligence or a defective product is to blame, you may have a claim.",
     ],
     sections: [

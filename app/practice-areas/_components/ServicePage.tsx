@@ -1,5 +1,4 @@
 import ButtonLink from "@/components/ButtonLink";
-import { areasServed } from "@/lib/content/home";
 import { findArea, type ServicePageData } from "@/lib/content/services";
 import type { ServiceSection } from "@/lib/content/services/types";
 import { breadcrumbSchema, faqSchema, legalServiceSchema } from "@/lib/seo";
@@ -59,7 +58,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
   const whyUs: ServiceSection = {
     heading: `Why choose ${site.name} for your ${area.title.toLowerCase()} case`,
     paragraphs: [
-      `The lawyer you choose can shape how your case unfolds. ${site.name} is a trial law firm based in Beverly Hills, serving clients throughout Los Angeles.`,
+      `The lawyer you choose can shape how your case unfolds. ${site.name} is a trial law firm based in Beverly Hills, serving clients throughout California.`,
     ],
     bullets: reasons[group.id],
   };
@@ -71,9 +70,9 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
     bullets: process[group.id],
   };
   const local: ServiceSection = {
-    heading: "Serving Los Angeles, Beverly Hills and nearby communities",
+    heading: "Serving clients throughout California",
     paragraphs: [
-      `Our office at ${site.address.line1} in Beverly Hills is convenient for clients across Los Angeles County, including ${areasServed.slice(0, -1).join(", ")}, and ${areasServed.at(-1)}. We're also happy to meet by phone or video.`,
+      `From our office at ${site.address.line1} in Beverly Hills, we represent clients in all 58 California counties — from Los Angeles and Orange County to the Central Valley and the Bay Area. We meet in person, by phone or by video, whichever is easiest for you.`,
     ],
   };
 
@@ -110,7 +109,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
 
             <div className="mt-16 bg-navy p-8 md:p-10">
               <p className="font-serif text-2xl font-light text-white md:text-3xl">
-                Talk to a Los Angeles {group.id === "employment-law" ? "employment" : "personal injury"} lawyer today
+                Talk to a California {group.id === "employment-law" ? "employment" : "personal injury"} lawyer today
               </p>
               <p className="mt-3 text-white/70">
                 Free, confidential consultation. Call {site.phone} or send us a message.

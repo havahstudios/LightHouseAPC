@@ -41,7 +41,7 @@ export default function Hero() {
         )}
 
         <h1 className="max-w-4xl text-[2.6rem] leading-[1.12] font-normal text-white sm:text-5xl md:text-[4rem]">
-          Los Angeles&apos; Trusted Employment &amp; Personal Injury Attorneys
+          California&apos;s Trusted Employment and Personal Injury Attorneys
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/90 md:text-[1.35rem]">

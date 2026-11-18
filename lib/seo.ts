@@ -32,8 +32,7 @@ export function legalServiceSchema(path: string, serviceName: string, descriptio
       addressCountry: "US",
     },
     areaServed: [
-      { "@type": "City", name: "Los Angeles" },
-      { "@type": "City", name: "Beverly Hills" },
+      { "@type": "State", name: "California" },
     ],
     knowsAbout: serviceName,
   };

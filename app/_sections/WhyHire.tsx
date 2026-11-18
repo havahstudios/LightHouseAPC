@@ -19,7 +19,7 @@ export default function WhyHire() {
                 combines deep knowledge of California employment law with personal, hands-on attention, so
                 you always know where your case stands.
               </p>
-              <p>Workers across Los Angeles choose us because:</p>
+              <p>Workers across California choose us because:</p>
               <ul className="space-y-5">
                 {whyHireReasons.map((reason) => (
                   <li key={reason} className="flex gap-4">
@@ -32,7 +32,7 @@ export default function WhyHire() {
               </ul>
               <p>
                 Getting advice early can change how your case unfolds. Reach out today to schedule a free
-                consultation with a Los Angeles employment attorney.
+                consultation with a California employment attorney.
               </p>
             </div>
         </div>

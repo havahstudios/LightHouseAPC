@@ -8,7 +8,7 @@ import ContactDetails from "./_components/ContactDetails";
 import NextSteps from "./_components/NextSteps";
 
 const description =
-  "Contact Lighthouse Law APC for a free, confidential consultation with a Los Angeles employment and personal injury lawyer. Call (310) 487-0024.";
+  "Contact Lighthouse Law APC for a free, confidential consultation with a California employment and personal injury lawyer. Call (310) 487-0024.";
 
 const crumbs = [
   { label: "Home", href: "/" },
@@ -16,7 +16,7 @@ const crumbs = [
 ];
 
 export const metadata: Metadata = {
-  title: pageTitle("Contact Our Los Angeles Trial Lawyers"),
+  title: pageTitle("Contact Our California Trial Lawyers"),
   description,
   alternates: { canonical: "/contact" },
 };
@@ -30,7 +30,7 @@ export default function ContactPage() {
       <PageBanner
         crumbs={crumbs}
         eyebrow="Contact Us"
-        title="Talk to a Los Angeles Trial Lawyer Today"
+        title="Talk to a California Trial Lawyer Today"
         lead="Whether you were wronged at work or hurt in an accident, we'll listen, explain your options and tell you honestly whether we can help. Your consultation is free and confidential."
         image={photos.office}
       />

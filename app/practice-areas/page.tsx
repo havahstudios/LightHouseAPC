@@ -9,7 +9,7 @@ import PracticeRow from "./_components/PracticeRow";
 
 export const metadata: Metadata = {
   title: `Practice Areas | Employment Law & Personal Injury | ${site.name}`,
-  description: `${site.name} represents Los Angeles workers and injury victims in employment law and personal injury cases. Free, confidential consultations.`,
+  description: `${site.name} represents California workers and injury victims in employment law and personal injury cases. Free, confidential consultations.`,
   alternates: { canonical: "/practice-areas" },
 };
 
@@ -23,7 +23,7 @@ export default function PracticeAreasPage() {
           <span className="mb-7 block h-[3px] w-16 bg-beacon" />
           <h1 className="text-4xl font-light text-white md:text-6xl">Practice Areas</h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75">
-            {site.name} is a trial law firm standing up for people across Los Angeles in two areas:
+            {site.name} is a trial law firm standing up for people across California in two areas:
             workers mistreated by their employers, and people injured through someone else&apos;s
             carelessness.
           </p>

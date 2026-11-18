@@ -9,7 +9,7 @@ export default function OurOffice() {
       <div className="mx-auto grid max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16">
         <div>
           <h2 className="text-3xl leading-tight font-light md:text-[2.5rem]">
-            Based in Beverly Hills, Serving All of Los Angeles
+            Based in Beverly Hills, Serving All of California
           </h2>
           <p className="mt-6 leading-8 text-stone">
             Our office sits on West Olympic Boulevard in Beverly Hills, minutes from Century City, West
@@ -31,7 +31,7 @@ export default function OurOffice() {
         <div>
           <p className="text-xs font-semibold tracking-[0.2em] text-stone uppercase">Communities we serve</p>
           <ul className="mt-5 flex flex-wrap gap-2.5">
-            {["Los Angeles", ...areasServed].map((area) => (
+            {["California", ...areasServed].map((area) => (
               <li key={area} className="rounded-full border border-line bg-white px-4 py-2 text-sm text-ink">
                 {area}
               </li>
